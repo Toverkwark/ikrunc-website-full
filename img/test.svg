@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" 
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"> <svg xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" onload="init(evt)" width="1900" height="400">
+  <style>
+    .caption{font-size: 14px; font-family: Arial}
+    .tooltip{font-size: 12px; font-family: Arial}
+    .tooltip_bg{fill: white; stroke: black; stroke-width: 1; opacity: 0.85;}
+  </style>
+
+  <script type="text/ecmascript">
+    <![CDATA[
+
+	function init(evt) {
+	    if ( window.svgDocument == null ) {
+			svgDocument = evt.target.ownerDocument;
+	    }
+	    tooltip = svgDocument.getElementById('tooltip');
+	    tooltip_bg = svgDocument.getElementById('tooltip_bg');
+	}
+
+	function ShowTooltip(evt, mouseovertext) {
+	    tooltip.setAttributeNS(null,"x",evt.clientX+15);
+	    tooltip.setAttributeNS(null,"y",evt.clientY+30);
+	    tooltip.firstChild.data = mouseovertext;
+	    tooltip.setAttributeNS(null,"visibility","visible");
+	    length = tooltip.getComputedTextLength();
+	    tooltip_bg.setAttributeNS(null,"width",length+8);
+	    tooltip_bg.setAttributeNS(null,"x",evt.clientX+12);
+	    tooltip_bg.setAttributeNS(null,"y",evt.clientY+18);
+	    tooltip_bg.setAttributeNS(null,"visibility","visibile");
+	}
+
+	function HideTooltip(evt) {
+	    tooltip.setAttributeNS(null,"visibility","hidden");
+	    tooltip_bg.setAttributeNS(null,"visibility","hidden");
+	}
+    ]]>
+  </script>
+<defs>
+   <linearGradient id = "grad1" x1 = "0%" y1 = "0%" x2 = "0%" y2 = "100%">
+     <stop stop-color = "rgb(200,200,255)" offset = "0%"/>
+     <stop stop-color = "rgb(255,255,255)" offset = "50%"/>
+     <stop stop-color = "rgb(200,200,255)" offset = "100%"/>
+   </linearGradient>
+ </defs>
+  <rect x="0" y="121" width="100" height="8" fill="black" stroke="black" stroke-width="1" />'
+  <rect x="100" y="117" width="61.5" height="16" fill="black" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 1')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="161.5" y="110" width="22" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 1')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="183.5" y="110" width="38" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 2')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="221.5" y="110" width="46" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 3')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="267.5" y="110" width="33.75" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 4')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="301.25" y="110" width="17.25" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 5')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="318.5" y="110" width="29.75" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 6')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="348.25" y="110" width="35.5" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 7')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="383.75" y="110" width="29.25" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 8')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="413" y="110" width="31.75" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 9')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="444.75" y="110" width="18.5" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 10')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="463.25" y="110" width="22.75" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 11')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="486" y="110" width="50" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 12')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="536" y="110" width="33.25" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 13')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="569.25" y="110" width="22.75" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 14')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="592" y="110" width="39.5" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 15')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="631.5" y="110" width="9.75" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 16')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="641.25" y="110" width="35.5" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 17')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="676.75" y="110" width="30.75" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 18')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="707.5" y="110" width="24.75" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 19')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="732.25" y="110" width="46.5" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 20')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="778.75" y="110" width="39" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 21')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="817.75" y="110" width="19" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 22')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="836.75" y="110" width="36.75" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 23')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="873.5" y="110" width="24.5" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 24')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="898" y="110" width="42" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 25')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="940" y="110" width="12" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 26')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="952" y="110" width="27.25" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 27')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="979.25" y="110" width="90.5" height="30" fill="url(#grad1)" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 28')" onmouseout="HideTooltip(evt)"/>'
+  <rect x="1069.75" y="117" width="430.25" height="16" fill="black" stroke="black" stroke-width="1" onmousemove="ShowTooltip(evt, 'Exon 28')" onmouseout="HideTooltip(evt)"/>'
+<polygon points="-30537.25,150 -30533.25,140 -30529.25,150" style="fill:rgb(141,114,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(1):2MM:1(0) - GTGCGCGGTTGGGCGGGCTGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.35931405859492s"/>
+</polygon>
+<polygon points="272,150 276,140 280,150" style="fill:rgb(68,187,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '52(9):3MM:13(0) - TCTCCACGTTGCACAGGGCAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.498225468023278s"/>
+</polygon>
+<polygon points="538,150 542,140 546,150" style="fill:rgb(228,27,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '13(1):2MM:2(1) - GCAGCCCTCGGGGGAGCACAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.209323168518557s"/>
+</polygon>
+<polygon points="292.25,150 296.25,140 300.25,150" style="fill:rgb(212,43,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '38(6):2MM:4(0) - TACAGCTGCCCAGGTGGTTCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.297409258711443s"/>
+</polygon>
+<polygon points="328,150 332,140 336,150" style="fill:rgb(159,96,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '55(6):2MM:1(0) - CTGGTTGTGGCAGCAGTCACTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.435240908822871s"/>
+</polygon>
+<polygon points="540.5,160 544.5,150 548.5,160" style="fill:rgb(210,45,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '211(7):2MM:4(0) - CCGGGCCCCAGCAGCCCTCGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.216461816213261s"/>
+</polygon>
+<polygon points="374.5,150 378.5,140 382.5,150" style="fill:rgb(81,174,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(4):3MM:3(1) - ACGGGGACACTTCTTCACGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0166943320756854s"/>
+</polygon>
+<polygon points="159,150 163,140 167,150" style="fill:rgb(127,128,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(2):3MM:9(4) - GCTGCCCCGGCCGTCCCGGAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.246898048810674s"/>
+</polygon>
+<polygon points="360.5,150 364.5,140 368.5,150" style="fill:rgb(35,220,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '11(2):3MM:4(0) - CATCCATCTGGTACGTGGTGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.055932458369357s"/>
+</polygon>
+<polygon points="361.75,160 365.75,150 369.75,160" style="fill:rgb(22,233,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):3MM:2(0) - GTTCACATCCATCTGGTACGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.124939445086397s"/>
+</polygon>
+<polygon points="171.75,150 175.75,140 179.75,150" style="fill:rgb(50,205,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(2):3MM:6(0) - TCCTCCAGAGCCCGACTCGCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.29680888739758s"/>
+</polygon>
+<polygon points="331.25,160 335.25,150 339.25,160" style="fill:rgb(205,50,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '16(1):2MM:3(0) - AGCCTGCAGCACACTGGTTGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.441647431459149s"/>
+</polygon>
+<polygon points="354.25,150 358.25,140 362.25,150" style="fill:rgb(200,55,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '60(11):2MM:2(0) - GTAGAGCATGAGTGGGGGGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.432284535855155s"/>
+</polygon>
+<polygon points="519.25,150 523.25,140 527.25,150" style="fill:rgb(72,183,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):3MM:18(0) - AATTTTGGTTTTCTGACCGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.392675451625912s"/>
+</polygon>
+<polygon points="195.5,150 199.5,140 203.5,150" style="fill:rgb(179,76,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '23(2):2MM:1(0) - CACAGTTATTGAACATCCTCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.311960844941721s"/>
+</polygon>
+<polygon points="-30545,150 -30541,140 -30537,150" style="fill:rgb(136,119,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '69(31):3MM:27(10) - GCGCGATCCGGGGGCGGCGCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0716317251063252s"/>
+</polygon>
+<polygon points="-30542.5,160 -30538.5,150 -30534.5,160" style="fill:rgb(146,109,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):2MM:1(0) - GGGGTCCGGGGCGCGATCCGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.464946674285246s"/>
+</polygon>
+<polygon points="419.5,150 423.5,140 427.5,150" style="fill:rgb(73,182,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(2):3MM:18(0) - TTTAATATTCGTAGCATTTATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.131165484839144s"/>
+</polygon>
+<polygon points="-30535.75,160 -30531.75,150 -30527.75,160" style="fill:rgb(228,27,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(2):2MM:2(1) - GCGCCGGTGCGCGGTTGGGCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.445739738908037s"/>
+</polygon>
+<polygon points="231.75,150 235.75,140 239.75,150" style="fill:rgb(177,78,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '37(3):2MM:1(0) - ATGATCTGCAGGTTTTCCAAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0548104354315946s"/>
+</polygon>
+<polygon points="122.25,150 126.25,140 130.25,150" style="fill:rgb(4,251,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):3MM:3(0) - GGTGGCCTGTCGTCCGGTCTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0565898638787505s"/>
+</polygon>
+<polygon points="123.75,160 127.75,150 131.75,160" style="fill:rgb(2,253,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):4MM:16(4) - CGACGAGGTGGCCTGTCGTCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.378803673224205s"/>
+</polygon>
+<polygon points="258.75,150 262.75,140 266.75,150" style="fill:rgb(70,185,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '54(1):3MM:15(0) - TCACCCTGTAAATTTCTCATGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.254990356526674s"/>
+</polygon>
+<polygon points="473.75,150 477.75,140 481.75,150" style="fill:rgb(10,245,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(3):4MM:26(2) - TCCTGCCGCGTATGATTTCTAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0816646414951485s"/>
+</polygon>
+<polygon points="536.75,170 540.75,160 544.75,170" style="fill:rgb(165,90,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '29(1):2MM:1(0) - CCTCGGGGGAGCACAAGGCATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.216421041484965s"/>
+</polygon>
+<polygon points="540.25,180 544.25,170 548.25,180" style="fill:rgb(221,34,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '19(4):2MM:1(1) - CGGGCCCCAGCAGCCCTCGGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.160468904329861s"/>
+</polygon>
+<polygon points="135.5,150 139.5,140 143.5,150" style="fill:rgb(133,122,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '12(1):3MM:16(6) - CGCGGTGGTTGTGGCGTTGGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.343700469286025s"/>
+</polygon>
+<polygon points="136.25,160 140.25,150 144.25,160" style="fill:rgb(114,141,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(2):3MM:7(2) - GTGCGCGGTGGTTGTGGCGTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.274936710319498s"/>
+</polygon>
+<polygon points="363.5,170 367.5,160 371.5,170" style="fill:rgb(83,172,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '33(3):3MM:3(1) - CCTCGGGGTTCACATCCATCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.4621977507667s"/>
+</polygon>
+<polygon points="378.75,150 382.75,140 386.75,150" style="fill:rgb(119,136,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '10(1):3MM:16(2) - CCCACAGAGGAGGACTCACGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.23585637200464s"/>
+</polygon>
+<polygon points="234.5,160 238.5,150 242.5,160" style="fill:rgb(74,181,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '19(4):3MM:19(0) - TATTTCCTCTGATGATCTGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.309218659034654s"/>
+</polygon>
+<polygon points="297.5,150 301.5,140 305.5,150" style="fill:rgb(151,104,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '33(1):2MM:1(0) - GACAGCTTGGATCACACTTTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.402383403263766s"/>
+</polygon>
+<polygon points="338.75,150 342.75,140 346.75,150" style="fill:rgb(181,74,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(2):2MM:2(0) - CCAGGCAGTCGCTCTCCCGGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0913206413409302s"/>
+</polygon>
+<polygon points="126.75,150 130.75,140 134.75,150" style="fill:rgb(108,147,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(3):3MM:4(2) - TCGGGCGGACGCCGACGAGGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.050373251389189s"/>
+</polygon>
+<polygon points="217.75,150 221.75,140 225.75,150" style="fill:rgb(175,80,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '214(11):2MM:1(0) - ATAACCAGCCACCTCCTGGATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.265287965313638s"/>
+</polygon>
+<polygon points="150.75,150 154.75,140 158.75,150" style="fill:rgb(78,177,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(2):3MM:1(1) - GCTCCCCGAAGAGCTCGCTCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.219804418143699s"/>
+</polygon>
+<polygon points="496.25,150 500.25,140 504.25,150" style="fill:rgb(67,188,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '27(2):3MM:13(0) - CTCCATCACTTATCTCCTTGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0254645469661714s"/>
+</polygon>
+<polygon points="541,170 545,160 549,170" style="fill:rgb(238,17,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '204(26):2MM:4(3) - CTCCGGGCCCCAGCAGCCCTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0419456362420121s"/>
+</polygon>
+<polygon points="520,160 524,150 528,160" style="fill:rgb(131,124,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '30(5):3MM:35(4) - TATAATTTTGGTTTTCTGACCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0797676922143022s"/>
+</polygon>
+<polygon points="339.25,160 343.25,150 347.25,160" style="fill:rgb(91,164,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:7(1) - TACCAGGCAGTCGCTCTCCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.364460049844279s"/>
+</polygon>
+<polygon points="576.5,150 580.5,140 584.5,150" style="fill:rgb(206,49,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '46(3):2MM:3(0) - TGGCCTGAGGCAGGCACTCTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.408529698906039s"/>
+</polygon>
+<polygon points="434,150 438,140 442,150" style="fill:rgb(94,161,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '13(2):3MM:8(1) - TAAATGCCACCGGCAGGATGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.156701259053023s"/>
+</polygon>
+<polygon points="159.25,160 163.25,150 167.25,160" style="fill:rgb(161,94,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(4):2MM:1(0) - CGCTGCCCCGGCCGTCCCGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.194890459760435s"/>
+</polygon>
+<polygon points="448.5,150 452.5,140 456.5,150" style="fill:rgb(190,65,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '29(4):2MM:2(0) - TTCAGAATATCCAGTTCCTGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.199324980418897s"/>
+</polygon>
+<polygon points="367.75,150 371.75,140 375.75,150" style="fill:rgb(168,87,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '18(1):2MM:1(0) - ACCAAAGCTGTATTTGCCCTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0203945970291048s"/>
+</polygon>
+<polygon points="576.75,160 580.75,150 584.75,160" style="fill:rgb(182,73,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '52(3):2MM:2(0) - ATGGCCTGAGGCAGGCACTCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0148122928416754s"/>
+</polygon>
+<polygon points="303,150 307,140 311,150" style="fill:rgb(147,108,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '34(3):2MM:1(0) - GCACCCCAGCAGCTCCCATTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.29331212253379s"/>
+</polygon>
+<polygon points="367.25,160 371.25,150 375.25,160" style="fill:rgb(138,117,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):2MM:1(0) - CAAAGCTGTATTTGCCCTCGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.38083475861924s"/>
+</polygon>
+<polygon points="-30542,170 -30538,160 -30534,170" style="fill:rgb(128,127,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):3MM:10(4) - GCGGGGTCCGGGGCGCGATCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.338035084276472s"/>
+</polygon>
+<polygon points="379.25,160 383.25,150 387.25,160" style="fill:rgb(184,71,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '48(6):2MM:2(0) - GGCCCACAGAGGAGGACTCACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.106230485806989s"/>
+</polygon>
+<polygon points="327.5,170 331.5,160 335.5,170" style="fill:rgb(247,8,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '61(5):1MM:1(0) - GGTTGTGGCAGCAGTCACTGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.179468663247041s"/>
+</polygon>
+<polygon points="273.5,160 277.5,150 281.5,160" style="fill:rgb(110,145,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '17(3):3MM:6(2) - GGATGCTCTCCACGTTGCACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.386574329703368s"/>
+</polygon>
+<polygon points="143.25,150 147.25,140 151.25,150" style="fill:rgb(80,175,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(2):3MM:2(1) - GATCAATACTGGACGGAGTCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.249106656090371s"/>
+</polygon>
+<polygon points="588.75,150 592.75,140 596.75,150" style="fill:rgb(53,202,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '12(1):3MM:7(0) - GCACACTGGATACAGTTGTCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.403861287345386s"/>
+</polygon>
+<polygon points="594.5,150 598.5,140 602.5,150" style="fill:rgb(49,206,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):3MM:6(0) - AGTGGGGGCCGTCAATGTAGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.209829257469336s"/>
+</polygon>
+<polygon points="214.75,160 218.75,150 222.75,160" style="fill:rgb(163,92,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '17(2):2MM:1(0) - AAAGTCACCAACCTTTAAGAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0647535604758893s"/>
+</polygon>
+<polygon points="581.5,150 585.5,140 589.5,150" style="fill:rgb(223,32,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '25(3):2MM:1(1) - TCCTGTGCAGGTGATGTTCATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.183197891499661s"/>
+</polygon>
+<polygon points="599,150 603,140 607,150" style="fill:rgb(82,173,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:3(1) - CCGGGCAGGTCTTGACGCAGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.460955267629032s"/>
+</polygon>
+<polygon points="373.75,160 377.75,150 381.75,160" style="fill:rgb(246,9,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):1MM:1(0) - GGGACACTTCTTCACGCAGGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.301063553976169s"/>
+</polygon>
+<polygon points="140,170 144,160 148,170" style="fill:rgb(202,53,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '10(3):2MM:3(0) - CGGAGTCAGGGGGCCGTGCGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.419645103073737s"/>
+</polygon>
+<polygon points="-30542.75,180 -30538.75,170 -30534.75,180" style="fill:rgb(126,129,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(2):3MM:8(4) - GGGTCCGGGGCGCGATCCGGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.243843523051249s"/>
+</polygon>
+<polygon points="133.5,170 137.5,160 141.5,170" style="fill:rgb(242,13,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(4):1MM:1(0) - TTGTGGCGTTGGCGGCGAGGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0200072941922613s"/>
+</polygon>
+<polygon points="-30535.5,170 -30531.5,160 -30527.5,170" style="fill:rgb(107,148,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(1):3MM:4(2) - TGCGCCGGTGCGCGGTTGGGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.197021479477568s"/>
+</polygon>
+<polygon points="-30539.25,190 -30535.25,180 -30531.25,190" style="fill:rgb(184,71,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '32(7):2MM:2(0) - TTGGGCGGGCTGCGGGGTCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.11206968527372s"/>
+</polygon>
+<polygon points="245.5,150 249.5,140 253.5,150" style="fill:rgb(28,227,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '15(1):3MM:3(0) - ATAGTTAGATAAGACTGCTAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.185289974910235s"/>
+</polygon>
+<polygon points="356.25,160 360.25,150 364.25,160" style="fill:rgb(172,83,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '18(3):2MM:1(0) - GTGGGGTTGTAGAGCATGAGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.144922389056646s"/>
+</polygon>
+<polygon points="300.75,160 304.75,150 308.75,160" style="fill:rgb(155,100,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '17(4):2MM:1(0) - CAGCTCCCATTGGGACAGCTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.48541571302639s"/>
+</polygon>
+<polygon points="592.25,160 596.25,150 600.25,160" style="fill:rgb(25,230,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '10(1):3MM:3(0) - CGTCAATGTAGTGGGCACACTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.262460036313858s"/>
+</polygon>
+<polygon points="430,160 434,150 438,160" style="fill:rgb(243,12,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):1MM:1(0) - GATGTGGAGATCGCCACTGATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.206250598476041s"/>
+</polygon>
+<polygon points="130.5,160 134.5,150 138.5,160" style="fill:rgb(195,60,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '16(5):2MM:2(0) - CGGCGAGGCGGGGACTCGGGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.397120230086436s"/>
+</polygon>
+<polygon points="208,150 212,140 216,150" style="fill:rgb(69,186,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '30(1):3MM:15(0) - ATCATAATTCCTCTGCACATAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.126423040472032s"/>
+</polygon>
+<polygon points="-30539,200 -30535,190 -30531,200" style="fill:rgb(234,21,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '32(12):2MM:3(1) - GTTGGGCGGGCTGCGGGGTCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.397286686639443s"/>
+</polygon>
+<polygon points="594.25,170 598.25,160 602.25,170" style="fill:rgb(16,239,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(2):3MM:1(0) - GTGGGGGCCGTCAATGTAGTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.116851229026752s"/>
+</polygon>
+<polygon points="267.25,150 271.25,140 275.25,150" style="fill:rgb(35,220,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):3MM:4(0) - AGGGTTGTTGCTGAACCGCACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.492908661755337s"/>
+</polygon>
+<polygon points="272.25,170 276.25,160 280.25,170" style="fill:rgb(103,152,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '29(1):3MM:19(1) - CTCTCCACGTTGCACAGGGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0178662491539594s"/>
+</polygon>
+<polygon points="405.75,150 409.75,140 413.75,150" style="fill:rgb(19,236,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):3MM:1(0) - GGCTTCCTACCTTTGCGGCAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.274268848856867s"/>
+</polygon>
+<polygon points="350.5,160 354.5,150 358.5,160" style="fill:rgb(230,25,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '8(3):2MM:2(1) - GGGGCAGGTGTCCTTGCACGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.352090481459635s"/>
+</polygon>
+<polygon points="146,160 150,150 154,160" style="fill:rgb(0,255,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):4MM:13(0) - CCGGCTCTCCCGATCAATACTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0949736245729653s"/>
+</polygon>
+<polygon points="-30534.75,180 -30530.75,170 -30526.75,180" style="fill:rgb(105,150,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(2):3MM:3(2) - CGGTGCGCCGGTGCGCGGTTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.256550713874161s"/>
+</polygon>
+<polygon points="446.25,160 450.25,150 454.25,160" style="fill:rgb(218,37,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '39(4):2MM:1(1) - TCCAGTTCCTGTGGATCCAGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.174716026753398s"/>
+</polygon>
+<polygon points="523,170 527,160 531,170" style="fill:rgb(200,55,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '47(2):2MM:2(0) - ACCTCTGTTGCTTATAATTTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.346927304392041s"/>
+</polygon>
+<polygon points="327.75,180 331.75,170 335.75,180" style="fill:rgb(164,91,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '37(2):2MM:1(0) - TGGTTGTGGCAGCAGTCACTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.429134380314864s"/>
+</polygon>
+<polygon points="294.5,160 298.5,150 302.5,160" style="fill:rgb(20,235,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '20(2):3MM:1(0) - TGCGACACTTACAGCTGCCCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.120619513298015s"/>
+</polygon>
+<polygon points="203,150 207,140 211,150" style="fill:rgb(232,23,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '55(6):2MM:2(1) - AGGTAATTTCCAAATTCCCAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.324757940769477s"/>
+</polygon>
+<polygon points="226,150 230,140 234,150" style="fill:rgb(40,215,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '21(2):3MM:4(0) - AATTCGCTCCACTGTGTTGAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.285127125973824s"/>
+</polygon>
+<polygon points="254.5,150 258.5,140 262.5,150" style="fill:rgb(120,135,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '20(3):3MM:18(2) - CATGGGCAGCTCCTTCAGTCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0603370831735432s"/>
+</polygon>
+<polygon points="546.75,150 550.75,140 554.75,150" style="fill:rgb(81,174,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(3):3MM:2(1) - CGGCAAGAGACGCAGTCCCTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.352930457559024s"/>
+</polygon>
+<polygon points="355.75,170 359.75,160 363.75,170" style="fill:rgb(95,160,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '34(4):3MM:10(1) - GGGGTTGTAGAGCATGAGTGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.233641333041486s"/>
+</polygon>
+<polygon points="610.75,150 614.75,140 618.75,150" style="fill:rgb(29,226,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '24(2):3MM:3(0) - GTCTGCGTACTTCCAGACCAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.180876357989961s"/>
+</polygon>
+<polygon points="224,160 228,150 232,160" style="fill:rgb(181,74,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '30(4):2MM:2(0) - CCACTGTGTTGAGGGCAATGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0737574062498254s"/>
+</polygon>
+<polygon points="436.5,160 440.5,150 444.5,160" style="fill:rgb(166,89,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '21(2):2MM:1(0) - ACTCACCCCCTAAATGCCACCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.256482959234452s"/>
+</polygon>
+<polygon points="492.25,160 496.25,150 500.25,160" style="fill:rgb(57,198,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(2):3MM:7(0) - CTTGAGGGAGCGTAATCCCAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.444534254317563s"/>
+</polygon>
+<polygon points="545,160 549,150 553,160" style="fill:rgb(225,30,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '141(16):2MM:2(1) - AGACGCAGTCCCTGGGCTCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.4326044834502s"/>
+</polygon>
+<polygon points="137.75,180 141.75,170 145.75,180" style="fill:rgb(215,40,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(2):2MM:8(0) - GGGGCCGTGCGCGGTGGTTGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.260217359683601s"/>
+</polygon>
+<polygon points="327.25,190 331.25,180 335.25,190" style="fill:rgb(139,116,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '39(3):2MM:1(0) - GTTGTGGCAGCAGTCACTGGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.457429897266165s"/>
+</polygon>
+<polygon points="355.25,180 359.25,170 363.25,180" style="fill:rgb(198,57,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '31(1):2MM:2(0) - GGTTGTAGAGCATGAGTGGGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.329526069936687s"/>
+</polygon>
+<polygon points="312.5,150 316.5,140 320.5,150" style="fill:rgb(43,212,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:5(0) - TGTTCACTGACTTACGTTTCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.100187343121378s"/>
+</polygon>
+<polygon points="264.5,160 268.5,150 272.5,160" style="fill:rgb(18,237,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(4):3MM:1(0) - TGAACCGCACGGCGCCATGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0050684124311573s"/>
+</polygon>
+<polygon points="562.25,150 566.25,140 570.25,150" style="fill:rgb(59,196,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(2):3MM:8(0) - TAACCTCCTACCCCTCCAGAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.463359663073794s"/>
+</polygon>
+<polygon points="598.25,160 602.25,150 606.25,160" style="fill:rgb(231,24,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):2MM:2(1) - GGCAGGTCTTGACGCAGTGGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.41920168390212s"/>
+</polygon>
+<polygon points="360.75,180 364.75,170 368.75,180" style="fill:rgb(44,211,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(3):3MM:6(0) - ACATCCATCTGGTACGTGGTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.436560964607432s"/>
+</polygon>
+<polygon points="244,160 248,150 252,160" style="fill:rgb(60,195,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '13(4):3MM:9(0) - AGATAAGACTGCTAAGGCATAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.489240835482342s"/>
+</polygon>
+<polygon points="121.5,170 125.5,160 129.5,170" style="fill:rgb(193,62,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(2):2MM:2(0) - GGCCTGTCGTCCGGTCTGGGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.460049096295831s"/>
+</polygon>
+<polygon points="545.25,170 549.25,160 553.25,170" style="fill:rgb(187,68,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '80(11):2MM:2(0) - GAGACGCAGTCCCTGGGCTCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.202070900124209s"/>
+</polygon>
+<polygon points="218.75,170 222.75,160 226.75,170" style="fill:rgb(97,158,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '104(17):3MM:11(1) - GGACATAACCAGCCACCTCCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0536312498721987s"/>
+</polygon>
+<polygon points="435.5,170 439.5,160 443.5,170" style="fill:rgb(38,217,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:4(0) - ACCCCCTAAATGCCACCGGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.476108601425096s"/>
+</polygon>
+<polygon points="-30542.25,210 -30538.25,200 -30534.25,210" style="fill:rgb(115,140,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(1):3MM:7(2) - CGGGGTCCGGGGCGCGATCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.491054170548372s"/>
+</polygon>
+<polygon points="160,170 164,160 168,170" style="fill:rgb(233,22,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '14(7):2MM:2(1) - GAGCGCTGCCCCGGCCGTCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.419330449404629s"/>
+</polygon>
+<polygon points="347.75,150 351.75,140 355.75,150" style="fill:rgb(31,224,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '8(3):3MM:3(0) - CCTTGCACGTGGCTTCGTCTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.210162459780742s"/>
+</polygon>
+<polygon points="339.5,170 343.5,160 347.5,170" style="fill:rgb(34,221,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(3):3MM:4(0) - TTACCAGGCAGTCGCTCTCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.331783484957278s"/>
+</polygon>
+<polygon points="479.5,150 483.5,140 487.5,150" style="fill:rgb(41,214,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '18(2):3MM:5(0) - GTGGTCAACTTACTGTTGCTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.445169733560929s"/>
+</polygon>
+<polygon points="332.75,150 336.75,140 340.75,150" style="fill:rgb(187,68,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '47(6):2MM:2(0) - CTGTGCAGCCTGCAGCACACTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.495321540934352s"/>
+</polygon>
+<polygon points="143,180 147,170 151,180" style="fill:rgb(17,238,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:1(0) - ATCAATACTGGACGGAGTCAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.180070613556241s"/>
+</polygon>
+<polygon points="127.5,170 131.5,160 135.5,170" style="fill:rgb(77,178,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):3MM:1(1) - GACTCGGGCGGACGCCGACGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0958569924661816s"/>
+</polygon>
+<polygon points="122.5,180 126.5,170 130.5,180" style="fill:rgb(5,250,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):3MM:4(0) - AGGTGGCCTGTCGTCCGGTCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.307362497284123s"/>
+</polygon>
+<polygon points="496,170 500,160 504,170" style="fill:rgb(117,138,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '34(2):3MM:12(2) - TCCATCACTTATCTCCTTGAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.208326879230928s"/>
+</polygon>
+<polygon points="226.25,170 230.25,160 234.25,170" style="fill:rgb(160,95,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '36(4):2MM:1(0) - GAATTCGCTCCACTGTGTTGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.136303063261389s"/>
+</polygon>
+<polygon points="322,150 326,140 330,150" style="fill:rgb(162,93,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '8(5):2MM:1(0) - GGACTTGCCACGGCAGCGCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.228692687394833s"/>
+</polygon>
+<polygon points="133.25,180 137.25,170 141.25,180" style="fill:rgb(186,69,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '16(4):2MM:2(0) - TGTGGCGTTGGCGGCGAGGCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.181235468314993s"/>
+</polygon>
+<polygon points="454.75,150 458.75,140 462.75,150" style="fill:rgb(69,186,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '95(7):3MM:14(0) - CAAACCTGTGATTTCCTTTACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.415047452797136s"/>
+</polygon>
+<polygon points="139.25,190 143.25,180 147.25,190" style="fill:rgb(251,4,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '126(6):1MM:1(0) - AGTCAGGGGGCCGTGCGCGGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.275381514765785s"/>
+</polygon>
+<polygon points="566.25,160 570.25,150 574.25,160" style="fill:rgb(66,189,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '32(1):3MM:11(0) - GAGTTCTCCACAAACTCCCTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.337185153040849s"/>
+</polygon>
+<polygon points="367.5,180 371.5,170 375.5,180" style="fill:rgb(72,183,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '121(1):3MM:18(0) - CCAAAGCTGTATTTGCCCTCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.163952263502315s"/>
+</polygon>
+<polygon points="319,160 323,150 327,160" style="fill:rgb(128,127,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '10(1):3MM:11(4) - GCAGCGCCCGGAGCACTGCTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.185543080592613s"/>
+</polygon>
+<polygon points="339,180 343,170 347,180" style="fill:rgb(45,210,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):3MM:6(0) - ACCAGGCAGTCGCTCTCCCGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.106914053403978s"/>
+</polygon>
+<polygon points="389.5,150 393.5,140 397.5,150" style="fill:rgb(84,171,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(2):3MM:4(1) - CTCATAGCTGTCGGCCCCACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.458308526938573s"/>
+</polygon>
+<polygon points="131.5,190 135.5,180 139.5,190" style="fill:rgb(237,18,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '26(7):2MM:3(2) - TTGGCGGCGAGGCGGGGACTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0979339261264993s"/>
+</polygon>
+<polygon points="145,170 149,160 153,170" style="fill:rgb(48,207,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '15(2):3MM:6(0) - CTCTCCCGATCAATACTGGACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.494256227922758s"/>
+</polygon>
+<polygon points="391.75,160 395.75,150 399.75,160" style="fill:rgb(212,43,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '18(1):2MM:5(0) - TTCCTCCATCTCATAGCTGTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.451196200912593s"/>
+</polygon>
+<polygon points="465,150 469,140 473,150" style="fill:rgb(89,166,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '18(3):3MM:6(1) - TGGAGGTCCGTCCTGTTTTCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.226453032308186s"/>
+</polygon>
+<polygon points="603.5,150 607.5,140 611.5,150" style="fill:rgb(125,130,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '18(1):3MM:38(3) - TTTCTCCCATGACTCCTGCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.364199100846525s"/>
+</polygon>
+<polygon points="534.5,160 538.5,150 542.5,160" style="fill:rgb(206,49,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '21(3):2MM:3(0) - AGCACAAGGCATGGCAGACCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.00292300581506666s"/>
+</polygon>
+<polygon points="293.75,170 297.75,160 301.75,170" style="fill:rgb(93,162,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '173(8):3MM:8(1) - GACACTTACAGCTGCCCAGGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.275738086509401s"/>
+</polygon>
+<polygon points="133,200 137,190 141,200" style="fill:rgb(218,37,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '37(18):2MM:1(1) - GTGGCGTTGGCGGCGAGGCGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0919805034666226s"/>
+</polygon>
+<polygon points="165.5,150 169.5,140 173.5,150" style="fill:rgb(135,120,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '37(16):3MM:21(7) - AGAGCGCAGCCAGCAGCGCCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.148173396919828s"/>
+</polygon>
+<polygon points="-30544.75,190 -30540.75,180 -30536.75,190" style="fill:rgb(224,31,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '71(29):2MM:1(1) - GGCGCGATCCGGGGGCGGCGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.388978078621943s"/>
+</polygon>
+<polygon points="361,190 365,180 369,190" style="fill:rgb(42,213,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(1):3MM:5(0) - CACATCCATCTGGTACGTGGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.271553365392224s"/>
+</polygon>
+<polygon points="547,180 551,170 555,180" style="fill:rgb(123,132,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(5):3MM:10(3) - CCGGCAAGAGACGCAGTCCCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.202920334834403s"/>
+</polygon>
+<polygon points="131.25,150 135.25,140 139.25,150" style="fill:rgb(226,29,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '17(7):2MM:2(1) - TGGCGGCGAGGCGGGGACTCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.154930625280164s"/>
+</polygon>
+<polygon points="442,150 446,140 450,150" style="fill:rgb(209,46,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '22(2):2MM:4(0) - CAGAGGAGGAGTATGTGTGAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.240063454711152s"/>
+</polygon>
+<polygon points="120,190 124,180 128,190" style="fill:rgb(109,146,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '29(11):3MM:6(2) - TCGTCCGGTCTGGGCGGCGGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0247669687412273s"/>
+</polygon>
+<polygon points="540.75,190 544.75,180 548.75,190" style="fill:rgb(137,118,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '544(11):3MM:40(10) - TCCGGGCCCCAGCAGCCCTCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.125388858489835s"/>
+</polygon>
+<polygon points="532.75,150 536.75,140 540.75,150" style="fill:rgb(144,111,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '42(4):2MM:1(0) - GGCATGGCAGACCTGGCCTGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0834949921531898s"/>
+</polygon>
+<polygon points="171.5,160 175.5,150 179.5,160" style="fill:rgb(145,110,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(2):2MM:1(0) - CCTCCAGAGCCCGACTCGCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.193349355930248s"/>
+</polygon>
+<polygon points="120.75,200 124.75,190 128.75,200" style="fill:rgb(33,222,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(2):3MM:4(0) - CTGTCGTCCGGTCTGGGCGGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.195047026754454s"/>
+</polygon>
+<polygon points="445.5,170 449.5,160 453.5,170" style="fill:rgb(103,152,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '26(2):3MM:19(1) - AGTTCCTGTGGATCCAGAGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.410073654367594s"/>
+</polygon>
+<polygon points="598.75,170 602.75,160 606.75,170" style="fill:rgb(79,176,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):3MM:2(1) - CGGGCAGGTCTTGACGCAGTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.271939426249878s"/>
+</polygon>
+<polygon points="319.25,170 323.25,160 327.25,170" style="fill:rgb(203,52,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(1):2MM:3(0) - GGCAGCGCCCGGAGCACTGCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.13477558430964s"/>
+</polygon>
+<polygon points="-30537.75,210 -30533.75,200 -30529.75,210" style="fill:rgb(241,14,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '33(16):1MM:1(0) - GCGCGGTTGGGCGGGCTGCGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.225107776583352s"/>
+</polygon>
+<polygon points="551.75,150 555.75,140 559.75,150" style="fill:rgb(178,77,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(2):2MM:1(0) - CCCTGCCTCGGCTGACATTCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.018718001422279s"/>
+</polygon>
+<polygon points="194.75,160 198.75,150 202.75,160" style="fill:rgb(62,193,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '27(1):3MM:10(0) - AGTTATTGAACATCCTCTGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.381033664453822s"/>
+</polygon>
+<polygon points="345.5,160 349.5,150 353.5,160" style="fill:rgb(28,227,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:3(0) - TGGCTTCGTCTCGGAATTTGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.345543560450391s"/>
+</polygon>
+<polygon points="356,190 360,180 364,190" style="fill:rgb(197,58,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(1):2MM:2(0) - TGGGGTTGTAGAGCATGAGTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.394693856512605s"/>
+</polygon>
+<polygon points="278.75,150 282.75,140 286.75,150" style="fill:rgb(44,211,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:5(0) - TGCTGACTATGTCCCGCCACTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0955203686293373s"/>
+</polygon>
+<polygon points="315.25,180 319.25,170 323.25,180" style="fill:rgb(213,42,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '35(7):2MM:6(0) - CTGCTGGGCACAGATGATTTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.105161678560128s"/>
+</polygon>
+<polygon points="579.75,170 583.75,160 587.75,170" style="fill:rgb(196,59,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '30(1):2MM:2(0) - CAGGTGATGTTCATGGCCTGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.144064528477447s"/>
+</polygon>
+<polygon points="134.25,210 138.25,200 142.25,210" style="fill:rgb(134,121,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(4):3MM:22(6) - TGGTTGTGGCGTTGGCGGCGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.406733502596717s"/>
+</polygon>
+<polygon points="598.5,180 602.5,170 606.5,180" style="fill:rgb(116,139,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):3MM:11(2) - GGGCAGGTCTTGACGCAGTGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.3010928028256s"/>
+</polygon>
+<polygon points="578.75,180 582.75,170 586.75,180" style="fill:rgb(143,112,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '46(6):2MM:1(0) - TGATGTTCATGGCCTGAGGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.347739149280782s"/>
+</polygon>
+<polygon points="259,160 263,150 267,160" style="fill:rgb(156,99,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '38(4):2MM:1(0) - CTCACCCTGTAAATTTCTCATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.294242838576647s"/>
+</polygon>
+<polygon points="429.25,150 433.25,140 437.25,150" style="fill:rgb(30,225,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(1):3MM:3(0) - GTGGAGATCGCCACTGATGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.475492710474613s"/>
+</polygon>
+<polygon points="379,170 383,160 387,170" style="fill:rgb(180,75,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '71(9):2MM:2(0) - GCCCACAGAGGAGGACTCACGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.351276077349709s"/>
+</polygon>
+<polygon points="584.5,160 588.5,150 592.5,160" style="fill:rgb(32,223,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '18(3):3MM:3(0) - GGCTCTTACCCGTCCTGTGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.213578139654265s"/>
+</polygon>
+<polygon points="575.75,190 579.75,180 583.75,190" style="fill:rgb(248,7,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '48(2):1MM:1(0) - CCTGAGGCAGGCACTCTGGGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.15390176122472s"/>
+</polygon>
+<polygon points="303.25,170 307.25,160 311.25,170" style="fill:rgb(149,106,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '37(5):2MM:1(0) - TGCACCCCAGCAGCTCCCATTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.43839080948292s"/>
+</polygon>
+<polygon points="471.25,160 475.25,150 479.25,160" style="fill:rgb(46,209,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '22(2):3MM:6(0) - TATGATTTCTAGGTTCTCAAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.207676802478822s"/>
+</polygon>
+<polygon points="407,160 411,150 415,160" style="fill:rgb(85,170,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '31(5):3MM:4(1) - CGGCGGGCTTCCTACCTTTGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.293290544435633s"/>
+</polygon>
+<polygon points="488.75,150 492.75,140 496.75,150" style="fill:rgb(63,192,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '14(1):3MM:10(0) - ATCCCAAGGATGTTATGTTCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.209112488515398s"/>
+</polygon>
+<polygon points="602.5,160 606.5,150 610.5,160" style="fill:rgb(88,167,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '36(8):3MM:6(1) - TCCCATGACTCCTGCCGGGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.260529024728628s"/>
+</polygon>
+<polygon points="-30537.5,220 -30533.5,210 -30529.5,220" style="fill:rgb(150,105,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '53(11):2MM:1(0) - TGCGCGGTTGGGCGGGCTGCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.122073147022263s"/>
+</polygon>
+<polygon points="611,160 615,150 619,160" style="fill:rgb(78,177,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '16(1):3MM:1(1) - CGTCTGCGTACTTCCAGACCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0121794512474107s"/>
+</polygon>
+<polygon points="142.5,200 146.5,190 150.5,200" style="fill:rgb(23,232,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:2(0) - CAATACTGGACGGAGTCAGGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.465246868731857s"/>
+</polygon>
+<polygon points="273.25,180 277.25,170 281.25,180" style="fill:rgb(137,118,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):2MM:1(0) - GATGCTCTCCACGTTGCACAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.258878881712514s"/>
+</polygon>
+<polygon points="162.25,180 166.25,170 170.25,180" style="fill:rgb(219,36,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '19(7):2MM:1(1) - CAGCGCCAGGAGCGCTGCCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0214446613751491s"/>
+</polygon>
+<polygon points="554.75,160 558.75,150 562.75,160" style="fill:rgb(172,83,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '55(7):2MM:1(0) - TGTCCACGCATTCCCTGCCTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.106985899491347s"/>
+</polygon>
+<polygon points="603.75,170 607.75,160 611.75,170" style="fill:rgb(215,40,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '19(4):2MM:1(1) - TTTTCTCCCATGACTCCTGCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.148135531765885s"/>
+</polygon>
+<polygon points="324.5,160 328.5,150 332.5,160" style="fill:rgb(102,153,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '21(1):3MM:18(1) - AGTCACTGGGGGACTTGCCACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.17048064366597s"/>
+</polygon>
+<polygon points="-30546.5,170 -30542.5,160 -30538.5,170" style="fill:rgb(240,15,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '27(14):2MM:8(5) - TCCGGGGGCGGCGCGGGAGCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.245743707105547s"/>
+</polygon>
+<polygon points="469.25,150 473.25,140 477.25,150" style="fill:rgb(96,159,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '30(2):3MM:10(1) - CTAGGTTCTCAAAGGCATGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.373747820506457s"/>
+</polygon>
+<polygon points="-30539.5,230 -30535.5,220 -30531.5,230" style="fill:rgb(236,19,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '17(7):2MM:2(2) - TGGGCGGGCTGCGGGGTCCGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.258482426387506s"/>
+</polygon>
+<polygon points="142.75,210 146.75,200 150.75,210" style="fill:rgb(150,105,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(4):2MM:1(0) - TCAATACTGGACGGAGTCAGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0939797702258236s"/>
+</polygon>
+<polygon points="470,170 474,160 478,170" style="fill:rgb(201,54,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '73(3):2MM:3(0) - TTTCTAGGTTCTCAAAGGCATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.385879467997334s"/>
+</polygon>
+<polygon points="355.5,200 359.5,190 363.5,200" style="fill:rgb(56,199,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '14(1):3MM:7(0) - GGGTTGTAGAGCATGAGTGGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0958608434597306s"/>
+</polygon>
+<polygon points="-30543.5,200 -30539.5,190 -30535.5,200" style="fill:rgb(216,39,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):2MM:1(1) - TCCGGGGCGCGATCCGGGGGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.239683936975222s"/>
+</polygon>
+<polygon points="388.25,170 392.25,160 396.25,170" style="fill:rgb(64,191,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '64(9):3MM:11(0) - AGCTGTCGGCCCCACAGGCTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.278510553674254s"/>
+</polygon>
+<polygon points="343.25,150 347.25,140 351.25,150" style="fill:rgb(220,35,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '8(3):2MM:1(1) - TGCTGGAGGGGCATCTTACCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.266781223647712s"/>
+</polygon>
+<polygon points="180.5,150 184.5,140 188.5,150" style="fill:rgb(32,223,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(2):3MM:3(0) - TGAGCTTGTTACTCGTGCCTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.1367423122225s"/>
+</polygon>
+<polygon points="399.5,150 403.5,140 407.5,150" style="fill:rgb(92,163,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '21(2):3MM:8(1) - CTTCGCACTTCTTACACTTGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 30" to="0 0" dur="0.0787577083766173s"/>
+</polygon>
+<polygon points="519,100 523,110 527,100" style="fill:rgb(208,47,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '76(5):2MM:3(0) - TAAACTGGAAAAAACTGTTTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.43951203196408s"/>
+</polygon>
+<polygon points="608,100 612,110 616,100" style="fill:rgb(116,139,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '27(1):3MM:10(2) - ACCTGCCCGGCAGGAGTCATGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.339708790473175s"/>
+</polygon>
+<polygon points="605.75,90 609.75,100 613.75,90" style="fill:rgb(47,208,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '17(8):3MM:6(0) - TGCGTCAAGACCTGCCCGGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0413879352676911s"/>
+</polygon>
+<polygon points="532.75,100 536.75,110 540.75,100" style="fill:rgb(112,143,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '10(5):3MM:7(2) - GACCCACTCTGTCTCCGCAGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0978476143317515s"/>
+</polygon>
+<polygon points="494,100 498,110 502,100" style="fill:rgb(55,200,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '16(2):3MM:7(0) - AGCCTGAACATAACATCCTTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.382785902383491s"/>
+</polygon>
+<polygon points="166.75,100 170.75,110 174.75,100" style="fill:rgb(134,121,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '19(3):3MM:17(6) - GACGGCCGGGGCAGCGCTCCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.381860557560785s"/>
+</polygon>
+<polygon points="323,100 327,110 331,100" style="fill:rgb(211,44,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '51(6):2MM:4(0) - ATCTGTGCCCAGCAGTGCTCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.087235139671014s"/>
+</polygon>
+<polygon points="124.75,100 128.75,110 132.75,100" style="fill:rgb(217,38,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '8(1):2MM:1(1) - GCGGCCGCCGCCGCCCAGACCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.490693988607607s"/>
+</polygon>
+<polygon points="515.25,90 519.25,100 523.25,90" style="fill:rgb(71,184,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '59(5):3MM:17(0) - GCTATGCAAATACAATAAACTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.39029587223869s"/>
+</polygon>
+<polygon points="564.25,100 568.25,110 572.25,100" style="fill:rgb(19,236,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(1):3MM:1(0) - CGTGGACAAGTGCAACCTTCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.200281647462695s"/>
+</polygon>
+<polygon points="204.75,100 208.75,110 212.75,100" style="fill:rgb(13,242,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '16(4):3MM:1(0) - ATAACTGTGAGGTGGTCCTTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.110331077862652s"/>
+</polygon>
+<polygon points="469,100 473,110 477,100" style="fill:rgb(250,5,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '64(4):1MM:1(0) - GGCTTGGCCTGAAAACAGGACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.365811829910779s"/>
+</polygon>
+<polygon points="459.75,100 463.75,110 467.75,100" style="fill:rgb(154,101,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '30(1):2MM:1(0) - AGTCTTTCATCTGCCTTACAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.402241589597979s"/>
+</polygon>
+<polygon points="309.5,100 313.5,110 317.5,100" style="fill:rgb(253,2,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '85(10):1MM:1(1) - AATGGGAGCTGCTGGGGTGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.134397196021155s"/>
+</polygon>
+<polygon points="386,100 390,110 394,100" style="fill:rgb(75,180,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '63(4):3MM:20(0) - AATTATGTGGTGACAGATCACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.387631498105085s"/>
+</polygon>
+<polygon points="546.25,100 550.25,110 554.25,100" style="fill:rgb(239,16,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '159(19):2MM:8(3) - CCCCGAGGGCTGCTGGGGCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.422486223017689s"/>
+</polygon>
+<polygon points="398.75,100 402.75,110 406.75,100" style="fill:rgb(76,179,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '166(14):3MM:47(0) - AGCTATGAGATGGAGGAAGACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.147259404196456s"/>
+</polygon>
+<polygon points="413,100 417,110 421,100" style="fill:rgb(7,248,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):3MM:4(2) - TCTGCAGTGTGTAACGGAATAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.188301851878585s"/>
+</polygon>
+<polygon points="307.75,90 311.75,100 315.75,90" style="fill:rgb(124,131,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '47(5):3MM:18(3) - CTGTCCCAATGGGAGCTGCTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0116769930174296s"/>
+</polygon>
+<polygon points="197.25,100 201.25,110 205.25,100" style="fill:rgb(240,15,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '306(7):1MM:1(0) - ATCATTTTCTCAGCCTCCAGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.473968220636774s"/>
+</polygon>
+<polygon points="528.5,100 532.5,110 536.5,100" style="fill:rgb(174,81,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '20(1):2MM:1(0) - ACCAAAATTATAAGCAACAGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0677106222968025s"/>
+</polygon>
+<polygon points="353.5,100 357.5,110 361.5,100" style="fill:rgb(41,214,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '17(1):3MM:5(0) - CCGAGACGAAGCCACGTGCAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.374152126722848s"/>
+</polygon>
+<polygon points="391.5,100 395.5,110 399.5,100" style="fill:rgb(153,102,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(2):2MM:1(0) - GCTCGTGCGTCCGAGCCTGTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.157815641077013s"/>
+</polygon>
+<polygon points="588,100 592,110 596,100" style="fill:rgb(169,86,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '35(6):2MM:1(0) - TGAACATCACCTGCACAGGACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.356642934545452s"/>
+</polygon>
+<polygon points="556.25,100 560.25,110 564.25,100" style="fill:rgb(140,115,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):2MM:1(0) - TCTTGCCGGAATGTCAGCCGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.24048204588855s"/>
+</polygon>
+<polygon points="373.25,100 377.25,110 381.25,100" style="fill:rgb(27,228,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '44(7):3MM:3(0) - CCCGAGGGCAAATACAGCTTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.343371462791445s"/>
+</polygon>
+<polygon points="326,90 330,100 334,90" style="fill:rgb(132,123,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '10(4):3MM:13(6) - CAGTGCTCCGGGCGCTGCCGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.126038410154889s"/>
+</polygon>
+<polygon points="548.25,90 552.25,100 556.25,90" style="fill:rgb(234,21,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '50(12):2MM:3(1) - GCTGCTGGGGCCCGGAGCCCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.406964121776081s"/>
+</polygon>
+<polygon points="176.5,100 180.5,110 184.5,100" style="fill:rgb(13,242,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(2):3MM:1(0) - CTGCCCGGCGAGTCGGGCTCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.250172332335739s"/>
+</polygon>
+<polygon points="542.5,90 546.5,100 550.5,90" style="fill:rgb(185,70,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '11(1):2MM:2(0) - CCATGCCTTGTGCTCCCCCGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0374396059601452s"/>
+</polygon>
+<polygon points="266.75,100 270.75,110 274.75,100" style="fill:rgb(162,93,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '37(5):2MM:1(0) - TCTCCCGCAGAAATCCTGCATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.475401056033595s"/>
+</polygon>
+<polygon points="338.75,100 342.75,110 346.75,100" style="fill:rgb(255,0,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '228(7):1MM:1(1) - CAGTGTGCTGCAGGCTGCACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.427438153309726s"/>
+</polygon>
+<polygon points="459.5,90 463.5,100 467.5,90" style="fill:rgb(58,197,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '27(5):3MM:8(0) - AAGTCTTTCATCTGCCTTACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.164662481701066s"/>
+</polygon>
+<polygon points="336.5,90 340.5,100 344.5,90" style="fill:rgb(91,164,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '30(4):3MM:7(1) - TGCCACAACCAGTGTGCTGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.327161362121423s"/>
+</polygon>
+<polygon points="155.5,100 159.5,110 163.5,100" style="fill:rgb(51,204,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(1):3MM:6(0) - AGAGCCGGAGCGAGCTCTTCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.246521278762684s"/>
+</polygon>
+<polygon points="151.75,90 155.75,100 159.75,90" style="fill:rgb(15,240,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(2):3MM:1(0) - CCAGTATTGATCGGGAGAGCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.497039450124216s"/>
+</polygon>
+<polygon points="457,80 461,90 465,80" style="fill:rgb(38,217,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:4(0) - GGATATTCTGAAAACCGTAAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.340623461733403s"/>
+</polygon>
+<polygon points="161.25,100 165.25,110 169.25,100" style="fill:rgb(52,203,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(2):3MM:7(0) - GAGCAGCGATGCGACCCTCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.48367085276611s"/>
+</polygon>
+<polygon points="581.5,100 585.5,110 589.5,100" style="fill:rgb(144,111,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '51(4):2MM:1(0) - CCACCCAGAGTGCCTGCCTCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.450922751880404s"/>
+</polygon>
+<polygon points="437.5,100 441.5,110 445.5,100" style="fill:rgb(175,80,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '54(11):2MM:1(0) - TGGCGATCTCCACATCCTGCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.15360629578382s"/>
+</polygon>
+<polygon points="188.5,100 192.5,110 196.5,100" style="fill:rgb(39,216,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(2):3MM:4(0) - GAGTAACAAGCTCACGCAGTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.235315021154955s"/>
+</polygon>
+<polygon points="-30538,100 -30534,110 -30530,100" style="fill:rgb(9,246,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):2MM:1(1) - GCCGCCCCCGGATCGCGCCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.149014253967771s"/>
+</polygon>
+<polygon points="552.75,90 556.75,100 560.75,90" style="fill:rgb(130,125,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(3):3MM:16(4) - CCAGGGACTGCGTCTCTTGCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0607709702183978s"/>
+</polygon>
+<polygon points="544.5,80 548.5,90 552.5,80" style="fill:rgb(156,99,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '221(15):2MM:1(0) - TGTGCTCCCCCGAGGGCTGCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.499769917301801s"/>
+</polygon>
+<polygon points="269.25,90 273.25,100 277.25,90" style="fill:rgb(111,144,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(2):3MM:6(2) - AAATCCTGCATGGCGCCGTGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.371956026674427s"/>
+</polygon>
+<polygon points="305.25,100 309.25,110 313.25,100" style="fill:rgb(47,208,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(1):3MM:6(0) - GTGATCCAAGCTGTCCCAATGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.444767482583586s"/>
+</polygon>
+<polygon points="518.75,80 522.75,90 526.75,80" style="fill:rgb(214,41,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '25(2):2MM:7(0) - ATAAACTGGAAAAAACTGTTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.251094827460369s"/>
+</polygon>
+<polygon points="396.25,90 400.25,100 404.25,90" style="fill:rgb(157,98,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '30(2):2MM:1(0) - TGGGGCCGACAGCTATGAGATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.468892898004174s"/>
+</polygon>
+<polygon points="365.5,100 369.5,110 373.5,100" style="fill:rgb(122,133,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(1):3MM:9(3) - CAACCCCACCACGTACCAGATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0389395943331525s"/>
+</polygon>
+<polygon points="280.5,100 284.5,110 288.5,100" style="fill:rgb(153,102,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '34(5):2MM:1(0) - GCAACGTGGAGAGCATCCAGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.17739866567792s"/>
+</polygon>
+<polygon points="340.75,90 344.75,100 348.75,90" style="fill:rgb(252,3,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '36(9):1MM:1(1) - TGCAGGCTGCACAGGCCCCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.072760091095402s"/>
+</polygon>
+<polygon points="255.5,100 259.5,110 263.5,100" style="fill:rgb(193,62,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '40(3):2MM:2(0) - AACTATGATGCAAATAAAACCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.462729878823207s"/>
+</polygon>
+<polygon points="414.5,90 418.5,100 422.5,90" style="fill:rgb(3,252,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):3MM:2(0) - GTGTGTAACGGAATAGGTATTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0522297776124976s"/>
+</polygon>
+<polygon points="172.75,90 176.75,100 180.75,90" style="fill:rgb(249,6,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '19(4):1MM:1(0) - GCTGCTGGCTGCGCTCTGCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.105404275195227s"/>
+</polygon>
+<polygon points="221.5,100 225.5,110 229.5,100" style="fill:rgb(53,202,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '73(5):3MM:7(0) - TTCTTAGACCATCCAGGAGGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.488666646141985s"/>
+</polygon>
+<polygon points="369.25,90 373.25,100 377.25,90" style="fill:rgb(106,149,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(1):3MM:3(2) - CCAGATGGATGTGAACCCCGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.412781149102504s"/>
+</polygon>
+<polygon points="149.5,100 153.5,110 157.5,100" style="fill:rgb(36,219,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '12(3):3MM:4(0) - TGACTCCGTCCAGTATTGATCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.368477029442724s"/>
+</polygon>
+<polygon points="440.75,90 444.75,100 448.75,90" style="fill:rgb(227,28,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '23(2):2MM:2(1) - ATCCTGCCGGTGGCATTTAGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.019870811007614s"/>
+</polygon>
+<polygon points="-30548.75,100 -30544.75,110 -30540.75,100" style="fill:rgb(209,46,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '83(6):2MM:4(0) - CTGGAGGAAAAGAAAGGTAAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.309853186269732s"/>
+</polygon>
+<polygon points="405.5,100 409.5,110 413.5,100" style="fill:rgb(24,231,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):3MM:2(0) - CGCAAGTGTAAGAAGTGCGAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.167607655851963s"/>
+</polygon>
+<polygon points="397,80 401,90 405,80" style="fill:rgb(167,88,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(1):2MM:1(0) - GGCCGACAGCTATGAGATGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0608559791060532s"/>
+</polygon>
+<polygon points="450.25,100 454.25,110 458.25,100" style="fill:rgb(165,90,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '28(2):2MM:1(0) - TACTCCTCCTCTGGATCCACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.434091652889123s"/>
+</polygon>
+<polygon points="-30549,90 -30545,100 -30541,90" style="fill:rgb(204,51,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '113(8):2MM:3(0) - TCTGGAGGAAAAGAAAGGTAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.270946097962442s"/>
+</polygon>
+<polygon points="162.25,90 166.25,100 170.25,90" style="fill:rgb(11,244,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '11(4):4MM:25(3) - AGCGATGCGACCCTCCGGGACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.30904620270049s"/>
+</polygon>
+<polygon points="257.5,90 261.5,100 265.5,90" style="fill:rgb(6,249,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):3MM:4(0) - TGCAAATAAAACCGGACTGAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0065526642698277s"/>
+</polygon>
+<polygon points="296,100 300,110 304,100" style="fill:rgb(170,85,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '41(6):2MM:1(0) - ATGGACTTCCAGAACCACCTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.464064456973666s"/>
+</polygon>
+<polygon points="567.75,90 571.75,100 575.75,90" style="fill:rgb(125,130,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '41(4):3MM:22(3) - TTCCTCCTCTCAGTGAGCCAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.385781266398309s"/>
+</polygon>
+<polygon points="177.25,90 181.25,100 185.25,90" style="fill:rgb(112,143,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(4):3MM:7(2) - CCCGGCGAGTCGGGCTCTGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.211950697806994s"/>
+</polygon>
+<polygon points="220.75,90 224.75,100 228.75,90" style="fill:rgb(100,155,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '27(4):3MM:14(1) - CTCTTCTTAGACCATCCAGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.344463139269466s"/>
+</polygon>
+<polygon points="310.75,80 314.75,90 318.75,80" style="fill:rgb(245,10,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '123(14):1MM:1(0) - GAGCTGCTGGGGTGCAGGAGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.127784026086587s"/>
+</polygon>
+<polygon points="411.5,80 415.5,90 419.5,80" style="fill:rgb(97,158,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '19(1):3MM:10(1) - CTTATCTCTGCAGTGTGTAACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.400718587021009s"/>
+</polygon>
+<polygon points="498.25,100 502.25,110 506.25,100" style="fill:rgb(21,234,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):3MM:2(0) - CTTGGGATTACGCTCCCTCAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.490746274956084s"/>
+</polygon>
+<polygon points="506,100 510,110 514,100" style="fill:rgb(100,155,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '26(3):3MM:15(1) - GATGGAGATGTGATAATTTCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.143327749535311s"/>
+</polygon>
+<polygon points="440.25,80 444.25,90 448.25,80" style="fill:rgb(87,168,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(2):3MM:5(1) - ACATCCTGCCGGTGGCATTTAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.172717217250913s"/>
+</polygon>
+<polygon points="163.5,80 167.5,90 171.5,80" style="fill:rgb(109,146,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(5):3MM:5(2) - TGCGACCCTCCGGGACGGCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.293381750588805s"/>
+</polygon>
+<polygon points="277,90 281,100 285,90" style="fill:rgb(118,137,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):3MM:14(2) - CAACCCTGCCCTGTGCAACGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0979874852337552s"/>
+</polygon>
+<polygon points="129.75,100 133.75,110 137.75,100" style="fill:rgb(14,241,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(2):3MM:1(0) - CGGACGACAGGCCACCTCGTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.237594224972513s"/>
+</polygon>
+<polygon points="206.5,90 210.5,100 214.5,90" style="fill:rgb(171,84,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '33(2):2MM:1(0) - TGAGGTGGTCCTTGGGAATTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.41600094490866s"/>
+</polygon>
+<polygon points="607.75,80 611.75,90 615.75,80" style="fill:rgb(221,34,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(1):2MM:1(1) - GACCTGCCCGGCAGGAGTCATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.253075538067966s"/>
+</polygon>
+<polygon points="281.5,90 285.5,100 289.5,90" style="fill:rgb(113,142,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '24(1):3MM:7(2) - CGTGGAGAGCATCCAGTGGCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.126841569300485s"/>
+</polygon>
+<polygon points="161,70 165,80 169,70" style="fill:rgb(4,251,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):3MM:3(0) - GGAGCAGCGATGCGACCCTCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0932195084087599s"/>
+</polygon>
+<polygon points="559.75,90 563.75,100 567.75,90" style="fill:rgb(131,124,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '11(5):3MM:25(4) - CAGCCGAGGCAGGGAATGCGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.216854976214911s"/>
+</polygon>
+<polygon points="307.5,70 311.5,80 315.5,70" style="fill:rgb(101,154,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '39(6):3MM:16(1) - GCTGTCCCAATGGGAGCTGCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.182307071331477s"/>
+</polygon>
+<polygon points="188.75,90 192.75,100 196.75,90" style="fill:rgb(37,218,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(1):3MM:4(0) - AGTAACAAGCTCACGCAGTTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0128676036043167s"/>
+</polygon>
+<polygon points="521,90 525,100 529,90" style="fill:rgb(147,108,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '18(1):2MM:1(0) - AAAAAACTGTTTGGGACCTCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0248888051709475s"/>
+</polygon>
+<polygon points="535.75,90 539.75,100 543.75,90" style="fill:rgb(196,59,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '99(8):2MM:2(0) - CTCCGCAGAGGCCACAGGCCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.494373776407897s"/>
+</polygon>
+<polygon points="451.75,90 455.75,100 459.75,90" style="fill:rgb(98,157,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '23(2):3MM:12(1) - TCCTCTGGATCCACAGGAACTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.209576372484412s"/>
+</polygon>
+<polygon points="222.5,80 226.5,90 230.5,80" style="fill:rgb(243,12,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '129(22):1MM:1(0) - TAGACCATCCAGGAGGTGGCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.467839099154848s"/>
+</polygon>
+<polygon points="281.25,80 285.25,90 289.25,80" style="fill:rgb(50,205,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '31(2):3MM:6(0) - ACGTGGAGAGCATCCAGTGGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.3053171226888s"/>
+</polygon>
+<polygon points="305,80 309,90 313,80" style="fill:rgb(148,107,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '11(1):2MM:1(0) - TGTGATCCAAGCTGTCCCAATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.312994428981959s"/>
+</polygon>
+<polygon points="229.75,100 233.75,110 237.75,100" style="fill:rgb(199,56,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '24(2):2MM:2(0) - CCTCATTGCCCTCAACACAGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.336377845013272s"/>
+</polygon>
+<polygon points="380,100 384,110 388,100" style="fill:rgb(231,24,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '56(5):2MM:2(1) - CCTTTCATGCTCTCTTCCCCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.31718094996047s"/>
+</polygon>
+<polygon points="565,80 569,90 573,80" style="fill:rgb(94,161,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '11(2):3MM:8(1) - GGACAAGTGCAACCTTCTGGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0560324710009912s"/>
+</polygon>
+<polygon points="239,100 243,110 247,100" style="fill:rgb(99,156,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '39(3):3MM:14(1) - GAAAACCTGCAGATCATCAGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0220814084420056s"/>
+</polygon>
+<polygon points="155.75,80 159.75,90 163.75,80" style="fill:rgb(84,171,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '4(2):3MM:4(1) - GAGCCGGAGCGAGCTCTTCGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.217203060098248s"/>
+</polygon>
+<polygon points="405.75,90 409.75,100 413.75,90" style="fill:rgb(159,96,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(1):2MM:1(0) - GCAAGTGTAAGAAGTGCGAAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.3556935111658s"/>
+</polygon>
+<polygon points="202,90 206,100 210,90" style="fill:rgb(119,136,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '23(1):3MM:15(2) - GAGGATGTTCAATAACTGTGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.446012322407478s"/>
+</polygon>
+<polygon points="548.5,70 552.5,80 556.5,70" style="fill:rgb(194,61,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '26(7):2MM:2(0) - CTGCTGGGGCCCGGAGCCCAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.302587004047986s"/>
+</polygon>
+<polygon points="295.75,90 299.75,100 303.75,90" style="fill:rgb(152,103,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '34(2):2MM:1(0) - GATGGACTTCCAGAACCACCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.102854167584523s"/>
+</polygon>
+<polygon points="587,90 591,100 595,90" style="fill:rgb(140,115,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '14(1):2MM:1(0) - GCCATGAACATCACCTGCACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.106761565563911s"/>
+</polygon>
+<polygon points="-30541,90 -30537,100 -30533,90" style="fill:rgb(237,18,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '42(22):2MM:3(2) - GCCGGCTCCCGCGCCGCCCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.222509787520552s"/>
+</polygon>
+<polygon points="340.5,80 344.5,90 348.5,80" style="fill:rgb(254,1,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '145(13):1MM:1(1) - CTGCAGGCTGCACAGGCCCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.422814262415883s"/>
+</polygon>
+<polygon points="174.75,80 178.75,90 182.75,80" style="fill:rgb(10,245,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):2MM:1(1) - CTGCGCTCTGCCCGGCGAGTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0537265095316624s"/>
+</polygon>
+<polygon points="169,80 173,90 177,80" style="fill:rgb(222,33,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '25(13):2MM:1(1) - GGCAGCGCTCCTGGCGCTGCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.136651042748813s"/>
+</polygon>
+<polygon points="297.5,80 301.5,90 305.5,80" style="fill:rgb(183,72,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '62(3):2MM:2(0) - ATCTATTACTTTTACATTTCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0691796618665226s"/>
+</polygon>
+<polygon points="545,60 549,70 553,60" style="fill:rgb(189,66,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '26(3):2MM:2(0) - TGCTCCCCCGAGGGCTGCTGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.474915716377886s"/>
+</polygon>
+<polygon points="557.25,80 561.25,90 565.25,80" style="fill:rgb(61,194,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '11(2):3MM:9(0) - GCCGGAATGTCAGCCGAGGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.141621251198542s"/>
+</polygon>
+<polygon points="220,70 224,80 228,70" style="fill:rgb(188,67,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(1):2MM:2(0) - TTTCTCTTCTTAGACCATCCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0765511189675685s"/>
+</polygon>
+<polygon points="542.75,70 546.75,80 550.75,70" style="fill:rgb(86,169,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '9(2):3MM:5(1) - CATGCCTTGTGCTCCCCCGAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.00607593822998531s"/>
+</polygon>
+<polygon points="233.5,90 237.5,100 241.5,90" style="fill:rgb(90,165,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(1):3MM:6(1) - CACAGTGGAGCGAATTCCTTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.174706678368636s"/>
+</polygon>
+<polygon points="142.5,100 146.5,110 150.5,100" style="fill:rgb(22,233,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '12(1):3MM:2(0) - AACGCCACAACCACCGCGCACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.223389216025415s"/>
+</polygon>
+<polygon points="308,60 312,70 316,60" style="fill:rgb(191,64,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '124(20):2MM:2(0) - TGTCCCAATGGGAGCTGCTGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.174805778978499s"/>
+</polygon>
+<polygon points="479.25,100 483.25,110 487.25,100" style="fill:rgb(1,254,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):4MM:27(2) - ACCTAGAAATCATACGCGGCAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0791829713633039s"/>
+</polygon>
+<polygon points="204.5,80 208.5,90 212.5,80" style="fill:rgb(192,63,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '31(4):2MM:2(0) - AATAACTGTGAGGTGGTCCTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.288269780046853s"/>
+</polygon>
+<polygon points="478.25,90 482.25,100 486.25,90" style="fill:rgb(229,26,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):2MM:2(1) - GAGAACCTAGAAATCATACGCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0561332738944298s"/>
+</polygon>
+<polygon points="570.25,100 574.25,110 578.25,100" style="fill:rgb(121,134,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '37(1):3MM:33(2) - CAGTGAGCCAAGGGAGTTTGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.294691595172136s"/>
+</polygon>
+<polygon points="-30545.5,80 -30541.5,90 -30537.5,80" style="fill:rgb(12,243,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(2):4MM:38(8) - AAGGTAAGGGCGTGTCTCGCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.412866129755203s"/>
+</polygon>
+<polygon points="482.75,90 486.75,100 490.75,90" style="fill:rgb(207,48,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '15(4):2MM:3(0) - TTTTCTTCTCTCCAATGTAGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.361103517132122s"/>
+</polygon>
+<polygon points="448,80 452,90 456,80" style="fill:rgb(129,126,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '16(3):3MM:13(4) - CTTCACACATACTCCTCCTCTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0772187419352459s"/>
+</polygon>
+<polygon points="440.5,70 444.5,80 448.5,70" style="fill:rgb(25,230,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '5(1):3MM:3(0) - CATCCTGCCGGTGGCATTTAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.488844405114893s"/>
+</polygon>
+<polygon points="369.5,80 373.5,90 377.5,80" style="fill:rgb(122,133,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '8(3):3MM:9(3) - CAGATGGATGTGAACCCCGAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.335050880114304s"/>
+</polygon>
+<polygon points="163.25,60 167.25,70 171.25,60" style="fill:rgb(16,239,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '7(5):3MM:1(0) - ATGCGACCCTCCGGGACGGCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.38846009078528s"/>
+</polygon>
+<polygon points="468,90 472,100 476,90" style="fill:rgb(246,9,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '25(1):1MM:1(0) - TTCAGGCTTGGCCTGAAAACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.23993197064341s"/>
+</polygon>
+<polygon points="291.25,100 295.25,110 299.25,100" style="fill:rgb(63,192,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '2(1):3MM:10(0) - CTTTCTCAGCAACATGTCGATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.390036277781871s"/>
+</polygon>
+<polygon points="382.75,90 386.75,100 390.75,90" style="fill:rgb(252,3,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '19(3):1MM:1(0) - CTCTTCCCCAGGTAATTATGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.414190730325958s"/>
+</polygon>
+<polygon points="544.75,50 548.75,60 552.75,50" style="fill:rgb(65,190,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '26(5):3MM:11(0) - GTGCTCCCCCGAGGGCTGCTGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.481077605537592s"/>
+</polygon>
+<polygon points="534.5,80 538.5,90 542.5,80" style="fill:rgb(190,65,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '21(4):2MM:2(0) - TCTGTCTCCGCAGAGGCCACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.25082176134571s"/>
+</polygon>
+<polygon points="501.5,90 505.5,100 509.5,90" style="fill:rgb(224,31,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '25(3):2MM:1(1) - TCCCTCAAGGAGATAAGTGATGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.124787682304788s"/>
+</polygon>
+<polygon points="391.25,90 395.25,100 399.25,90" style="fill:rgb(60,195,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '3(1):3MM:9(0) - GGCTCGTGCGTCCGAGCCTGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.340355712133908s"/>
+</polygon>
+<polygon points="149.75,80 153.75,90 157.75,80" style="fill:rgb(26,229,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '10(3):3MM:3(0) - GACTCCGTCCAGTATTGATCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0586019700287821s"/>
+</polygon>
+<polygon points="323.25,80 327.25,90 331.25,80" style="fill:rgb(235,20,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '41(2):2MM:8(1) - TCTGTGCCCAGCAGTGCTCCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.122654150328996s"/>
+</polygon>
+<polygon points="598.25,100 602.25,110 606.25,100" style="fill:rgb(56,199,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '10(1):3MM:7(0) - CAGTGTGCCCACTACATTGACGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0669126423237252s"/>
+</polygon>
+<polygon points="568,70 572,80 576,70" style="fill:rgb(176,79,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '24(2):2MM:1(0) - TCCTCCTCTCAGTGAGCCAAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0253180219320956s"/>
+</polygon>
+<polygon points="565.25,60 569.25,70 573.25,60" style="fill:rgb(249,6,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '22(1):1MM:1(0) - GACAAGTGCAACCTTCTGGAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.386290431896995s"/>
+</polygon>
+<polygon points="493.75,90 497.75,100 501.75,90" style="fill:rgb(142,113,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '15(3):2MM:1(0) - CAGCCTGAACATAACATCCTTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.339168556496764s"/>
+</polygon>
+<polygon points="163.75,50 167.75,60 171.75,50" style="fill:rgb(88,167,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '13(7):3MM:6(1) - GCGACCCTCCGGGACGGCCGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.233493905247176s"/>
+</polygon>
+<polygon points="344.5,100 348.5,110 352.5,100" style="fill:rgb(244,11,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '58(3):1MM:1(0) - GCGTGTCCTCTCTCCTCCATAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0126464630763312s"/>
+</polygon>
+<polygon points="202.75,70 206.75,80 210.75,70" style="fill:rgb(104,151,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '23(2):3MM:29(1) - GATGTTCAATAACTGTGAGGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.359579843324916s"/>
+</polygon>
+<polygon points="175,70 179,80 183,70" style="fill:rgb(8,247,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):3MM:4(3) - TGCGCTCTGCCCGGCGAGTCGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.427664979481319s"/>
+</polygon>
+<polygon points="155.25,70 159.25,80 163.25,70" style="fill:rgb(66,189,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '6(1):3MM:11(0) - GAGAGCCGGAGCGAGCTCTTCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.287240310143869s"/>
+</polygon>
+<polygon points="211.5,100 215.5,110 219.5,100" style="fill:rgb(75,180,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '11(4):3MM:19(0) - TGGAAATTACCTATGTGCAGAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.366925352290609s"/>
+</polygon>
+<polygon points="391.75,80 395.75,90 399.75,80" style="fill:rgb(178,77,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '23(1):2MM:1(0) - CTCGTGCGTCCGAGCCTGTGGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.219089280235494s"/>
+</polygon>
+<polygon points="438.25,60 442.25,70 446.25,60" style="fill:rgb(106,149,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '8(2):3MM:3(2) - CGATCTCCACATCCTGCCGGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.382663009968402s"/>
+</polygon>
+<polygon points="126.75,90 130.75,100 134.75,90" style="fill:rgb(7,248,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '1(1):3MM:2(1) - CGCCGCCCAGACCGGACGACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.443271631861865s"/>
+</polygon>
+<polygon points="432.5,100 436.5,110 440.5,100" style="fill:rgb(168,87,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '32(3):2MM:1(0) - AAAAACTGCACCTCCATCAGTGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0287279722984923s"/>
+</polygon>
+<polygon points="557.5,70 561.5,80 565.5,70" style="fill:rgb(54,201,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '8(2):3MM:7(0) - CCGGAATGTCAGCCGAGGCAGGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.236721807198144s"/>
+</polygon>
+<polygon points="604.75,70 608.75,80 612.75,70" style="fill:rgb(158,97,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '895(6):2MM:1(0) - CCACTGCGTCAAGACCTGCCCGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.0598015298359069s"/>
+</polygon>
+<polygon points="263.5,90 267.5,100 271.5,90" style="fill:rgb(173,82,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '29(1):2MM:1(0) - GCTGCCCATGAGAAATTTACAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.402001743545664s"/>
+</polygon>
+<polygon points="-30550.25,80 -30546.25,90 -30542.25,80" style="fill:rgb(203,52,0);stroke:black;stroke-width:1" onmousemove="ShowTooltip(evt, '239(13):2MM:3(0) - CGGGCTCTGGAGGAAAAGAAAGG')" onmouseout="HideTooltip(evt)">
+<animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -30" to="0 0" dur="0.470403379006287s"/>
+</polygon>
+  <rect class="tooltip_bg" id="tooltip_bg" x="0" y="0" width="85" height="17" visibility="hidden"/>
+  <text class="tooltip" id="tooltip" x="0" y="0" visibility="hidden">Tooltip</text>
+</svg>

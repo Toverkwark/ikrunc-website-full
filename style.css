@@ -1,0 +1,106 @@
+body {
+	background-color: #D7DADB;
+	font-size: 87.5%;
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+
+.body {
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+}
+
+h1 {	
+	color: #fc4349
+}
+
+td { vertical-align: middle;
+		border: 1px solid black; }
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #0011db
+}
+
+a:hover, a:active {
+}
+
+table.svgtable {
+	font-family: courier new;
+	font-size:11px;
+	color:#000000;
+	border-collapse: collapse 
+}
+
+.svgimage {
+	overflow: hidden;
+}
+
+.maincontentclass {
+	overflow-y: hidden;
+}
+
+.mainheader {
+		width: 100%;	
+		margin: 0 auto;
+}
+.mainheader img {
+	width: 30%;
+	height: auto;
+	margin: 2% 0;
+}
+
+
+.mainheader nav {
+	background-color: #202d44;
+	height: 40px;
+}
+
+.mainheader nav a {
+	color: #FFFFFF;
+	display: block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.mainheader nav a:hover, .mainheader nav a:active, .mainheader nav a:visited {
+	background-color: #FC4349;
+}
+
+.mainheader nav ul {
+	list-style: none;
+	margin: 0 auto;
+	position: relative;
+	display: inline-table;
+}
+
+.mainheader nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+.mainheader nav ul ul {
+	padding: 0;
+	display: none;
+	position: absolute;
+}
+
+.mainheader nav ul li {
+	float: left;
+}
+
+.mainheader nav ul li:hover > ul {
+	display: block;
+}
+
+.mainheader nav ul ul li {
+	float: none;
+	position: relative;
+	background-color: #202d44;
+}
+
+

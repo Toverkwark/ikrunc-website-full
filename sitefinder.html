@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" type="text/css"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	</head>
+
+	<body>
+		<header>
+			<h1>Sitefinder</h1>
+		</header>
+		Please enter the gene for which you'd like to display proper CRISPR sites:
+		<p>
+			<form action="refseqselector.php" method="post" target="maincontentframe">
+				<input type="radio" name="species" value="human" checked="checked">Human (hg19)</input>
+				<input type="radio" name="species" value="mouse">Mouse (mm10)</input><br> 
+				<input type="text" name="gene"/>
+				<input type="submit" value="Find target sites" />
+			</form>
+		</p>
+	</body>
+</html>

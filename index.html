@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>iKRUNC - Inducible Knockouts by RNA Utilizing Nuclease Cas9</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css"></link>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	<script>
+		function alertsize(ID)
+  		{
+  			{
+				document.getElementById(ID).style.height = 0;
+			};
+			{			
+				pixels=document.getElementById(ID).contentWindow.document.body.scrollHeight;
+				document.getElementById(ID).style.height=pixels+"px";				
+			}
+			document.getElementById(ID).scrolling="no";
+		}
+	</script>
+</head>
+
+<body class="body">
+	<header class="mainheader">
+		<img src="img/ikrunc_logo.png">
+		<nav>
+			<ul>
+				<li><a href="home.html" target="maincontentframe">Home</a></li>
+				<li><a href="intro.html" target="maincontentframe">Introduction</a></li>
+				<li><a href="#">Protocols &rsaquo;</a>
+					<ul>
+						<li><a href="cloning.html" target="maincontentframe">Cloning custom iKRUNC vector</a></li>
+						<li><a href="sequencing.html" target="maincontentframe">Sequencing iKRUNC vectors</a></li>
+					</ul>
+				</li>
+				<li><a href="sitefinder.html" target="maincontentframe">Sitefinder</a></li>
+				<li><a href="https://groups.google.com/forum/#!forum/ikrunc" target="_blank">Forum</a></li>				
+				<li><a href="about.html" target="maincontentframe">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<iframe name="maincontentframe" id="maincontentframe" class="maincontentclass" src="home.html" width="100%" seamless onload="parent.alertsize('maincontentframe');"/>	
+</body>
+</html>
+

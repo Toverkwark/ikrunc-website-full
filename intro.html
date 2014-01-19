@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" type="text/css"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	</head>
+	<h1>What is iKRUNC?</h1>
+	iKRUNC stands for <b>i</b>nducible <b>K</b>nockouts by <b>R</b>NA <b>U</b>tilizing <b>C</b>as9.<br>
+	It is a lentiviral based system to create cell lines that upon Doxycycline induction expresses a custom hybrid sgRNA (single-guide RNA) which together with a constitutively expressed Cas9 protein will mediate double-strand DNA cleavage of any gene of interest.<br> 
+	Specificity of the system comes from a 20nt region in the sgRNA molecule that recognizes a complementary sequence in the genome
+	<h1>Vectors</h1>
+	The system consists of two vectors (Click on vector names to download a map):<br>
+	The <a href='maps/ikrunc-cas9neo.gb'>iKRUNC-Cas9Neo</a> vector encodes the Cas9 protein and a neomycin selection cassette, making infected cells resistant to G418.<br>
+	<img src='img/Cas9Neo.png' width='50%'></img><br>
+	<a href='maps/ikrunc-bsd.gb'>iKRUNC-sgRNA-BSD</a>/<a href='maps/ikrunc-puro.gb'>iKRUNC-sgRNA-Puro</a> vectors contain a doxycycline inducible H1 promoter driving any sgRNA of interest. The tet repressor and antibiotic selection markers (vectors are available with Blasticidin or Puromycin resistance genes) are expressed from the same construct<br>
+	<img src='img/ikrunc_bsd.png' width='68%'></img><br>
+	<h1>Cloning</h1>
+	To create a custom iKRUNC vector that inducibly cuts the genome of the host cell at any given location, a 20nt fragment containing the target site should be cloned into iKRUNC-sgRNA-BSD or iKRUNC-sgRNA-Puro (see protocols for further details). 
+	Using the CRISPR/Cas9 system, not every genomic location can be cut, as the genomic recognition sequence <b>has to be followed by NGG</b>, the so-called protospacer adjacent motif (PAM).<br>
+	Of course it is important to choose a target site that is uniquely present in the genome, but considering off-target effects, it is important to realize that cleavage of targets with only a few basepairs has been consistently reported.<br>
+	To prevent such off-target effects, this website offers a <a href='sitefinder.html' target='maincontentframe'>sitefinder</a> that can help in finding the ideal sgRNA sequences for your gene of interest. <br>
+	<h1>Questions</h1>
+	In case you have any further questions, please send them to <a href='mailto:b.evers@nki.nl'>b.evers@nki.nl</a>
+</html>
