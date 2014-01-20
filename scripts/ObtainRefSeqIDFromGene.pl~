@@ -17,13 +17,13 @@ die "ERROR in $ScriptName: It's unclear what species we're handling.\n" unless m
 $Species = lc($Species);
 if ($Species eq 'mouse') {
 	$Genome = "mm10";
-	$RefSeqFile = "/home/NKI/b.evers/mm10/scripts/RefSeq/refGene.txt";
+	$RefSeqFile = $HomepagePrefix . "scripts/refGene.txt";
 	$Gene = uc(substr($Gene,0,1)) . lc(substr($Gene,1));
 }
 else {
 	if ($Species eq 'human') {
 		$Genome = "hg19";
-		$RefSeqFile = "/home/NKI/b.evers/hg19/scripts/RefSeq/refGene.txt";
+		$RefSeqFile = $HomepagePrefix . "scripts/refGene.txt";
 		$Gene = uc($Gene);
 	}
 	else {

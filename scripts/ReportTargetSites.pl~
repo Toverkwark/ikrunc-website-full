@@ -59,8 +59,8 @@ print "temp/" . $timestamp . ".svg";
 #Open this temporary file and for output open a file with a similar name, but with extension .svg for the image and one with extension .svg.html for the linked table
 my $InputFile=$HomepagePrefix . "temp/" . $timestamp . ".seq";
 open (IN, $InputFile) or die "ERROR in $ScriptName: Cannot open inputfile $InputFile\n";
-open (OUT, ">", $HomepagePrefix . "temp/" . $timestamp . ".svg") or die "ERROR in $ScriptName: Cannot create svg file\n";
-open (OUTHTML, ">", $HomepagePrefix . "temp/" . $timestamp . ".svg.html") or die "ERROR in $ScriptName: Cannot create svg html file\n";
+open (OUT, ">", "temp/" . $timestamp . ".svg") or die "ERROR in $ScriptName: Cannot create svg file\n";
+open (OUTHTML, ">", "temp/" . $timestamp . ".svg.html") or die "ERROR in $ScriptName: Cannot create svg html file\n";
 
 #First read in all intron/exon information of the gene we're plotting
 my $RefSeqInfo = `grep -P "$RefSeq\t" $RefSeqFile`;

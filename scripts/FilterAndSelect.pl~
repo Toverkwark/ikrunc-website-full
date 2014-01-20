@@ -25,12 +25,12 @@ open (OUTSEQ, ">", $OutputFile . ".seq") or die "ERROR in $ScriptName: Cannot op
 $Species = lc($Species);
 if ($Species eq 'mouse') {
 	$Genome = "mm10";
-	$RefSeqFile = "/home/NKI/b.evers/mm10/scripts/RefSeq/refGene.txt";
+	$RefSeqFile = $HomepagePrefix . "/home/NKI/b.evers/mm10/scripts/RefSeq/refGene.txt";
 }
 else {
 	if ($Species eq 'human') {
 		$Genome = "hg19";
-		$RefSeqFile = "/home/NKI/b.evers/hg19/scripts/RefSeq/refGene.txt";
+		$RefSeqFile = $HomepagePrefix . "/home/NKI/b.evers/hg19/scripts/RefSeq/refGene.txt";
 	}
 	else {
 		die "ERROR in $ScriptName: Species $Species is not currently handled by the iKRUNC scripts\n";
