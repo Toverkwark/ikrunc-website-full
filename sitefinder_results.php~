@@ -44,9 +44,11 @@
 	</head>
 	
 	<body>
+	pipo
 		<?php
 			$Opdracht = "perl scripts/ReportTargetSites.pl -r " . htmlspecialchars($_POST['RefSeqID']) . " -s " . htmlspecialchars($_POST['species']) . " -n " . htmlspecialchars($_POST['NumberOfSites']) . " -f " . (htmlspecialchars($_POST['Percentage'])/100) . " -a " . htmlspecialchars($_POST['AroundStart']);
 			exec($Opdracht,$Resultaat);
+			echo $Opdracht;
 			foreach ($Resultaat as $ImageFile) {  // process array line by line
 			}
 			//Wait until svg file is written

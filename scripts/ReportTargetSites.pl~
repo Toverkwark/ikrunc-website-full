@@ -25,9 +25,15 @@ my $LevelOffset = 10;
 
 #Get options given to the script
 my %opts;
-getopt( 'rs', \%opts );
+getopt( 'rsnfa', \%opts );
 die "ERROR in $ScriptName: No RefSeq ID given.\n" unless my $RefSeq = $opts{'r'};
 die "ERROR in $ScriptName: No species given.\n" unless my $Species = $opts{'s'};
+my $ReportNumberOfNucleotides;
+$ReportNumberOfNucleotides=-1 unless $ReportNumberOfNucleotides = $opts{'n'};
+my $ReportFractionOfTranscript;
+$ReportFractionOfTranscript=1 unless $ReportFractionOfTranscript = $opts{'f'};
+my $ReportNucleotidesAroundStartSite;
+$ReportNucleotidesAroundStartSite=0 unless unless my $ReportNucleotidesAroundStartSite = $opts{'a'};
 
 #Assign proper genome id
 $Species = lc($Species);
@@ -54,13 +60,13 @@ my $DeleteTempFilesCommand = "find " . $HomepagePrefix . "temp/* -mmin +5 -exec 
 #Filter the qualities.4 file for relevant target sites. As output, use a temporary file
 my $timestamp = gettimeofday;
 print "temp/" . $timestamp . ".svg";
-`perl $HomepagePrefix/scripts/FilterAndSelect.pl -i $QualitiesFileLocation/$RefSeq.qualities.4 -o $HomepagePrefix/temp/$timestamp -c 1 -e 50 -n -1 -r $RefSeq -s $Species`;
+`perl $HomepagePrefix/scripts/FilterAndSelect.pl -i $QualitiesFileLocation/$RefSeq.qualities.4 -o $HomepagePrefix/temp/$timestamp -c $ReportFractionOfTranscript -e $ReportNucleotidesAroundStartSite -n $ReportNumberOfNucleotides -r $RefSeq -s $Species`;
 
 #Open this temporary file and for output open a file with a similar name, but with extension .svg for the image and one with extension .svg.html for the linked table
 my $InputFile=$HomepagePrefix . "temp/" . $timestamp . ".seq";
 open (IN, $InputFile) or die "ERROR in $ScriptName: Cannot open inputfile $InputFile\n";
-open (OUT, ">", "temp/" . $timestamp . ".svg") or die "ERROR in $ScriptName: Cannot create svg file\n";
-open (OUTHTML, ">", "temp/" . $timestamp . ".svg.html") or die "ERROR in $ScriptName: Cannot create svg html file\n";
+open (OUT, ">", $HomepagePrefix . "temp/" . $timestamp . ".svg") or die "ERROR in $ScriptName: Cannot create svg file\n";
+open (OUTHTML, ">", $HomepagePrefix . "temp/" . $timestamp . ".svg.html") or die "ERROR in $ScriptName: Cannot create svg html file\n";
 
 #First read in all intron/exon information of the gene we're plotting
 my $RefSeqInfo = `grep -P "$RefSeq\t" $RefSeqFile`;
