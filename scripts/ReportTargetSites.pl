@@ -302,7 +302,7 @@ print OUT `cat $FooterFile`;
 #Print the table file
 print OUTHTML "<!DOCTYPE html>\n<html lang='en'>\n\t<head>\n\t\t<meta charset='utf-8'>\n\t\t<link rel='stylesheet' href='../style.css' type='text/css'></link>\n\t</head>\n";
 print OUTHTML "<body>\n<table id='svgtable' class='svgtable' width='100%'>\n";
-foreach my $TableRow (sort {$TableObjects{$a}->[0] <=> $TableObjects{$b}->[0]} keys %TableObjects) {
+foreach my $TableRow (sort {$TableObjects{$b}->[0] <=> $TableObjects{$a}->[0]} keys %TableObjects) {
 	print OUTHTML "\t<tr id='" . $TableRow . ".table' onclick=parent.ClickTableRow('" . $TableRow . "')>\n";
 	print OUTHTML "\t\t<td>" . $TableRow . "</td>\n";
 	print OUTHTML "\t\t<td>" . $Chromosome . ":" . $TableObjects{$TableRow}->[2] . "</td>\n";

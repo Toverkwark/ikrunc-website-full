@@ -33,7 +33,7 @@ $ReportNumberOfNucleotides=-1 unless $ReportNumberOfNucleotides = $opts{'n'};
 my $ReportFractionOfTranscript;
 $ReportFractionOfTranscript=1 unless $ReportFractionOfTranscript = $opts{'f'};
 my $ReportNucleotidesAroundStartSite;
-$ReportNucleotidesAroundStartSite=0 unless unless my $ReportNucleotidesAroundStartSite = $opts{'a'};
+$ReportNucleotidesAroundStartSite=0 unless $ReportNucleotidesAroundStartSite = $opts{'a'};
 
 #Assign proper genome id
 $Species = lc($Species);
