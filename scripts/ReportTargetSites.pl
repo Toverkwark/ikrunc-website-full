@@ -128,7 +128,7 @@ foreach my $Orientation (keys %DisplayObjects) {
 		else {
 			for (my $i=$NumberOfExons-1;$i>=0;$i--) {
 				if ($TargetCutSite >= $ExonStartSites[$i]) {
-					if((($ExonEndSites[$i]-$TargetCutSite)>0) || $i==0) {
+					if((($ExonEndSites[$i]-$TargetCutSite)>0) || $i==($NumberOfExons-1)) {
 						$CodingSequencePosition = $CodingSequencePosition + ($ExonEndSites[$i]-$TargetCutSite);
 						last;
 					}
