@@ -1,0 +1,1344 @@
+LOCUS       212-iKRUNC-Blast       14502 bp    DNA     circular UNA 17-AUG-2013
+ACCESSION   pGSLGreen v1.1 Seq Derived
+SOURCE      Saccharomyces cerevisiae (unknown).
+  ORGANISM  Saccharomyces cerevisiae
+            Saccharomyces cerevisiae Eukaryota; Fungi; Ascomycota; Saccharomycotina; Saccharomycetes; Saccharomycetales; Saccharomycetaceae; Saccharomyces.
+COMMENT     http://www.informaxinc.com/
+COMMENT     This file is created by Vector NTI
+            http://www.invitrogen.com/
+COMMENT     ORIGDB|GenBank
+COMMENT     VNTDATE|670596060|
+COMMENT     VNTDBDATE|670596060|
+COMMENT     LSOWNER|
+COMMENT     VNTNAME|212-iKRUNC-Blasticidin|
+COMMENT     VNTAUTHORNAME|Demo User|
+COMMENT     VNTOAUTHORNAME|UNKNOWN|
+COMMENT     Vector_NTI_Display_Data_(Do_Not_Edit!)
+COMMENT     (SXF 
+COMMENT      (CGexDoc "212-iKRUNC-Blasticidin" 0 14502 
+COMMENT       (CDBMol 0 0 1 1 1 0 0 1 0 "" "" 0 0 0 0 (CObList) (CObList) (CObList) 
+COMMENT        (CObList) -1 "") 
+COMMENT       (CDocSetData 1 1 0 1 0 0 "MAIN" 1 1 1 1 0 0 1 1 0 1 10 10 4294967295 50 0 
+COMMENT        1 0 (CHomObj 0 0 0 3 75) 
+COMMENT        (CWordArray 47 49 50 48 51 52 81 0 1 3 4 82 5 83 2 6 8 7 9 61 10 11 12 
+COMMENT         13 14 15 16 17 18 19 84 20 85 21 22 86 87 88 23 54 62 24 89 25 26 55 91 
+COMMENT         27 28 29 30 31 92 32 34 35 33 53 58 93 56 94 37 57 38 36 39 40 41 42 43 
+COMMENT         95 44 59 99 96 97 45 100 46) (CWordArray) 
+COMMENT        (CStringList "ApaI" "EcoRI" "XhoI" "BfuAI" "AgeI") 
+COMMENT        (CStringList "atg" "gtg") (CStringList "taa" "tga" "tag") (CObList) 1 
+COMMENT        "{(0,1),2}" 0 0 "" 0 4294967295 0 0 0 0 0 0 1 "MAIN" 0 0 30 0 
+COMMENT        (CProteinMotifSearchObject 100 10 1 1 1 1 1 0 1 0 0 0 0 0)) 
+COMMENT       (CMolPar 0 0 0 0 0 1 14502 0 0 0 0 0 0 0 0) (CStringList) (CStringList) 
+COMMENT       (CObList) (COAPar 25 250 50 0 6 4 3 7) (COAPar 25 250 50 0 6 4 3 7) 
+COMMENT       (COAPar 25 250 50 0 6 4 3 7) 
+COMMENT       (CObList 
+COMMENT        #0=(CRSite (CStringList) "ApaI" "gggccc" 6 0 2 3317 0 10493 0 0 "") 
+COMMENT        #1=(CRSite (CStringList) "EcoRI" "gaattc" 2 0 1 6754 0 0 "") 
+COMMENT        #2=(CRSite (CStringList) "XhoI" "ctcgag" 2 0 1 2698 0 0 "") 
+COMMENT        #3=(CRSite (CStringList) "BfuAI" "acctgc" 11 15 2 2699 1 6672 0 0 "") 
+COMMENT        #4=(CRSite (CStringList) "AgeI" "accggt" 2 0 2 2738 0 6632 0 0 "")) 
+COMMENT       (CObList 
+COMMENT        #5=(CFSignal (CObList) "CMV-LTR" 19 0 0 1 1015 0 (CStringList) 
+COMMENT            (CStringList) 1 1 1 1 "1..1015") 
+COMMENT        #6=(CFSignal (CObList) "HIV-RRE" 21 0 0 1574 2431 0 (CStringList) 
+COMMENT            (CStringList) 1 1 1 1 "1574..2431") 
+COMMENT        #7=(CFSignal (CObList) "cPPT" 21 0 0 2416 2593 0 (CStringList) 
+COMMENT            (CStringList) 1 1 1 1 "2416..2593") 
+COMMENT        #8=(CFSignal (CObList) "040-Psi-FW" 21 0 0 2566 2586 0 (CStringList) 
+COMMENT            (CStringList) 1 1 1 1 "2566..2586") 
+COMMENT        #9=(CFSignal (CObList) "Min. H1 Promoter" 21 0 0 2602 2702 0 
+COMMENT            (CStringList) (CStringList) 1 1 1 1 "2602..2702") 
+COMMENT        #10=(CFSignal (CObList) "tetO" 21 0 0 2681 2693 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "2681..2693") 
+COMMENT        #11=(CFSignal (CObList) "WPRE" 21 0 0 9189 9777 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "5398..5986") 
+COMMENT        #12=(CFSignal (CObList) "LTR_1" 19 0 0 9922 10512 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "6131..6721") 
+COMMENT        #13=(CFSignal (CObList) "colE1 ori" 104 0 0 12748 13347 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "8957..9556") 
+COMMENT        #14=(CFSignal (CObList) "AmpR" 21 0 0 13509 14369 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "9718..10578") 
+COMMENT        #15=(CFSignal (CObList) "138-NheI-Ub-FW" 27 0 0 6759 6784 0 
+COMMENT             (CStringList) (CStringList) 1 1 1 1 "") 
+COMMENT        #16=(CFSignal (CObList) "136-GS-Seq-001" 21 0 0 2481 2502 0 
+COMMENT             (CStringList) (CStringList) 1 1 1 1 "") 
+COMMENT        #17=(CFSignal (CObList) "Ubiquitin Promoter" 29 0 0 6837 7170 0 
+COMMENT             (CStringList) (CStringList) 1 1 1 1 "") 
+COMMENT        #18=(CFSignal (CObList) "Exon" 61 0 0 7171 7223 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "") 
+COMMENT        #19=(CFSignal (CObList) "Intron" 15 0 0 7224 8057 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "") 
+COMMENT        #20=(CFSignal (CObList) "gRNA scaffold" 21 0 0 6672 6747 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "") 
+COMMENT        #21=(CFSignal (CObList) "161-BamHI-hTetR-FW" 27 0 0 8061 8093 0 
+COMMENT             (CStringList) (CStringList) 1 1 1 1 "") 
+COMMENT        #22=(CFSignal (CObList) "T2A" 21 0 0 8697 8750 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "") 
+COMMENT        #23=(CFSignal (CObList) "Spacer" 88 0 0 8688 8696 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "") 
+COMMENT        #24=(CFSignal (CObList) "hTetR" 21 0 0 8067 8687 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "") 
+COMMENT        #25=(CFSignal (CObList) "bsd" 21 0 0 8751 9149 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "") 
+COMMENT        #26=(CFSignal (CObList) "Stuffer" 21 0 0 2699 6671 0 (CStringList) 
+COMMENT             (CStringList) 1 1 1 1 "")) (CObList) (CObList) (CObList) (CObList) 
+COMMENT       (CObList) (CObList) 
+COMMENT       (CTextView 0 
+COMMENT        #27=(CGroupPar (CParagraph 0 (0 0) 1 2 0 0 180) 
+COMMENT             (CObjectList 
+COMMENT              #28=(CRefLinePar 
+COMMENT                   (CLinePar (CParagraph 0 (0 0) 0 2 0 0 233) 
+COMMENT                    "212-iKRUNC-Blasticidin" 2) 5 "" 0 4) 
+COMMENT              #29=(CFolderPar 
+COMMENT                   (CGroupPar (CParagraph 1 (0 0) 1 1 0 0 178) 
+COMMENT                    (CObjectList 
+COMMENT                     #30=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "DNA '212-iKRUNC-Blasticidin'" 1) 
+COMMENT                     #31=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Currently local object. Original author: UNKNOWN" 1) 
+COMMENT                     #32=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Created: 08/17/13 12:41PM" 1) 
+COMMENT                     #33=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Last Modified: 08/17/13 12:41PM" 1) 
+COMMENT                     #34=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "length: 14502 bp" 1) 
+COMMENT                     #35=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "storage type: Basic" 1) 
+COMMENT                     #36=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "form: Circular" 1))) "General Description") 
+COMMENT              #37=(CFolderPar 
+COMMENT                   (CGroupPar (CParagraph 2 (0 0) 1 1 0 0 178) 
+COMMENT                    (CObjectList 
+COMMENT                     #38=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Original Source Database: GenBank" 1) 
+COMMENT                     #39=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Division: UNA" 1) 
+COMMENT                     #40=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Modification Date in the Original DB: 20-NOV-2010" 1) 
+COMMENT                     #41=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Original Accession Number(s): <a href=\"ncbilink:dnarna/pGSLGreen\">pGSLGreen</a>; <a href=\"ncbilink:dnarna/v1.1\">v1.1</a>; <a href=\"ncbilink:dnarna/Seq\">Seq</a>; <a href=\"ncbilink:dnarna/Derived\">Derived</a>" 
+COMMENT                          1) 
+COMMENT                     #42=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Sequence Source: Saccharomyces cerevisiae (unknown)" 
+COMMENT                          1) 
+COMMENT                     #43=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Organizm(s): <a href=\"ncbilink:taxonomy/Saccharomyces+cerevisiae\">Saccharomyces cerevisiae(Saccharomyces cerevisiae)</a>" 
+COMMENT                          1) 
+COMMENT                     #44=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Taxonomy: Saccharomyces cerevisiae Eukaryota; Fungi; Ascomycota; Saccharomycotina; Saccharomycetes; Saccharomycetales; Saccharomycetaceae; Saccharomyces" 
+COMMENT                          1) 
+COMMENT                     #45=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                          "Associated Genes:  PuroR" 1))) "Standard Fields") 
+COMMENT              #46=(CRefLinePar 
+COMMENT                   (CLinePar (CParagraph 0 (0 0) 0 2 0 0 233) "Comments" 2) 1 "" 
+COMMENT                   0 0) 
+COMMENT              #47=(CFolderPar 
+COMMENT                   (CGroupPar (CParagraph 8 (0 0) 1 2 0 0 178) (CObjectList)) 
+COMMENT                   "Annotations") 
+COMMENT              #48=(CFolderPar 
+COMMENT                   (CGroupPar (CParagraph 12 (6 0) 1 1 0 0 178) 
+COMMENT                    (CObjectList 
+COMMENT                     #49=(CFolderPar 
+COMMENT                          (CGroupPar (CParagraph 15 (7 15 0) 1 1 1 0 178) 
+COMMENT                           (CObjectList 
+COMMENT                            #50=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 7224 (3 #19# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #51=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 7224  End: 8057" 1))) "Intron"))) 
+COMMENT                          "Intron (1 total)") 
+COMMENT                     #52=(CFolderPar 
+COMMENT                          (CGroupPar (CParagraph 19 (7 19 0) 1 1 1 0 178) 
+COMMENT                           (CObjectList 
+COMMENT                            #53=(CFolderPar 
+COMMENT                                 (CGroupPar (CParagraph 1 (3 #5# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #54=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 1     End: 1015" 1) 
+COMMENT                                   #55=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Oriinal location: 1..1015" 1) 
+COMMENT                                   #56=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Original Location Description:" 1) 
+COMMENT                                   #57=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "   1..1015" 1))) "CMV-LTR") 
+COMMENT                            #58=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 9922 (3 #12# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #59=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 9922  End: 10512" 1) 
+COMMENT                                   #60=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Oriinal location: 6383..6973" 1) 
+COMMENT                                   #61=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Original Location Description:" 1) 
+COMMENT                                   #62=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "   6131..6721" 1))) "LTR_1"))) 
+COMMENT                          "LTR (2 total)") 
+COMMENT                     #63=(CFolderPar 
+COMMENT                          (CGroupPar (CParagraph 21 (7 21 0) 1 1 1 0 178) 
+COMMENT                           (CObjectList 
+COMMENT                            #64=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 1574 (3 #6# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #65=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 1574  End: 2431" 1) 
+COMMENT                                   #66=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Unknown feature type:Misc._feature  Oriinal location: 1574..2431" 
+COMMENT                                        1) 
+COMMENT                                   #67=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Original Location Description:" 1) 
+COMMENT                                   #68=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "   1574..2431" 1))) "HIV-RRE") 
+COMMENT                            #69=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 2416 (3 #7# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #70=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 2416  End: 2593" 1) 
+COMMENT                                   #71=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Unknown feature type:Primer_binding_  Oriinal location: 2416..2593" 
+COMMENT                                        1) 
+COMMENT                                   #72=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Original Location Description:" 1) 
+COMMENT                                   #73=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "   2416..2593" 1))) "cPPT") 
+COMMENT                            #74=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 2481 (3 #16# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #75=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 2481  End: 2502" 1))) 
+COMMENT                                 "136-GS-Seq-001") 
+COMMENT                            #76=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 2566 (3 #8# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #77=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 2566  End: 2586" 1) 
+COMMENT                                   #78=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Unknown feature type:Primer" 1) 
+COMMENT                                   #79=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Original Location Description:" 1) 
+COMMENT                                   #80=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "   2566..2586" 1))) "040-Psi-FW") 
+COMMENT                            #81=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 2602 (3 #9# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #82=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 2602  End: 2702" 1) 
+COMMENT                                   #83=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Unknown feature type:Promoter" 1) 
+COMMENT                                   #84=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Original Location Description:" 1) 
+COMMENT                                   #85=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "   2602..2702" 1))) "Min. H1 Promoter") 
+COMMENT                            #86=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 2681 (3 #10# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #87=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 2681  End: 2693" 1) 
+COMMENT                                   #88=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Unknown feature type:Binding_site" 1) 
+COMMENT                                   #89=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Original Location Description:" 1) 
+COMMENT                                   #90=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "   2681..2693" 1))) "tetO") 
+COMMENT                            #91=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 2699 (3 #26# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #92=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 2699  End: 6671" 1))) "Stuffer") 
+COMMENT                            #93=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 6672 (3 #20# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #94=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 6672  End: 6747" 1))) 
+COMMENT                                 "gRNA scaffold") 
+COMMENT                            #95=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 8067 (3 #24# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #96=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 8067  End: 8687" 1))) "hTetR") 
+COMMENT                            #97=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 8697 (3 #22# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #98=(CLinePar 
+COMMENT                                        (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                        "Start: 8697  End: 8750" 1))) "T2A") 
+COMMENT                            #99=(CFolderPar 
+COMMENT                                 (CGroupPar 
+COMMENT                                  (CParagraph 8751 (3 #25# 0) 1 2 2 0 194) 
+COMMENT                                  (CObjectList 
+COMMENT                                   #100=(CLinePar 
+COMMENT                                         (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                         "Start: 8751  End: 9149" 1))) "bsd") 
+COMMENT                            #101=(CFolderPar 
+COMMENT                                  (CGroupPar 
+COMMENT                                   (CParagraph 9189 (3 #11# 0) 1 2 2 0 194) 
+COMMENT                                   (CObjectList 
+COMMENT                                    #102=(CLinePar 
+COMMENT                                          (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                          "Start: 9189  End: 9777" 1) 
+COMMENT                                    #103=(CLinePar 
+COMMENT                                          (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                          "Unknown feature type:Enhancer  Oriinal location: 5650..6238" 
+COMMENT                                          1) 
+COMMENT                                    #104=(CLinePar 
+COMMENT                                          (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                          "Original Location Description:" 1) 
+COMMENT                                    #105=(CLinePar 
+COMMENT                                          (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                          "   5398..5986" 1))) "WPRE") 
+COMMENT                            #106=(CFolderPar 
+COMMENT                                  (CGroupPar 
+COMMENT                                   (CParagraph 13509 (3 #14# 0) 1 2 2 0 194) 
+COMMENT                                   (CObjectList 
+COMMENT                                    #107=(CLinePar 
+COMMENT                                          (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                          "Start: 13509  End: 14369" 1) 
+COMMENT                                    #108=(CLinePar 
+COMMENT                                          (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                          "Unknown feature type:Gene" 1) 
+COMMENT                                    #109=(CLinePar 
+COMMENT                                          (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                          "Original Location Description:" 1) 
+COMMENT                                    #110=(CLinePar 
+COMMENT                                          (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                          "   9718..10578" 1))) "AmpR"))) 
+COMMENT                          "Misc. Feature (13 total)") 
+COMMENT                     #111=(CFolderPar 
+COMMENT                           (CGroupPar (CParagraph 27 (7 27 0) 1 1 1 0 178) 
+COMMENT                            (CObjectList 
+COMMENT                             #112=(CFolderPar 
+COMMENT                                   (CGroupPar 
+COMMENT                                    (CParagraph 6759 (3 #15# 0) 1 2 2 0 194) 
+COMMENT                                    (CObjectList 
+COMMENT                                     #113=(CLinePar 
+COMMENT                                           (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                           "Start: 6759  End: 6784" 1))) 
+COMMENT                                   "138-NheI-Ub-FW") 
+COMMENT                             #114=(CFolderPar 
+COMMENT                                   (CGroupPar 
+COMMENT                                    (CParagraph 8061 (3 #21# 0) 1 2 2 0 194) 
+COMMENT                                    (CObjectList 
+COMMENT                                     #115=(CLinePar 
+COMMENT                                           (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                           "Start: 8061  End: 8093" 1))) 
+COMMENT                                   "161-BamHI-hTetR-FW"))) "Primer (2 total)") 
+COMMENT                     #116=(CFolderPar 
+COMMENT                           (CGroupPar (CParagraph 29 (7 29 0) 1 1 1 0 178) 
+COMMENT                            (CObjectList 
+COMMENT                             #117=(CFolderPar 
+COMMENT                                   (CGroupPar 
+COMMENT                                    (CParagraph 6837 (3 #17# 0) 1 2 2 0 194) 
+COMMENT                                    (CObjectList 
+COMMENT                                     #118=(CLinePar 
+COMMENT                                           (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                           "Start: 6837  End: 7170" 1))) 
+COMMENT                                   "Ubiquitin Promoter"))) 
+COMMENT                           "Promoter Eukaryotic (1 total)") 
+COMMENT                     #119=(CFolderPar 
+COMMENT                           (CGroupPar (CParagraph 61 (7 61 0) 1 1 1 0 178) 
+COMMENT                            (CObjectList 
+COMMENT                             #120=(CFolderPar 
+COMMENT                                   (CGroupPar 
+COMMENT                                    (CParagraph 7171 (3 #18# 0) 1 2 2 0 194) 
+COMMENT                                    (CObjectList 
+COMMENT                                     #121=(CLinePar 
+COMMENT                                           (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                           "Start: 7171  End: 7223" 1))) "Exon"))) 
+COMMENT                           "Exon (1 total)") 
+COMMENT                     #122=(CFolderPar 
+COMMENT                           (CGroupPar (CParagraph 88 (7 88 0) 1 1 1 0 178) 
+COMMENT                            (CObjectList 
+COMMENT                             #123=(CFolderPar 
+COMMENT                                   (CGroupPar 
+COMMENT                                    (CParagraph 8688 (3 #23# 0) 1 2 2 0 194) 
+COMMENT                                    (CObjectList 
+COMMENT                                     #124=(CLinePar 
+COMMENT                                           (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                           "Start: 8688  End: 8696" 1))) 
+COMMENT                                   "Spacer"))) "Misc. Structure (1 total)") 
+COMMENT                     #125=(CFolderPar 
+COMMENT                           (CGroupPar (CParagraph 104 (7 104 0) 1 1 1 0 178) 
+COMMENT                            (CObjectList 
+COMMENT                             #126=(CFolderPar 
+COMMENT                                   (CGroupPar 
+COMMENT                                    (CParagraph 12748 (3 #13# 0) 1 2 2 0 194) 
+COMMENT                                    (CObjectList 
+COMMENT                                     #127=(CLinePar 
+COMMENT                                           (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                           "Start: 12748  End: 13347" 1) 
+COMMENT                                     #128=(CLinePar 
+COMMENT                                           (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                           "Original Location Description:" 1) 
+COMMENT                                     #129=(CLinePar 
+COMMENT                                           (CParagraph 0 (0 0) 1 2 3 0 180) 
+COMMENT                                           "   8957..9556" 1))) "colE1 ori"))) 
+COMMENT                           "oriT (1 total)"))) "Feature Map") 
+COMMENT              #130=(CFolderPar 
+COMMENT                    (CGroupPar (CParagraph 13 (0 0) 1 1 0 0 178) 
+COMMENT                     (CObjectList 
+COMMENT                      #131=(CRSFolderPar 
+COMMENT                            (CFolderPar 
+COMMENT                             (CGroupPar (CParagraph 79266520 (8 0) 1 1 1 0 178) 
+COMMENT                              (CObjectList 
+COMMENT                               #132=(CGroupPar 
+COMMENT                                     (CParagraph 0 (10 #4# 0) 1 2 2 0 180) 
+COMMENT                                     (CObjectList 
+COMMENT                                      #133=(CLinePar 
+COMMENT                                            (CParagraph 0 (1 #4# 1) 1 2 2 0 191) 
+COMMENT                                            " N1: 2738 " 1) 
+COMMENT                                      #134=(CLinePar 
+COMMENT                                            (CParagraph 0 (1 #4# 2) 1 2 2 0 191) 
+COMMENT                                            " N2: 6632 " 1))))) "AgeI: 2 sites") 
+COMMENT                            1 5 "ACCGGT" "TGGCCA") 
+COMMENT                      #135=(CRSFolderPar 
+COMMENT                            (CFolderPar 
+COMMENT                             (CGroupPar (CParagraph 79266648 (8 0) 1 1 1 0 178) 
+COMMENT                              (CObjectList 
+COMMENT                               #136=(CGroupPar 
+COMMENT                                     (CParagraph 0 (10 #0# 0) 1 2 2 0 180) 
+COMMENT                                     (CObjectList 
+COMMENT                                      #137=(CLinePar 
+COMMENT                                            (CParagraph 0 (1 #0# 1) 1 2 2 0 191) 
+COMMENT                                            " N1: 3317 " 1) 
+COMMENT                                      #138=(CLinePar 
+COMMENT                                            (CParagraph 0 (1 #0# 2) 1 2 2 0 191) 
+COMMENT                                            " N2: 10493 " 1))))) "ApaI: 2 sites") 
+COMMENT                            5 1 "GGGCCC" "CCCGGG") 
+COMMENT                      #139=(CRSFolderPar 
+COMMENT                            (CFolderPar 
+COMMENT                             (CGroupPar (CParagraph 79266552 (8 0) 1 1 1 0 178) 
+COMMENT                              (CObjectList 
+COMMENT                               #140=(CGroupPar 
+COMMENT                                     (CParagraph 0 (10 #3# 0) 1 2 2 0 180) 
+COMMENT                                     (CObjectList 
+COMMENT                                      #141=(CLinePar 
+COMMENT                                            (CParagraph 0 (1 #3# 1) 1 2 2 0 191) 
+COMMENT                                            " N1: 2699 (on complementary strand)" 
+COMMENT                                            1) 
+COMMENT                                      #142=(CLinePar 
+COMMENT                                            (CParagraph 0 (1 #3# 2) 1 2 2 0 191) 
+COMMENT                                            " N2: 6672 " 1))))) "BfuAI: 2 sites") 
+COMMENT                            10 14 "ACCTGCNNNNNNNNN" "TGGACGNNNNNNNNN") 
+COMMENT                      #143=(CRSFolderPar 
+COMMENT                            (CFolderPar 
+COMMENT                             (CGroupPar (CParagraph 79266616 (8 0) 1 1 1 0 178) 
+COMMENT                              (CObjectList 
+COMMENT                               #144=(CGroupPar 
+COMMENT                                     (CParagraph 0 (10 #1# 0) 1 2 2 0 180) 
+COMMENT                                     (CObjectList 
+COMMENT                                      #145=(CLinePar 
+COMMENT                                            (CParagraph 0 (1 #1# 1) 1 2 2 0 191) 
+COMMENT                                            " N1: 6754 " 1))))) "EcoRI: 1 site") 
+COMMENT                            1 5 "GAATTC" "CTTAAG") 
+COMMENT                      #146=(CRSFolderPar 
+COMMENT                            (CFolderPar 
+COMMENT                             (CGroupPar (CParagraph 79266584 (8 0) 1 1 1 0 178) 
+COMMENT                              (CObjectList 
+COMMENT                               #147=(CGroupPar 
+COMMENT                                     (CParagraph 0 (10 #2# 0) 1 2 2 0 180) 
+COMMENT                                     (CObjectList 
+COMMENT                                      #148=(CLinePar 
+COMMENT                                            (CParagraph 0 (1 #2# 1) 1 2 2 0 191) 
+COMMENT                                            " N1: 2698 " 1))))) "XhoI: 1 site") 
+COMMENT                            1 5 "CTCGAG" "GAGCTC"))) 
+COMMENT                    "Restriction/Methylation Map") 
+COMMENT              #149=(CFolderPar 
+COMMENT                    (CGroupPar (CParagraph 14 (0 0) 1 2 0 0 178) 
+COMMENT                     (CObjectList 
+COMMENT                      #150=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                            "   Similarity between ambiguous nucleotides (if any)" 
+COMMENT                            1) 
+COMMENT                      #151=(CLinePar (CParagraph 0 (0 0) 1 2 1 0 180) 
+COMMENT                            "is calculated as an AVERAGE similarity" 1))) 
+COMMENT                    "Motifs (both strands, best fit only)")))) 
+COMMENT       (CGraphView 
+COMMENT        (CWStyleSheet 
+COMMENT         (CObjectList 
+COMMENT          #152=(CWidgetStyle "RSite Label" 1 (LOGPEN 0 0 13408563) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 18 "Georgia") 0.555556 0 1 5 
+COMMENT                "@N (@S)" 0) 
+COMMENT          #153=(CWidgetStyle "Signal Label" 1 (LOGPEN 0 0 0) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 700 0 0 0 0 3 2 1 34 "Arial") 0.666667 0 1 1 
+COMMENT                "@N" 0) 
+COMMENT          #154=(CWidgetStyle "Molecule Label 2" 0 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 18 "Georgia") 0.555556 0 1 16 
+COMMENT                "@L bp" 0) 
+COMMENT          #155=(CWidgetStyle "Molecule Label 1" 0 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 34 "Verdana") 0.833333 0 1 1 
+COMMENT                "@N" 0) 
+COMMENT          #156=(CWidgetStyle "Shape 3" 1 (LOGPEN 0 0 3355545) 1 1 
+COMMENT                (LOGBRUSH 0 6724095 0) 0 0 1 (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #157=(CWidgetStyle "Shape 1" 1 (LOGPEN 0 0 6723840) 1 1 
+COMMENT                (LOGBRUSH 0 10079334 0) 0 0 1 (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #158=(CWidgetStyle "Axis" 1 (LOGPEN 0 0 10079436) 2 1 
+COMMENT                (LOGBRUSH 0 13434879 0) 0 0 1 (LOGSHAPE 10 1 0 0 0)) 
+COMMENT          #159=(CWidgetStyle "Line 2" 1 (LOGPEN 0 0 6723840) 8 0 0 0 1 
+COMMENT                (LOGSHAPE 1 1.9 0 0 0)) 
+COMMENT          #160=(CWidgetStyle "RSite" 1 (LOGPEN 0 0 10053171) 8 0 0 0 1 
+COMMENT                (LOGSHAPE 1 1.9 0 0 0)) 
+COMMENT          #161=(CWidgetStyle "Short Signal" 1 (LOGPEN 0 0 13395507) 10 0 0 0 1 
+COMMENT                (LOGSHAPE 1 1.9 0 0 0)) 
+COMMENT          #162=(CWidgetStyle "Uniq RSite Label" 1 (LOGPEN 0 0 153) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 18 "Georgia") 0.555556 128 1 
+COMMENT                5 "@N (@S)" 0) 
+COMMENT          #163=(CWidgetStyle "Vanilla" 1 (LOGPEN 0 0 0) 1 1 
+COMMENT                (LOGBRUSH 0 16777215 0) 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 18 "Times New Roman") 0.8 0 
+COMMENT                1 2 "?" 0) 
+COMMENT          #164=(CWidgetStyle "Mark 1" 0 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 2 7 48 2 2 "Windings") 0.7 0 1 2 "?" 
+COMMENT                0) 
+COMMENT          #165=(CWidgetStyle "Motif Label" 1 (LOGPEN 0 0 16744512) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 34 "Arial") 0.611111 8388608 
+COMMENT                1 65535 "@N (@H)" 0) 
+COMMENT          #166=(CWidgetStyle "Fragment Label 2" 1 (LOGPEN 0 0 0) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 49 "Courier New") 1.05 0 1 48 
+COMMENT                "@F bp (molecule @L bp)" 0) 
+COMMENT          #167=(CWidgetStyle "Fragment Label 1" 1 (LOGPEN 0 0 0) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 34 "Arial") 0.91 0 1 1 
+COMMENT                "Fragment of @N" 0) 
+COMMENT          #168=(CWidgetStyle "Shape 4" 1 (LOGPEN 0 0 0) 1 1 
+COMMENT                (LOGBRUSH 2 8388608 5) 0 0 0) 
+COMMENT          #169=(CWidgetStyle "Shape 2" 1 (LOGPEN 0 0 0) 1 1 (LOGBRUSH 0 128 0) 0 
+COMMENT                0 0) 
+COMMENT          #170=(CWidgetStyle "Shape 0" 1 (LOGPEN 0 0 0) 1 1 (LOGBRUSH 0 0 0) 0 0 
+COMMENT                0) 
+COMMENT          #171=(CWidgetStyle "ORF" 1 (LOGPEN 0 0 16384) 8 0 0 0 1 
+COMMENT                (LOGSHAPE 7 0.2 3.41182 2.86186 0.609808)) 
+COMMENT          #172=(CWidgetStyle "Line 4" 1 (LOGPEN 0 0 32768) 8 0 0 0 0) 
+COMMENT          #173=(CWidgetStyle "Line 3" 1 (LOGPEN 0 0 16711680) 8 0 0 0 0) 
+COMMENT          #174=(CWidgetStyle "Line 1" 1 (LOGPEN 0 0 16711680) 1 0 0 0 0) 
+COMMENT          #175=(CWidgetStyle "Short Promoter" 1 (LOGPEN 0 0 128) 6 0 0 0 0) 
+COMMENT          #176=(CWidgetStyle "Motif" 1 (LOGPEN 0 0 0) 1 0 0 0 0) 
+COMMENT          #177=(CWidgetStyle "Line 0" 1 (LOGPEN 0 0 0) 8 0 0 0 0) 
+COMMENT          #178=(CWidgetStyle "Void" 0 0 0 0 0) 
+COMMENT          #179=(CWidgetStyle "General Label" 1 (LOGPEN 0 0 0) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 18 "Times New Roman") 0.91 0 
+COMMENT                1 3 "@T @N " 0) 
+COMMENT          #180=(CWidgetStyle "Position" 1 (LOGPEN 0 0 0) 1 0 0 0 0) 
+COMMENT          #181=(CWidgetStyle "Annotation" 0 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 18 "Times New Roman") 0.91 0 
+COMMENT                0 0) 
+COMMENT          #182=(CWidgetStyle "Position Label" 1 (LOGPEN 0 0 8388608) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 1 0 0 3 2 1 34 "Arial") 0.63 8388608 1 1 
+COMMENT                "@N" 0) 
+COMMENT          #183=(CWidgetStyle "Range" 1 (LOGPEN 0 0 0) 1 1 
+COMMENT                (LOGBRUSH 0 16777215 0) 0 0 0) 
+COMMENT          #184=(CWidgetStyle "Range Label" 1 (LOGPEN 0 0 8388608) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 1 0 0 3 2 1 34 "Arial") 0.63 8388608 1 1 
+COMMENT                "@N" 0) 
+COMMENT          #185=(CWidgetStyle "ORF Label" 1 (LOGPEN 0 0 49216) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 18 "Times New Roman") 
+COMMENT                0.611111 0 1 65535 "@N" 0) 
+COMMENT          #186=(CWidgetStyle "CDS Label" 1 (LOGPEN 0 0 4227264) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 34 "Arial") 0.555556 255 1 1 
+COMMENT                "@N" 0) 
+COMMENT          #187=(CWidgetStyle "Shape 5" 1 (LOGPEN 0 0 0) 3 1 
+COMMENT                (LOGBRUSH 0 16777113 0) 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 50 "Arial") 0.9 0 0 1 
+COMMENT                (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #188=(CWidgetStyle "CDS" 1 (LOGPEN 0 0 0) 1 1 (LOGBRUSH 2 39423 3) 0 0 
+COMMENT                1 (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #189=(CWidgetStyle "Label 2" 1 (LOGPEN 0 0 4227264) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 34 "Arial") 0.944444 8388608 
+COMMENT                1 1 "@N" 0) 
+COMMENT          #190=(CWidgetStyle "Label 3" 1 (LOGPEN 0 0 8421376) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 700 255 0 0 0 3 2 1 34 "Arial") 0.833333 255 1 
+COMMENT                5 "@N (@S)" 0) 
+COMMENT          #191=(CWidgetStyle "Label 4" 1 (LOGPEN 0 0 8437824) 1 0 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 3 2 1 34 "Arial") 0.722222 0 1 5 
+COMMENT                "@N (@S)" 0) 
+COMMENT          #192=(CWidgetStyle "Misc_Feature" 1 (LOGPEN 0 0 0) 1 1 
+COMMENT                (LOGBRUSH 0 10079334 0) 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 50 "Arial") 0.9 0 0 1 
+COMMENT                (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #193=(CWidgetStyle "Shape 6" 1 (LOGPEN 0 0 0) 1 1 (LOGBRUSH 0 0 0) 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 50 "Arial") 0.9 0 0 1 
+COMMENT                (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #194=(CWidgetStyle "Shape 7" 1 (LOGPEN 0 0 0) 1 1 
+COMMENT                (LOGBRUSH 0 3407871 0) 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 50 "Arial") 0.9 0 0 1 
+COMMENT                (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #195=(CWidgetStyle "Promoter_E" 1 (LOGPEN 0 0 6723840) 1 1 
+COMMENT                (LOGBRUSH 0 16724736 0) 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 50 "Arial") 0.9 0 0 1 
+COMMENT                (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #196=(CWidgetStyle "Shape 8" 1 (LOGPEN 0 0 0) 1 1 
+COMMENT                (LOGBRUSH 0 16724736 0) 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 50 "Arial") 0.9 0 0 1 
+COMMENT                (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #197=(CWidgetStyle "Shape 9" 1 (LOGPEN 0 0 0) 1 1 (LOGBRUSH 0 13158 0) 
+COMMENT                1 (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 50 "Arial") 0.9 0 0 1 
+COMMENT                (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #198=(CWidgetStyle "Misc_Diff" 1 (LOGPEN 0 0 0) 1 1 (LOGBRUSH 0 255 0) 
+COMMENT                1 (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 50 "Arial") 0.9 0 0 1 
+COMMENT                (LOGSHAPE 9 1 0.8 1.8 0)) 
+COMMENT          #199=(CWidgetStyle "Mat_Peptide" 1 (LOGPEN 0 0 0) 1 1 
+COMMENT                (LOGBRUSH 0 65433 0) 1 
+COMMENT                (LOGFONT 0 0 0 0 400 0 0 0 0 7 48 2 50 "Arial") 0.9 0 0 0)) 
+COMMENT         0.164479 1.74233 0.164644 1.12369 
+COMMENT         (29 (CShapeMapEntry 0 "Shape 8" 1 "Signal Label") 27 
+COMMENT          (CShapeMapEntry 2 "Shape 0" 1 "Signal Label") 22 
+COMMENT          (CShapeMapEntry 8 "Shape 7" 1 "Signal Label") 21 
+COMMENT          (CShapeMapEntry 9 "Shape 8" 1 "Signal Label") 70 
+COMMENT          (CShapeMapEntry 0 "Unique RSite" 1 "Uniq RSite Label") 67 
+COMMENT          (CShapeMapEntry 0 "ORF" 0 "ORF Label") 85 
+COMMENT          (CShapeMapEntry 8 "Misc_Diff" 1 "Signal Label") 84 
+COMMENT          (CShapeMapEntry 8 "Mat_Peptide" 1 "Signal Label")) 38.0048 38.0048 
+COMMENT         70.2793 70.2793 0.1 -10942) 1 1 0 1 1 
+COMMENT        (mapper: 20.1604 -16.3388 38.0048 38.0048 0.01 10 -1 14502 14502 1 0 0) 
+COMMENT        #200=(CGroupWidget (CWidget 0 (0 0) 1 2 0 0 Nil 720906 100) 
+COMMENT              (CObjectList 
+COMMENT               #201=(CGroupWidget (CWidget 1 (0 0) 1 2 0 0 Nil -968 100) 
+COMMENT                     (CObjectList 
+COMMENT                      #202=(CAxis 
+COMMENT                            (CWideLine 
+COMMENT                             (CWidget 0 (0 0) 1 2 0 0 #158# 80012628 0) 
+COMMENT                             (LOGPEN 0 0 10079436) 2 (LOGBRUSH 0 13434879 0) 1 
+COMMENT                             6.27462 6.27262 1 0.0213823) 0.0432574) 
+COMMENT                      #203=(CLabel 
+COMMENT                            (CWidget 1001 (0 0) 1 2 0 0 #155# 13434879 100) 
+COMMENT                            (LOGPEN 0 0 13408563) 1 
+COMMENT                            (LOGFONT 55 20 0 0 400 0 0 0 0 3 2 1 34 "Verdana") 
+COMMENT                            1.74233 0.833333 0 "212-iKRUNC-Blasticidin" "@N" 1 0 
+COMMENT                            0.871165 0 -10 12.2616 1.4735 Nil) 
+COMMENT                      #204=(CLabel (CWidget 1002 (0 0) 1 2 0 0 #154# 0 100) 
+COMMENT                            (LOGPEN 0 0 13408563) 1 
+COMMENT                            (LOGFONT 36 13 0 0 400 0 0 0 0 3 2 1 18 "Georgia") 
+COMMENT                            1.74233 0.555556 0 "14502 bp" "@L bp" 16 0 -0.871165 
+COMMENT                            0 -10.8 3.02593 0.841999 Nil)) (CObjectList)) 
+COMMENT               #205=(CGroupWidget (CWidget 10 (6 0) 1 2 0 0 Nil -703 100) 
+COMMENT                     (CObjectList 
+COMMENT                      #206=(CGroupWidget 
+COMMENT                            (CWidget 15 (7 15 0) 1 2 0 0 Nil -244 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #207=(CLine 
+COMMENT                                   (CWidget 0 (3 #19# 0) 1 2 0 0 #174# 323 100) 
+COMMENT                                   (LOGPEN 0 0 16711680) 1 0.835521 2.78794 
+COMMENT                                   3.1487) 
+COMMENT                             #208=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "Intron" "@N" 1 
+COMMENT                                   -4.55267 -15.681 0 -10 2.71018 1.10512 #207#)) 
+COMMENT                            (CObjectList)) 
+COMMENT                      #209=(CGroupWidget 
+COMMENT                            (CWidget 19 (7 19 0) 1 2 0 0 Nil -1100 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #210=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #5# 0) 1 2 0 0 #168# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 2 8388608 5) 1 
+COMMENT                                    5.83412 6.27319 1 0.0822395) 0.8 1.8 0) 
+COMMENT                             #211=(CLabel 
+COMMENT                                   (CWidget 0 (0 0) 1 2 0 0 #153# -858993459 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "CMV-LTR" "@N" 1 
+COMMENT                                   5.87194 13.9386 0 -10 4.18368 1.10512 #210#) 
+COMMENT                             #212=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #12# 0) 1 2 0 0 #168# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 2 8388608 5) 1 
+COMMENT                                    1.72597 1.98162 1 0.0822395) 0.8 1.8 0) 
+COMMENT                             #213=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 1 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "LTR 1" "@N" 1 
+COMMENT                                   -14.3534 -3.48466 0 -10 2.60493 1.10512 #212#)) 
+COMMENT                            (CObjectList)) 
+COMMENT                      #214=(CGroupWidget 
+COMMENT                            (CWidget 21 (7 21 0) 1 2 0 0 Nil -636 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #215=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #6# 0) 1 2 0 0 #196# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 0 16724736 0) 1 
+COMMENT                                    5.2216 5.59275 1 0.0822395) 0.8 1.8 0) 
+COMMENT                             #216=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "HIV-RRE" "@N" 1 
+COMMENT                                   12.811 12.1963 0 -10 3.92056 1.10512 #215#) 
+COMMENT                             #217=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #7# 0) 1 2 0 0 #196# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 0 16724736 0) 
+COMMENT                                    0.835521 5.15152 5.22852 1 0.0822395) 0.8 
+COMMENT                                   1.8 0) 
+COMMENT                             #218=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "cPPT" "@N" 1 
+COMMENT                                   13.4831 8.71165 0 -10 2.42075 1.10512 #217#) 
+COMMENT                             #219=(CScratch 
+COMMENT                                   (CWidget 0 (3 #8# 0) 1 2 0 0 #161# 648 100) 
+COMMENT                                   (LOGPEN 0 6 13395507) 10 1 5.16363 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #220=(CLabel 
+COMMENT                                   (CWidget 0 (0 0) 1 2 0 0 #153# 695412850 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "040-Psi-FW" 
+COMMENT                                   "@N" 1 14.8116 6.96932 0 -10 5.20987 1.10512 
+COMMENT                                   #219#) 
+COMMENT                             #221=(CScratch 
+COMMENT                                   (CWidget 0 (3 #9# 0) 1 2 0 0 #161# 1054 100) 
+COMMENT                                   (LOGPEN 0 6 13395507) 10 1 5.14806 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #222=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 
+COMMENT                                   "Min. H1 Promoter" "@N" 1 16.3026 5.22699 0 
+COMMENT                                   -10 7.99899 1.10512 #221#) 
+COMMENT                             #223=(CScratch 
+COMMENT                                   (CWidget 0 (3 #10# 0) 1 2 0 0 #161# 0 100) 
+COMMENT                                   (LOGPEN 0 6 13395507) 10 1 5.11389 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #224=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 1 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "tetO" "@N" 1 
+COMMENT                                   14.0137 3.48466 0 -10 1.97343 1.10512 #223#) 
+COMMENT                             #225=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #11# 0) 1 2 0 0 #196# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 0 16724736 0) 1 
+COMMENT                                    2.04391 2.2987 1 0.0822395) 0.8 1.8 0) 
+COMMENT                             #226=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "WPRE" "@N" 1 
+COMMENT                                   -13.8808 -5.22699 0 -10 2.89437 1.10512 #225#) 
+COMMENT                             #227=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #14# 0) 1 2 0 0 #196# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 0 16724736 0) 1 
+COMMENT                                    0.0575323 0.429978 1 0.0822395) 0.8 1.8 0) 
+COMMENT                             #228=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "AmpR" "@N" 1 
+COMMENT                                   -7.69395 12.1963 0 -10 2.78912 1.10512 #227#) 
+COMMENT                             #229=(CScratch 
+COMMENT                                   (CWidget 0 (3 #16# 0) 1 2 0 0 #161# 0 100) 
+COMMENT                                   (LOGPEN 0 6 13395507) 10 1 5.2004 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #230=(CLabel 
+COMMENT                                   (CWidget 0 (0 0) 1 2 0 0 #153# 16724736 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "136-GS-Seq-001" 
+COMMENT                                   "@N" 1 15.8337 10.454 0 -10 7.44643 1.10512 
+COMMENT                                   #229#) 
+COMMENT                             #231=(CScratch 
+COMMENT                                   (CWidget 0 (3 #20# 0) 1 2 0 0 #161# 0 100) 
+COMMENT                                   (LOGPEN 0 6 13395507) 10 1 3.38749 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #232=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 1 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "gRNA scaffold" 
+COMMENT                                   "@N" 1 12.1056 -10.454 0 -10 6.49918 1.10512 
+COMMENT                                   #231#) 
+COMMENT                             #233=(CScratch 
+COMMENT                                   (CWidget 0 (3 #22# 0) 1 2 0 0 #161# 0 100) 
+COMMENT                                   (LOGPEN 0 6 13395507) 10 1 2.51152 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #234=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "T2A" "@N" 1 
+COMMENT                                   -11.5436 -8.71165 0 -10 1.76294 1.10512 #233#) 
+COMMENT                             #235=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #24# 0) 1 2 0 0 #196# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 0 16724736 0) 
+COMMENT                                    0.835521 2.51542 2.78404 1 0.0822395) 0.8 
+COMMENT                                   1.8 0) 
+COMMENT                             #236=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "hTetR" "@N" 1 
+COMMENT                                   -8.3418 -12.1963 0 -10 2.60493 1.10512 #235#) 
+COMMENT                             #237=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #25# 0) 1 2 0 0 #196# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 0 16724736 0) 
+COMMENT                                    0.835521 2.31557 2.48816 1 0.0822395) 0.8 
+COMMENT                                   1.8 0) 
+COMMENT                             #238=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "bsd" "@N" 1 
+COMMENT                                   -12.6444 -6.96932 0 -10 1.76294 1.10512 #237#) 
+COMMENT                             #239=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #26# 0) 1 2 0 0 #196# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 0 16724736 0) 
+COMMENT                                    0.835521 3.38749 5.1061 1 0.0822395) 0.8 1.8 
+COMMENT                                   0) 
+COMMENT                             #240=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 1 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "Stuffer" "@N" 1 
+COMMENT                                   14.0637 -5.22699 0 -10 3.07856 1.10512 #239#)) 
+COMMENT                            (CObjectList)) 
+COMMENT                      #241=(CGroupWidget 
+COMMENT                            (CWidget 27 (7 27 0) 1 2 0 0 Nil -769 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #242=(CPromoterArrow 
+COMMENT                                   (CLine 
+COMMENT                                    (CWidget 0 (3 #15# 0) 1 2 0 0 #170# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 1.16448 3.26259 3.34985) 
+COMMENT                                   0.4 0.0822395 1.08448 1.8 1.8 0) 
+COMMENT                             #243=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "138-NheI-Ub-FW" 
+COMMENT                                   "@N" 1 6.56365 -15.681 0 -10 7.26224 1.10512 
+COMMENT                                   #242#) 
+COMMENT                             #244=(CPromoterArrow 
+COMMENT                                   (CLine 
+COMMENT                                    (CWidget 0 (3 #21# 0) 1 2 0 0 #170# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 1.16448 2.69937 2.78664) 
+COMMENT                                   0.4 0.0822395 1.08448 1.8 1.8 0) 
+COMMENT                             #245=(CLabel 
+COMMENT                                   (CWidget 0 (0 0) 1 2 0 0 #153# 39423 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 
+COMMENT                                   "161-BamHI-hTetR-FW" "@N" 1 -10.5851 -13.9386 
+COMMENT                                   0 -10 9.47249 1.10512 #244#)) (CObjectList)) 
+COMMENT                      #246=(CGroupWidget 
+COMMENT                            (CWidget 29 (7 29 0) 1 2 0 0 Nil -570 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #247=(CWideArrow 
+COMMENT                                   (CWideLine 
+COMMENT                                    (CWidget 0 (3 #17# 0) 1 2 0 0 #196# 0 100) 
+COMMENT                                    (LOGPEN 0 0 0) 1 (LOGBRUSH 0 16724736 0) 
+COMMENT                                    0.835521 3.17163 3.31611 1 0.0822395) 0.8 
+COMMENT                                   1.8 0) 
+COMMENT                             #248=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 
+COMMENT                                   "Ubiquitin Promoter" "@N" 1 6.46126 -17.4233 
+COMMENT                                   0 -10 8.55155 1.10512 #247#)) (CObjectList)) 
+COMMENT                      #249=(CGroupWidget 
+COMMENT                            (CWidget 61 (7 61 0) 1 2 0 0 Nil -1166 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #250=(CScratch 
+COMMENT                                   (CWidget 0 (3 #18# 0) 1 2 0 0 #161# 0 100) 
+COMMENT                                   (LOGPEN 0 6 13395507) 10 1 3.17163 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #251=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 0 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "Exon" "@N" 1 
+COMMENT                                   2.57016 -19.1656 0 -10 2.42075 1.10512 #250#)) 
+COMMENT                            (CObjectList)) 
+COMMENT                      #252=(CGroupWidget 
+COMMENT                            (CWidget 88 (7 88 0) 1 2 0 0 Nil 1701015137 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #253=(CScratch 
+COMMENT                                   (CWidget 0 (3 #23# 0) 1 2 0 0 #161# 0 100) 
+COMMENT                                   (LOGPEN 0 6 13395507) 10 1 2.51542 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #254=(CLabel 
+COMMENT                                   (CWidget 0 (0 0) 1 2 0 0 #153# 695412850 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "Spacer" "@N" 1 
+COMMENT                                   -10.5376 -10.454 0 -10 3.34168 1.10512 #253#)) 
+COMMENT                            (CObjectList)) 
+COMMENT                      #255=(CGroupWidget 
+COMMENT                            (CWidget 104 (7 104 0) 1 2 0 0 Nil -703 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #256=(CPrimerArrow 
+COMMENT                                   (CLine 
+COMMENT                                    (CWidget 0 (3 #13# 0) 1 2 0 0 #159# 
+COMMENT                                     2081693732 100) (LOGPEN 0 6 6723840) 8 
+COMMENT                                    1.16448 0.499623 0.759167) 0.4 0.0822395 1.8 
+COMMENT                                   1.8 0) 
+COMMENT                             #257=(CLabel (CWidget 0 (0 0) 1 2 0 0 #153# 1 100) 
+COMMENT                                   (LOGPEN 0 0 0) 1 
+COMMENT                                   (LOGFONT 44 16 0 0 700 0 0 0 0 3 2 1 34 
+COMMENT                                    "Arial") 1.74233 0.666667 0 "colE1 ori" "@N" 
+COMMENT                                   1 -10.9383 10.454 0 -10 4.18368 1.10512 #256#)) 
+COMMENT                            (CObjectList))) (CObjectList)) 
+COMMENT               #258=(CGroupWidget (CWidget 11 (8 0) 1 2 0 0 Nil 1701015137 100) 
+COMMENT                     (CObjectList 
+COMMENT                      #259=(CGroupWidget 
+COMMENT                            (CWidget 1 (10 #1# 0) 1 2 0 0 Nil -508 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #260=(CScratch 
+COMMENT                                   (CWidget 1 (1 #1# 1) 1 2 0 0 #160# 0 100) 
+COMMENT                                   (LOGPEN 0 6 10053171) 8 1 3.35201 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #261=(CLabel (CWidget 0 (0 0) 1 2 0 0 #162# 0 100) 
+COMMENT                                   (LOGPEN 0 0 153) 1 
+COMMENT                                   (LOGFONT 36 13 0 0 400 0 0 0 0 3 2 1 18 
+COMMENT                                    "Georgia") 1.74233 0.555556 128 
+COMMENT                                   "{\\i Eco}RI (6754)" "@N (@S)" 5 6.24828 
+COMMENT                                   -13.9386 0 -10 4.55206 0.841999 #260#)) 
+COMMENT                            (CObjectList)) 
+COMMENT                      #262=(CGroupWidget 
+COMMENT                            (CWidget 1 (10 #2# 0) 1 2 0 0 Nil -442 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #263=(CScratch 
+COMMENT                                   (CWidget 1 (1 #2# 1) 1 2 0 0 #160# 0 100) 
+COMMENT                                   (LOGPEN 0 6 10053171) 8 1 5.10653 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #264=(CLabel (CWidget 0 (0 0) 1 2 0 0 #162# 0 100) 
+COMMENT                                   (LOGPEN 0 0 153) 1 
+COMMENT                                   (LOGFONT 36 13 0 0 400 0 0 0 0 3 2 1 18 
+COMMENT                                    "Georgia") 1.74233 0.555556 128 
+COMMENT                                   "{\\i Xho}I (2698)" "@N (@S)" 5 15.7651 
+COMMENT                                   1.74233 0 -10 4.28893 0.841999 #263#)) 
+COMMENT                            (CObjectList)) 
+COMMENT                      #265=(CGroupWidget 
+COMMENT                            (CWidget 2 (10 #0# 0) 1 2 0 0 Nil -839 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #266=(CScratch 
+COMMENT                                   (CWidget 1 (1 #0# 1) 1 2 0 0 #160# 0 100) 
+COMMENT                                   (LOGPEN 0 6 10053171) 8 1 4.83877 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #267=(CLabel (CWidget 0 (0 0) 1 2 0 0 #152# 0 100) 
+COMMENT                                   (LOGPEN 0 0 13408563) 1 
+COMMENT                                   (LOGFONT 36 13 0 0 400 0 0 0 0 3 2 1 18 
+COMMENT                                    "Georgia") 1.74233 0.555556 0 
+COMMENT                                   "{\\i Apa}I (3317)" "@N (@S)" 5 15.8639 
+COMMENT                                   -3.48466 0 -10 3.92056 0.841999 #266#) 
+COMMENT                             #268=(CScratch 
+COMMENT                                   (CWidget 2 (1 #0# 2) 1 2 0 0 #160# 0 100) 
+COMMENT                                   (LOGPEN 0 6 10053171) 8 1 1.73462 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #269=(CLabel (CWidget 0 (0 0) 1 2 0 0 #152# 1 100) 
+COMMENT                                   (LOGPEN 0 0 13408563) 1 
+COMMENT                                   (LOGFONT 36 13 0 0 400 0 0 0 0 3 2 1 18 
+COMMENT                                    "Georgia") 1.74233 0.555556 0 
+COMMENT                                   "{\\i Apa}I (10493)" "@N (@S)" 5 -16.0439 
+COMMENT                                   -1.74233 0 -10 4.55206 0.841999 #268#)) 
+COMMENT                            (CObjectList)) 
+COMMENT                      #270=(CGroupWidget 
+COMMENT                            (CWidget 2 (10 #3# 0) 1 2 0 0 Nil -376 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #271=(CScratch 
+COMMENT                                   (CWidget 1 (1 #3# 1) 1 2 0 0 #160# 0 100) 
+COMMENT                                   (LOGPEN 0 6 10053171) 8 1 5.1061 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #272=(CLabel (CWidget 0 (0 0) 1 2 0 0 #152# 0 100) 
+COMMENT                                   (LOGPEN 0 0 13408563) 1 
+COMMENT                                   (LOGFONT 36 13 0 0 400 0 0 0 0 3 2 1 18 
+COMMENT                                    "Georgia") 1.74233 0.555556 0 
+COMMENT                                   "{\\i Bfu}AI (2699)" "@N (@S)" 5 16.0153 0 0 
+COMMENT                                   -10 4.55206 0.841999 #271#) 
+COMMENT                             #273=(CScratch 
+COMMENT                                   (CWidget 2 (1 #3# 2) 1 2 0 0 #160# 0 100) 
+COMMENT                                   (LOGPEN 0 6 10053171) 8 1 3.38749 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #274=(CLabel (CWidget 0 (0 0) 1 2 0 0 #152# 1 100) 
+COMMENT                                   (LOGPEN 0 0 13408563) 1 
+COMMENT                                   (LOGFONT 36 13 0 0 400 0 0 0 0 3 2 1 18 
+COMMENT                                    "Georgia") 1.74233 0.555556 0 
+COMMENT                                   "{\\i Bfu}AI (6672)" "@N (@S)" 5 8.94843 
+COMMENT                                   -12.1963 0 -10 4.47312 0.841999 #273#)) 
+COMMENT                            (CObjectList)) 
+COMMENT                      #275=(CGroupWidget 
+COMMENT                            (CWidget 2 (10 #4# 0) 1 2 0 0 Nil -309 100) 
+COMMENT                            (CObjectList 
+COMMENT                             #276=(CScratch 
+COMMENT                                   (CWidget 1 (1 #4# 1) 1 2 0 0 #160# 0 100) 
+COMMENT                                   (LOGPEN 0 6 10053171) 8 1 5.08923 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #277=(CLabel (CWidget 0 (0 0) 1 2 0 0 #152# 0 100) 
+COMMENT                                   (LOGPEN 0 0 13408563) 1 
+COMMENT                                   (LOGFONT 36 13 0 0 400 0 0 0 0 3 2 1 18 
+COMMENT                                    "Georgia") 1.74233 0.555556 0 
+COMMENT                                   "{\\i Age}I (2738)" "@N (@S)" 5 15.7913 
+COMMENT                                   -1.74233 0 -10 3.99949 0.841999 #276#) 
+COMMENT                             #278=(CScratch 
+COMMENT                                   (CWidget 2 (1 #4# 2) 1 2 0 0 #160# 0 100) 
+COMMENT                                   (LOGPEN 0 6 10053171) 8 1 3.40479 1.9 
+COMMENT                                   0.0822395 1) 
+COMMENT                             #279=(CLabel 
+COMMENT                                   (CWidget 0 (0 0) 1 2 0 0 #152# 695412850 100) 
+COMMENT                                   (LOGPEN 0 0 13408563) 1 
+COMMENT                                   (LOGFONT 36 13 0 0 400 0 0 0 0 3 2 1 18 
+COMMENT                                    "Georgia") 1.74233 0.555556 0 
+COMMENT                                   "{\\i Age}I (6632)" "@N (@S)" 5 13.0681 
+COMMENT                                   -8.71165 0 -10 4.07843 0.841999 #278#)) 
+COMMENT                            (CObjectList))) (CObjectList)) 
+COMMENT               #280=(CGroupWidget (CWidget 14 (16 0) 1 2 0 0 Nil -178 100) 
+COMMENT                     (CObjectList) (CObjectList)) 
+COMMENT               #281=(CGroupWidget (CWidget 12 (0 0) 1 2 0 0 Nil -773 100) 
+COMMENT                     (CObjectList) (CObjectList))) (CObjectList))) 
+COMMENT       (CSeqView 10 10 (CObjectList) (CObList) 1 (CObList)) (CObList) 78102160 
+COMMENT       (CStringList) 0 0 (CObList)))
+FEATURES             Location/Qualifiers
+     LTR             1..1015
+                     /vntifkey="19"
+                     /label=CMV-LTR
+                     /note="Oriinal location: 1..1015"
+     Misc._feature   1574..2431
+                     /vntifkey="21"
+                     /label=HIV-RRE
+                     /note="Unknown feature type:Misc._feature  Oriinal location: 1574..2431"
+     Primer_binding_ 2416..2593
+                     /vntifkey="21"
+                     /label=cPPT
+                     /note="Unknown feature type:Primer_binding_  Oriinal location: 2416..2593"
+     Primer          2566..2586
+                     /vntifkey="21"
+                     /label=040-Psi-FW
+                     /note="Unknown feature type:Primer"
+     Promoter        2602..2702
+                     /vntifkey="21"
+                     /label=Min.\H1\Promoter
+                     /note="Unknown feature type:Promoter"
+     Binding_site    2681..2693
+                     /vntifkey="21"
+                     /label=tetO
+                     /note="Unknown feature type:Binding_site"
+     Enhancer        9189..9777
+                     /vntifkey="21"
+                     /label=WPRE
+                     /note="Unknown feature type:Enhancer  Oriinal location: 5650..6238"
+     LTR             9922..10512
+                     /vntifkey="19"
+                     /label=LTR_1
+                     /note="Oriinal location: 6383..6973"
+     oriT            12748..13347
+                     /vntifkey="104"
+                     /label=colE1\ori
+     Gene            13509..14369
+                     /vntifkey="21"
+                     /label=AmpR
+                     /note="Unknown feature type:Gene"
+     primer          6759..6784
+                     /vntifkey="27"
+                     /label=138-NheI-Ub-FW
+     misc_feature    2481..2502
+                     /vntifkey="21"
+                     /label=136-GS-Seq-001
+     promoter        6837..7170
+                     /vntifkey="29"
+                     /label=Ubiquitin\Promoter
+     exon            7171..7223
+                     /vntifkey="61"
+                     /label=Exon
+     intron          7224..8057
+                     /vntifkey="15"
+                     /label=Intron
+     misc_feature    6672..6747
+                     /vntifkey="21"
+                     /label=gRNA\scaffold
+     primer          8061..8093
+                     /vntifkey="27"
+                     /label=161-BamHI-hTetR-FW
+     misc_feature    8697..8750
+                     /vntifkey="21"
+                     /label=T2A
+     misc_structure  8688..8696
+                     /vntifkey="88"
+                     /label=Spacer
+     misc_feature    8067..8687
+                     /vntifkey="21"
+                     /label=hTetR
+     misc_feature    8751..9149
+                     /vntifkey="21"
+                     /label=bsd
+     misc_feature    2699..6671
+                     /vntifkey="21"
+                     /label=Stuffer
+BASE COUNT     3711 a      3392 c      3815 g      3584 t 
+ORIGIN
+        1 gtcgacggat cgggagatct cccgatcccc tatggtgcac tctcagtaca atctgctctg 
+       61 atgccgcata gttaagccag tatctgctcc ctgcttgtgt gttggaggtc gctgagtagt 
+      121 gcgcgagcaa aatttaagct acaacaaggc aaggcttgac cgacaattgc atgaagaatc 
+      181 tgcttagggt taggcgtttt gcgctgcttc gcgatgtacg ggccagatat acgcgttgac 
+      241 attgattatt gactagttat taatagtaat caattacggg gtcattagtt catagcccat 
+      301 atatggagtt ccgcgttaca taacttacgg taaatggccc gcctggctga ccgcccaacg 
+      361 acccccgccc attgacgtca ataatgacgt atgttcccat agtaacgcca atagggactt 
+      421 tccattgacg tcaatgggtg gagtatttac ggtaaactgc ccacttggca gtacatcaag 
+      481 tgtatcatat gccaagtacg ccccctattg acgtcaatga cggtaaatgg cccgcctggc 
+      541 attatgccca gtacatgacc ttatgggact ttcctacttg gcagtacatc tacgtattag 
+      601 tcatcgctat taccatggtg atgcggtttt ggcagtacat caatgggcgt ggatagcggt 
+      661 ttgactcacg gggatttcca agtctccacc ccattgacgt caatgggagt ttgttttggc 
+      721 accaaaatca acgggacttt ccaaaatgtc gtaacaactc cgccccattg acgcaaatgg 
+      781 gcggtaggcg tgtacggtgg gaggtctata taagcagcgc gttttgcctg tactgggtct 
+      841 ctctggttag accagatctg agcctgggag ctctctggct aactagggaa cccactgctt 
+      901 aagcctcaat aaagcttgcc ttgagtgctt caagtagtgt gtgcccgtct gttgtgtgac 
+      961 tctggtaact agagatccct cagacccttt tagtcagtgt ggaaaatctc tagcagtggc 
+     1021 gcccgaacag ggacttgaaa gcgaaaggga aaccagagga gctctctcga cgcaggactc 
+     1081 ggcttgctga agcgcgcacg gcaagaggcg aggggcggcg actggtgagt acgccaaaaa 
+     1141 ttttgactag cggaggctag aaggagagag atgggtgcga gagcgtcagt attaagcggg 
+     1201 ggagaattag atcgcgatgg gaaaaaattc ggttaaggcc agggggaaag aaaaaatata 
+     1261 aattaaaaca tatagtatgg gcaagcaggg agctagaacg attcgcagtt aatcctggcc 
+     1321 tgttagaaac atcagaaggc tgtagacaaa tactgggaca gctacaacca tcccttcaga 
+     1381 caggatcaga agaacttaga tcattatata atacagtagc aaccctctat tgtgtgcatc 
+     1441 aaaggataga gataaaagac accaaggaag ctttagacaa gatagaggaa gagcaaaaca 
+     1501 aaagtaagac caccgcacag caagcggccg ctgatcttca gacctggagg aggagatatg 
+     1561 agggacaatt ggagaagtga attatataaa tataaagtag taaaaattga accattagga 
+     1621 gtagcaccca ccaaggcaaa gagaagagtg gtgcagagag aaaaaagagc agtgggaata 
+     1681 ggagctttgt tccttgggtt cttgggagca gcaggaagca ctatgggcgc agcgtcaatg 
+     1741 acgctgacgg tacaggccag acaattattg tctggtatag tgcagcagca gaacaatttg 
+     1801 ctgagggcta ttgaggcgca acagcatctg ttgcaactca cagtctgggg catcaagcag 
+     1861 ctccaggcaa gaatcctggc tgtggaaaga tacctaaagg atcaacagct cctggggatt 
+     1921 tggggttgct ctggaaaact catttgcacc actgctgtgc cttggaatgc tagttggagt 
+     1981 aataaatctc tggaacagat ttggaatcac acgacctgga tggagtggga cagagaaatt 
+     2041 aacaattaca caagcttaat acactcctta attgaagaat cgcaaaacca gcaagaaaag 
+     2101 aatgaacaag aattattgga attagataaa tgggcaagtt tgtggaattg gtttaacata 
+     2161 acaaattggc tgtggtatat aaaattattc ataatgatag taggaggctt ggtaggttta 
+     2221 agaatagttt ttgctgtact ttctatagtg aatagagtta ggcagggata ttcaccatta 
+     2281 tcgtttcaga cccacctccc aaccccgagg ggacccgaca ggcccgaagg aatagaagaa 
+     2341 gaaggtggag agagagacag agacagatcc attcgattag tgaacggatc ggcactgcgt 
+     2401 gcgccaattc tgcagacaaa tggcagtatt catccacaat tttaaaagaa aaggggggat 
+     2461 tggggggtac agtgcagggg aaagaatagt agacataata gcaacagaca tacaaactaa 
+     2521 agaattacaa aaacaaatta caaaaattca aaattttcgg gtttattaca gggacagcag 
+     2581 agatccagtt tggttaatta aaatatttgc atgtcgctat gtgttctggg aaatcaccat 
+     2641 aaacgtgaaa tgtctttgga tttgggaatc ttataagtcc ctatcagtga tagagactcg 
+     2701 agttcggcag gtcatattat cagcttattg tagtttaccg gtggtactgc ggttgcgatt 
+     2761 cgtgaaatgt atccaaaagc gcactttgtc accatcttcg caaaaccggc tggtcgtccg 
+     2821 ctggttgatg actatgttgt tgatatcccg caagatacct ggattgaaca gccgtgggat 
+     2881 atgggcgtcg tattcgtccc gccaatctcc ggtcgctaat cttttcaacg cctggcactg 
+     2941 ccgggcgttg ttctttttaa cttcaggcgg gttacaatag tttccagtaa gtattctgga 
+     3001 ggctgcatcc atgacacagg caaacctgag cgaaaccctg ttcaaacccc gctttaaaca 
+     3061 tcctgaaacc tcgacgctag tccgccgctt taatcacggc gcacaaccgc ctgtgcagtc 
+     3121 ggcccttgat ggtaaaacca tccctcactg gtatcgcatg attaaccgtc tgatgtggat 
+     3181 ctggcgcggc attgacccac gcgaaatcct cgacgtccag gcacgtattg tgatgagcga 
+     3241 tgccgaacgt accgacgatg atttatacga tacggtgatt ggctaccgtg gcggcaactg 
+     3301 gatttatgag tgggccccgg atctttgtga aggaacctta cttctgtggt gtgacataat 
+     3361 tggacaaact acctacagag atttaaagct ctaaggtaaa tataaaattt ttaagtgtat 
+     3421 aatgtgttaa actactgatt ctaattgttt gtgtatttta gattccaacc tatggaactg 
+     3481 atgaatggga gcagtggtgg aatgccttta atgaggaaaa cctgttttgc tcagaagaaa 
+     3541 tgccatctag tgatgatgag gctactgctg actctcaaca ttctactcct ccaaaaaaga 
+     3601 agagaaaggt agaagacccc aaggactttc cttcagaatt gctaagtttt ttgagtcatg 
+     3661 ctgtgtttag taatagaact cttgcttgct ttgctattta caccacaaag gaaaaagctg 
+     3721 cactgctata caagaaaatt atggaaaaat attctgtaac ctttataagt aggcataaca 
+     3781 gttataatca taacatactg ttttttctta ctccacacag gcatagagtg tctgctatta 
+     3841 ataactatgc tcaaaaattg tgtaccttta gctttttaat ttgtaaaggg gttaataagg 
+     3901 aatatttgat gtatagtgcc ttgactagag atcataatca gccataccac atttgtagag 
+     3961 gttttacttg ctttaaaaaa cctcccacac ctccccctga acctgaaaca taaaatgaat 
+     4021 gcaattgttg ttgttaactt gtttattgca gcttataatg gttacaaata aagcaatagc 
+     4081 atcacaaatt tcacaaataa agcatttttt tcactgcatt ctagttgtgg tttgtccaaa 
+     4141 ctcatcaatg tatcttatca tgtctggatc aactggataa ctcaagctaa ccaaaatcat 
+     4201 cccaaacttc ccaccccata ccctattacc actgccaatt acctagtggt ttcatttact 
+     4261 ctaaacctgt gattcctctg aattattttc attttaaaga aattgtattt gttaaatatg 
+     4321 tactacaaac ttagtagttg gaagggctaa ttcactccca aagaagacaa gatatccttg 
+     4381 atctgtggat ctaccacaca caaggctact tccctgatta gcagaactac acaccagggc 
+     4441 caggggtcag atatccactg acctttggat ggtgctacaa gctagtacca gttgagccag 
+     4501 ataaggtaga agaggccaat aaaggagaga acaccagctt gttacaccct gtgagcctgc 
+     4561 atgggatgga tgacccggag agagaagtgt tagagtggag gtttgacagc cgcctagcat 
+     4621 ttcatcacgt ggcccgagag ctgcatccgg agtacttcaa gaactgctga tatcgagctt 
+     4681 gctacaaggg actttccgct ggggactttc cagggaggcg tggcctgggc gggactgggg 
+     4741 agtggcgagc cctcagatcc tgcatataag cagctgcttt ttgcctgtac tgggtctctc 
+     4801 tggttagacc agatctgagc ctgggagctc tctggctaac tagggaaccc actgcttaag 
+     4861 cctcaataaa gcttgccttg agtgcttcaa gtagtgtgtg cccgtctgtt gtgtgactct 
+     4921 ggtaactaga gatccctcag acccttttag tcagtgtgga aaatctctag cagtggcgcc 
+     4981 cgaacaggga cttgaaagcg aaagggaaac cagaggagct ctctcgacgc aggactcggc 
+     5041 ttgctgaagc gcgcacggca agaggcgagg ggcggcgact ggtgagtacg ccaaaaattt 
+     5101 tgactagcgg aggctagaag gagagagatg ggtgcgagag cgtcagtatt aagcggggga 
+     5161 gaattagatc gcgatgggaa aaaattcggt taaggccagg gggaaagaaa aaatataaat 
+     5221 taaaacatat agtatgggca agcagggagc tagaacgatt cgcagttaat cctggcctgt 
+     5281 tagaaacatc agaaggctgt agacaaatac tgggacagct acaaccatcc cttcagacag 
+     5341 gatcagaaga acttagatca ttatataata cagtagcaac cctctattgt gtgcatcaaa 
+     5401 ggatagagat aaaagacacc aaggaagctt tagacaagat agaggaagag caaaacaaaa 
+     5461 gtaagaccac cgcacagcaa gcggccgctg atcttcagac ctggaggagg agatatgagg 
+     5521 gacaattgga gaagtgaatt atataaatat aaagtagtaa aaattgaacc attaggagta 
+     5581 gcacccacca aggcaaagag aagagtggtg cagagagaaa aaagagcagt gggaatagga 
+     5641 gctttgttcc ttgggttctt gggagcagca ggaagcacta tgggcgcagc ctcaatgacg 
+     5701 ctgacggtac aggccagaca attattgtct ggtatagtgc agcagcagaa caatttgctg 
+     5761 agggctattg aggcgcaaca gcatctgttg caactcacag tctggggcat caagcagctc 
+     5821 caggcaagaa tcctggctgt ggaaagatac ctaaaggatc aacagctcct ggggatttgg 
+     5881 ggttgctctg gaaaactcat ttgcaccact gctgtgcctt ggaatgctag ttggagtaat 
+     5941 aaatctctgg aacagattgg aatcacacga cctggatgga gtgggacaga gaaattaaca 
+     6001 attacacaag cttaatacac tccttaattg aagaatcgca aaaccagcaa gaaaagaatg 
+     6061 aacaagaatt attggaatta gataaatggg caagtttgtg gaattggttt aacataacaa 
+     6121 attggctgtg gtatataaaa ttattcataa tgatagtagg aggcttggta ggtttaagaa 
+     6181 tagtttttgc tgtactttct atagtgaata gagttaggca gggatattca ccattatcgt 
+     6241 ttcagaccca cctcccaacc ccgaggggac ccgacaggcc cgaaggaata gaagaagaag 
+     6301 gtggagagag agacagagac agatccattc gattagtgaa cggatctcga cggtatcggt 
+     6361 taacttttaa aagaaaaggg gggattgggg ggtacagtgc aggggaaaga atagtagaca 
+     6421 taatagcaac agacatacaa actaaagaat tacaaaaaca aattacaaaa attcaaaatt 
+     6481 ttatcgatca cgagactagc ctcgacgatg gtcgagtacc gggtagggga ggcgcttttc 
+     6541 ccaaggcagt ctggagcatg cgctttagca gccccgctgg gcacttggcg ctacacaagt 
+     6601 ggcctctggc ctcgcacaca ttccacatcc accggtcatt ctcgcacaga atcgtattgc 
+     6661 cacctgcact ggttttagag ctagaaatag caagttaaaa taaggctagt ccgttatcaa 
+     6721 cttgaaaaag tggcaccgag tcggtgcttt ttgaattcgc gcgctagcct gcaggggtca 
+     6781 ttagttcata gcccatatta attaacccgt gtcggctcca gatctggcct ccgcgccggg 
+     6841 ttttggcgcc tcccgcgggc gcccccctcc tcacggcgag cgctgccacg tcagacgaag 
+     6901 ggcgcagcga gcgtcctgat ccttccgccc ggacgctcag gacagcggcc cgctgctcat 
+     6961 aagactcggc cttagaaccc cagtatcagc agaaggacat tttaggacgg gacttgggtg 
+     7021 actctagggc actggttttc tttccagaga gcggaacagg cgaggaaaag tagtcccttc 
+     7081 tcggcgattc tgcggaggga tctccgtggg gcggtgaacg ccgatgatta tataaggacg 
+     7141 cgccgggtgt ggcacagcta gttccgtcgc agccgggatt tgggtcgcgg ttcttgtttg 
+     7201 tggatcgctg tgatcgtcac ttggtgagta gcgggctgct gggctggccg gggctttcgt 
+     7261 ggccgccggg ccgctcggtg ggacggaagc gtgtggagag accgccaagg gctgtagtct 
+     7321 gggtccgcga gcaaggttgc cctgaactgg gggttggggg gagcgcagca aaatggcggc 
+     7381 tgttcccgag tcttgaatgg aagacgcttg tgaggcgggc tgtgaggtcg ttgaaacaag 
+     7441 gtggggggca tggtgggcgg caagaaccca aggtcttgag gccttcgcta atgcgggaaa 
+     7501 gctcttattc gggtgagatg ggctggggca ccatctgggg accctgacgt gaagtttgtc 
+     7561 actgactgga gaactcggtt tgtcgtctgt tgcgggggcg gcagttatgg cggtgccgtt 
+     7621 gggcagtgca cccgtacctt tgggagcgcg cgcctcgtcg tgtcgtgacg tcacccgttc 
+     7681 tgttggctta taatgcaggg tggggccacc gccggtaggt gtgcggtagg cttttctccg 
+     7741 tcgcaggacg cagggttcgg gcctagggta ggctctcctg aatcgacagg cgccggacct 
+     7801 ctggtgaggg gagggataag tgaggcgtca gtttctttgg tcggttttat gtacctatct 
+     7861 tcttaagtag ctgaagctcc ggttttgaac tatgcgctcg gggttggcga gtgtgttttg 
+     7921 tgaagttttt taggcacctt ttgaaatgta atcatttggg tcaatatgta attttcagtg 
+     7981 ttagactagt aaagcttctg cggtcgactc tagaaaattg tccgctaaat tctggccgtt 
+     8041 tttggctttt ttgttagaca ggatccatgt ccagactgga caagagcaaa gtcatcaact 
+     8101 ctgccttgga gctcctgaat gaagttggca ttgagggctt gaccaccagg aagctggccc 
+     8161 agaagctggg tgtggagcag cctaccctgt actggcatgt gaagaacaag agggctctgc 
+     8221 ttgatgccct ggccattgag atgttggaca ggcaccacac ccacttctgc cctctggaag 
+     8281 gggagtcctg gcaggacttc ctgaggaaca atgccaagag cttcagatgt gccttgctct 
+     8341 cccaccggga tggtgccaaa gttcacttgg gcaccaggcc tacagagaag cagtatgaga 
+     8401 ccctggagaa ccagctggca ttcctgtgcc aacaaggctt ctccctggaa aatgccttgt 
+     8461 atgccctctc tgctgtgggc cacttcacct tgggctgtgt gctggaggac caggagcacc 
+     8521 aagttgccaa ggaggagagg gagaccccca ccactgactc catgccacca ctgctgcggc 
+     8581 aagctattga gttgtttgac caccaagggg ctgagcctgc attccttttt ggcctggaac 
+     8641 tgatcatctg tggcctggaa aagcagctga aatgtgagtc tggctctggg tccggtgagg 
+     8701 gcagaggaag tctgctaaca tgcggtgacg tcgaggagaa tcctggccca atggccaagc 
+     8761 ctttgtctca agaagaatcc accctcattg aaagagcaac ggctacaatc aacagcatcc 
+     8821 ccatctctga agactacagc gtcgccagcg cagctctctc tagcgacggc cgcatcttca 
+     8881 ctggtgtcaa tgtatatcat tttactgggg gaccttgtgc agaactcgtg gtgctgggca 
+     8941 ctgctgctgc tgcggcagct ggcaacctga cttgtatcgt cgcgatcgga aatgagaaca 
+     9001 ggggcatctt gagcccctgc ggacggtgcc gacaggtgct tctcgatctg catcctggga 
+     9061 tcaaagccat agtgaaggac agtgatggac agccgacggc agttgggatt cgtgaattgc 
+     9121 tgccctctgg ttatgtgtgg gagggctaag cggccgcgac tctacaattc gatatcaagc 
+     9181 ttatcgataa tcaacctctg gattacaaaa tttgtgaaag attgactggt attcttaact 
+     9241 atgttgctcc ttttacgcta tgtggatacg ctgctttaat gcctttgtat catgctattg 
+     9301 cttcccgtat ggctttcatt ttctcctcct tgtataaatc ctggttgctg tctctttatg 
+     9361 aggagttgtg gcccgttgtc aggcaacgtg gcgtggtgtg cactgtgttt gctgacgcaa 
+     9421 cccccactgg ttggggcatt gccaccacct gtcagctcct ttccgggact ttcgctttcc 
+     9481 ccctccctat tgccacggcg gaactcatcg ccgcctgcct tgcccgctgc tggacagggg 
+     9541 ctcggctgtt gggcactgac aattccgtgg tgttgtcggg gaaatcatcg tcctttcctt 
+     9601 ggctgctcgc ctgtgttgcc acctggattc tgcgcgggac gtccttctgc tacgtccctt 
+     9661 cggccctcaa tccagcggac cttccttccc gcggcctgct gccggctctg cggcctcttc 
+     9721 cgcgtcttcg ccttcgccct cagacgagtc ggatctccct ttgggccgcc tccccgcatc 
+     9781 gataccgtcg acctcgatcg aggacctaga aaaacatgga gcaatcacaa gtagcaatac 
+     9841 agcagctacc aatgctgatt gtgcctggct agaagcacaa gaggaggagg aggtgggttt 
+     9901 tccagtcaca cctcaggtac ctttaagacc aatgacttac aaggcagctg tagatcttag 
+     9961 ccacttttta aaagaaaagg ggggactgga agggctaatt cactcccaac gaagacaaga 
+    10021 tatccttgat ctgtggatct accacacaca aggctacttc cctgattggc agaactacac 
+    10081 accagggcca gggatcagat atccactgac ctttggatgg tgctacaagc tagtaccagt 
+    10141 tgagcaagag aaggtagaag aagccaatga aggagagaac acccgcttgt tacaccctgt 
+    10201 gagcctgcat gggatggatg acccggagag agaagtatta gagtggaggt ttgacagccg 
+    10261 cctagcattt catcacatgg cccgagagct gcatccggac tgtactgggt ctctctggtt 
+    10321 agaccagatc tgagcctggg agctctctgg ctaactaggg aacccactgc ttaagcctca 
+    10381 ataaagcttg ccttgagtgc ttcaagtagt gtgtgcccgt ctgttgtgtg actctggtaa 
+    10441 ctagagatcc ctcagaccct tttagtcagt gtggaaaatc tctagcaggg cccgtttaaa 
+    10501 cccgctgatc agcctcgact gtgccttcta gttgccagcc atctgttgtt tgcccctccc 
+    10561 ccgtgccttc cttgaccctg gaaggtgcca ctcccactgt cctttcctaa taaaatgagg 
+    10621 aaattgcatc gcattgtctg agtaggtgtc attctattct ggggggtggg gtggggcagg 
+    10681 acagcaaggg ggaggattgg gaagacaata gcaggcatgc tggggatgcg gtgggctcta 
+    10741 tggcttctga ggcggaaaga accagctggg gctctagggg gtatccccac gcgccctgta 
+    10801 gcggcgcatt aagcgcggcg ggtgtggtgg ttacgcgcag cgtgaccgct acacttgcca 
+    10861 gcgccctagc gcccgctcct ttcgctttct tcccttcctt tctcgccacg ttcgccggct 
+    10921 ttccccgtca agctctaaat cgggggctcc ctttagggtt ccgatttagt gctttacggc 
+    10981 acctcgaccc caaaaaactt gattagggtg atggttcacg tagtgggcca tcgccctgat 
+    11041 agacggtttt tcgccctttg acgttggagt ccacgttctt taatagtgga ctcttgttcc 
+    11101 aaactggaac aacactcaac cctatctcgg tctattcttt tgatttataa gggattttgc 
+    11161 cgatttcggc ctattggtta aaaaatgagc tgatttaaca aaaatttaac gcgaattaat 
+    11221 tctgtggaat gtgtgtcagt tagggtgtgg aaagtcccca ggctccccag caggcagaag 
+    11281 tatgcaaagc atgcatctca attagtcagc aaccaggtgt ggaaagtccc caggctcccc 
+    11341 agcaggcaga agtatgcaaa gcatgcatct caattagtca gcaaccatag tcccgcccct 
+    11401 aactccgccc atcccgcccc taactccgcc cagttccgcc cattctccgc cccatggctg 
+    11461 actaattttt tttatttatg cagaggccga ggccgcctct gcctctgagc tattccagaa 
+    11521 gtagtgagga ggcttttttg gaggcctagg cttttgcaaa aagctcccgg gagcttgtat 
+    11581 atccattttc ggatctgatc agcacgtgtt gacaattaat catcggcata gtatatcggc 
+    11641 atagtataat acgacaaggt gaggaactaa accatggcca agttgaccag tgccgttccg 
+    11701 gtgctcaccg cgcgcgacgt cgccggagcg gtcgagttct ggaccgaccg gctcgggttc 
+    11761 tcccgggact tcgtggagga cgacttcgcc ggtgtggtcc gggacgacgt gaccctgttc 
+    11821 atcagcgcgg tccaggacca ggtggtgccg gacaacaccc tggcctgggt gtgggtgcgc 
+    11881 ggcctggacg agctgtacgc cgagtggtcg gaggtcgtgt ccacgaactt ccgggacgcc 
+    11941 tccgggccgg ccatgaccga gatcggcgag cagccgtggg ggcgggagtt cgccctgcgc 
+    12001 gacccggccg gcaactgcgt gcacttcgtg gccgaggagc aggactgaca cgtgctacga 
+    12061 gatttcgatt ccaccgccgc cttctatgaa aggttgggct tcggaatcgt tttccgggac 
+    12121 gccggctgga tgatcctcca gcgcggggat ctcatgctgg agttcttcgc ccaccccaac 
+    12181 ttgtttattg cagcttataa tggttacaaa taaagcaata gcatcacaaa tttcacaaat 
+    12241 aaagcatttt tttcactgca ttctagttgt ggtttgtcca aactcatcaa tgtatcttat 
+    12301 catgtctgta taccgtcgac ctctagctag agcttggcgt aatcatggtc atagctgttt 
+    12361 cctgtgtgaa attgttatcc gctcacaatt ccacacaaca tacgagccgg aagcataaag 
+    12421 tgtaaagcct ggggtgccta atgagtgagc taactcacat taattgcgtt gcgctcactg 
+    12481 cccgctttcc agtcgggaaa cctgtcgtgc cagctgcatt aatgaatcgg ccaacgcgcg 
+    12541 gggagaggcg gtttgcgtat tgggcgctct tccgcttcct cgctcactga ctcgctgcgc 
+    12601 tcggtcgttc ggctgcggcg agcggtatca gctcactcaa aggcggtaat acggttatcc 
+    12661 acagaatcag gggataacgc aggaaagaac atgtgagcaa aaggccagca aaaggccagg 
+    12721 aaccgtaaaa aggccgcgtt gctggcgttt ttccataggc tccgcccccc tgacgagcat 
+    12781 cacaaaaatc gacgctcaag tcagaggtgg cgaaacccga caggactata aagataccag 
+    12841 gcgtttcccc ctggaagctc cctcgtgcgc tctcctgttc cgaccctgcc gcttaccgga 
+    12901 tacctgtccg cctttctccc ttcgggaagc gtggcgcttt ctcatagctc acgctgtagg 
+    12961 tatctcagtt cggtgtaggt cgttcgctcc aagctgggct gtgtgcacga accccccgtt 
+    13021 cagcccgacc gctgcgcctt atccggtaac tatcgtcttg agtccaaccc ggtaagacac 
+    13081 gacttatcgc cactggcagc agccactggt aacaggatta gcagagcgag gtatgtaggc 
+    13141 ggtgctacag agttcttgaa gtggtggcct aactacggct acactagaag aacagtattt 
+    13201 ggtatctgcg ctctgctgaa gccagttacc ttcggaaaaa gagttggtag ctcttgatcc 
+    13261 ggcaaacaaa ccaccgctgg tagcggtggt ttttttgttt gcaagcagca gattacgcgc 
+    13321 agaaaaaaag gatctcaaga agatcctttg atcttttcta cggggtctga cgctcagtgg 
+    13381 aacgaaaact cacgttaagg gattttggtc atgagattat caaaaaggat cttcacctag 
+    13441 atccttttaa attaaaaatg aagttttaaa tcaatctaaa gtatatatga gtaaacttgg 
+    13501 tctgacagtt accaatgctt aatcagtgag gcacctatct cagcgatctg tctatttcgt 
+    13561 tcatccatag ttgcctgact ccccgtcgtg tagataacta cgatacggga gggcttacca 
+    13621 tctggcccca gtgctgcaat gataccgcga gacccacgct caccggctcc agatttatca 
+    13681 gcaataaacc agccagccgg aagggccgag cgcagaagtg gtcctgcaac tttatccgcc 
+    13741 tccatccagt ctattaattg ttgccgggaa gctagagtaa gtagttcgcc agttaatagt 
+    13801 ttgcgcaacg ttgttgccat tgctacaggc atcgtggtgt cacgctcgtc gtttggtatg 
+    13861 gcttcattca gctccggttc ccaacgatca aggcgagtta catgatcccc catgttgtgc 
+    13921 aaaaaagcgg ttagctcctt cggtcctccg atcgttgtca gaagtaagtt ggccgcagtg 
+    13981 ttatcactca tggttatggc agcactgcat aattctctta ctgtcatgcc atccgtaaga 
+    14041 tgcttttctg tgactggtga gtactcaacc aagtcattct gagaatagtg tatgcggcga 
+    14101 ccgagttgct cttgcccggc gtcaatacgg gataataccg cgccacatag cagaacttta 
+    14161 aaagtgctca tcattggaaa acgttcttcg gggcgaaaac tctcaaggat cttaccgctg 
+    14221 ttgagatcca gttcgatgta acccactcgt gcacccaact gatcttcagc atcttttact 
+    14281 ttcaccagcg tttctgggtg agcaaaaaca ggaaggcaaa atgccgcaaa aaagggaata 
+    14341 agggcgacac ggaaatgttg aatactcata ctcttccttt ttcaatatta ttgaagcatt 
+    14401 tatcagggtt attgtctcat gagcggatac atatttgaat gtatttagaa aaataaacaa 
+    14461 ataggggttc cgcgcacatt tccccgaaaa gtgccacctg ac 
+//
