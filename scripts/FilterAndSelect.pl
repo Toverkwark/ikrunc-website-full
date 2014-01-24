@@ -74,6 +74,7 @@ $CDSLimit = $CDSSize - $CDSLimit if ($GeneOrientation == 0);
 open (IN, $InputFile) or die "ERROR in $ScriptName: Cannot open inputfile $InputFile\n";
 while (defined(my $Line = <IN>)) {
 	chomp($Line);
+	
 	#For every line, extract the necessary information
 	my @SAMValues = split( /\t/, $Line );
 	my $ProtospacerSequence = $SAMValues[9];
@@ -84,11 +85,12 @@ while (defined(my $Line = <IN>)) {
 		$ProtospacerSequence = reverse($ProtospacerSequence);
 	}
 	$Chromosome = $SAMValues[2];
+	#RefSeq file locations are zero based, but output of bowtie and therefore the locations in the qualities.4 files are 1-based, so correct for that.
 	my $Start = $SAMValues[3]-1;
 	my $End = $Start+23;
 	my $CutLocation;
 	if ($Orientation eq '+') {
-		$CutLocation = $End-5;
+		$CutLocation = $Start+18;
 	}
 	else {
 		$CutLocation = $Start+6;
@@ -130,32 +132,38 @@ while (defined(my $Line = <IN>)) {
 	my $WithinChosenCDSFraction = 0;
 	my $StartCodon=$ProteinStart;
 	if(!$GeneOrientation) {
-		$StartCodon=$ProteinEnd
+		$StartCodon=$ProteinEnd;
 	}
+	#Check whether cut location is within start codon neighbourhood
 	if(abs($CutLocation - $StartCodon) <= $StartNeighbourhood) {
 		$WithinStartCodonNeighbourHood = 1;
 	}
-	
-	#Find what location in the CDS the cut location is
+	#Find what location in the CDS the cut location is and check whether the cut location is within coding sequence
 	my $CutLocationCDS=0;
+	my $CutWithinCodingSequence = 0;
 	for (my $Exon = 0;$Exon < $NumberOfExons; $Exon++) {
 		my $ExonStart= ($ExonStartSites[$Exon]);
 		my $ExonEnd = ($ExonEndSites[$Exon]); 
 	
 		#Check if the current exon has coding sequence. If it has, set StartSite and EndSite according to coordinates that fall within protein coding sequence
-		if($ProteinStart<$ExonEnd && $CutLocation>$ExonStart) {
+		if($ProteinStart<=$ExonEnd && $CutLocation>=$ExonStart) {
 			my $StartSite = ($ProteinStart > $ExonStart) ? $ProteinStart : $ExonStart;
 			my $EndSite = ($CutLocation < $ExonEnd) ? $CutLocation : $ExonEnd;
 			$CutLocationCDS = $CutLocationCDS + ($EndSite - $StartSite); 
 		}
+		if($CutLocation>=$ExonStart && $CutLocation < $ExonEnd) {
+			$CutWithinCodingSequence = 1;
+		}
 	}
 	if($GeneOrientation == 1) {
-		$WithinChosenCDSFraction = 1 if ($CutLocationCDS<$CDSLimit && $CutLocationCDS>0); 
+		$WithinChosenCDSFraction = 1 if ($CutLocationCDS<=$CDSLimit && $CutLocationCDS>0); 
 	}
 	else {
-		$WithinChosenCDSFraction = 1 if ($CutLocationCDS>$CDSLimit && $CutLocationCDS<$CDSSize); 
+		$WithinChosenCDSFraction = 1 if ($CutLocationCDS>=$CDSLimit && $CutLocationCDS<=$CDSSize); 
 	}
-	if ($WithinChosenCDSFraction || $WithinStartCodonNeighbourHood) {
+	
+	#Only write target site to output file if the cut site is either within the chosen CDS fraction or within the chosen start codon neighbourhood
+	if ($WithinChosenCDSFraction || ($WithinStartCodonNeighbourHood && $CutWithinCodingSequence)) {
 		$Protospacers{"$Chromosome\t$Start\t$End\t$Name\t$Score\t$Orientation\t$Start\t$End\t$ColorRed,$ColorGreen,$ColorBlue\n"} = $Score;
 		$ProtospacerSequences{"$Chromosome\t$Start\t$End\t$Name\t$Score\t$Orientation\t$Start\t$End\t$ColorRed,$ColorGreen,$ColorBlue\t$ProtospacerSequence\t$RefSeq"} = $Score;
 	}
