@@ -39,7 +39,8 @@
 			Display only the top <input type="text" name="NumberOfSites" value="20" size="7"/> sites (Enter -1 to show all)<br>
 			Only search the 5' <input type="text" name="Percentage" value="50" size="7"/>% of the transcript for valid sites<br>
 			Include <input type="text" name="AroundStart" value="25" size="7"/> nucleotides around the startcodon as valid target sites (max. 100)<br><br>
-			<input type="submit" name="Plot CRISPR Sites" />
+			<input type="submit" name="Plot CRISPR Sites" /><br>
+			Click <a href="sitefinderexplanation.html" target="_blank">here</a> for an explanation of what you see below<br>
 		</form>
 		<iframe name="sitefinderresultsframe" id="sitefinderresultsframe" class="maincontentclass" width="100%" seamless onload="alertsize('sitefinderresultsframe');">
 		</iframe>
