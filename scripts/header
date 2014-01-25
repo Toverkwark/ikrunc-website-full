@@ -70,4 +70,13 @@
 			<stop stop-color = "rgb(255,255,255)" offset = "50%"/>
 			<stop stop-color = "rgb(200,200,255)" offset = "100%"/>
 		</linearGradient>
+		<linearGradient id = "blueyellow" x1 = "0%" y1 = "0%" x2 = "100%" y2 = "0%">
+			<stop stop-color = "rgb(0,0,255)" offset = "0%"/>
+			<stop stop-color = "rgb(255,255,255)" offset = "50%"/>
+			<stop stop-color = "rgb(255,255,0)" offset = "100%"/>
+		</linearGradient>
 	</defs>
+ 	<text x="0" y="0" font-family="Verdana" font-size="8">Low score</text>
+	<rect x="22" y="0" width="30" height="5" stroke="black" fill="url(#blueyellow)">
+	<text x="54" y="0" font-family="Verdana" font-size="8">High score</text>
+	
