@@ -108,7 +108,7 @@ while (defined(my $Line = <IN>)) {
 			$Degree=$Degree+1;
 		}
 	}
-	my $Name = $NumberOfIdentical3PrimeTargets . "(" . $NumberOfIdentical3PrimeTargetsNearExons . "):". $Degree . "MM:" . $ClosestRelatives . "(" . $ClosestRelativesNearExons . ")";
+	my $Label = $ProtospacerSequence . "-3'12nt:"$NumberOfIdentical3PrimeTargets . "(" . $NumberOfIdentical3PrimeTargetsNearExons . ") Closest off-target:". $Degree . "mismatched:" . $ClosestRelatives . "(" . $ClosestRelativesNearExons . ")";
 	
 	#The score of any protospacer will be determined as follows
 	#There will be one point added for every Degree, meaning the degree below that did not have relatives
@@ -116,10 +116,7 @@ while (defined(my $Line = <IN>)) {
 	#2 Points will be added for protospacers that have 1 OTHER identical 3' target, which is not near Exons
 	#1 Points will be added for protospacers that have more than 1 OTHER identical 3' target unless any of them near Exons
 	#0.0001 points will be subtracted for the number of relatives in the closest degree
-	#0.01 points will be substracted for the number of relatives in the closest degree that are near Exons
-	my $ColorRed=0;
-	my $ColorGreen=0;
-	my $ColorBlue=1;	
+	#0.01 points will be substracted for the number of relatives in the closest degree that are near Exons	
 	my $Score=$Degree;
 	$Score=$Score + 3 if ($NumberOfIdentical3PrimeTargets == 1);
 	$Score=$Score + 2 if ($NumberOfIdentical3PrimeTargets == 2 && $NumberOfIdentical3PrimeTargetsNearExons == 0);
@@ -164,19 +161,14 @@ while (defined(my $Line = <IN>)) {
 	
 	#Only write target site to output file if the cut site is either within the chosen CDS fraction or within the chosen start codon neighbourhood
 	if ($WithinChosenCDSFraction || ($WithinStartCodonNeighbourHood && $CutWithinCodingSequence)) {
-		$Protospacers{"$Chromosome\t$Start\t$End\t$Name\t$Score\t$Orientation\t$Start\t$End\t$ColorRed,$ColorGreen,$ColorBlue\n"} = $Score;
-		$ProtospacerSequences{"$Chromosome\t$Start\t$End\t$Name\t$Score\t$Orientation\t$Start\t$End\t$ColorRed,$ColorGreen,$ColorBlue\t$ProtospacerSequence\t$RefSeq"} = $Score;
+		$ProtospacerSequences{"$RefSeq\t$Chromosome\t$Orientation\t$CutLocation\t$Score\t$ProtospacerSequence\t$NumberOfIdentical3PrimeTargets\t$NumberOfIdentical3PrimeTargetsNearExons\t$Degree\t$ClosestRelatives\t$ClosestRelativesNearExons\t$Label"} = $Score;
 	}
+}
+my $MaxNumberOfProtospacers = scalar %ProtospacerSequences;
+if ($SelectNumberOfProtospacers>0) {
+	$MaxNumberOfProtospacers=$SelectNumberOfProtospacers;
 }
 
-my $NumberOfProtospacers = 0;
-foreach my $Protospacer (sort {$Protospacers{$b} <=> $Protospacers{$a}} keys %Protospacers) {
-	$NumberOfProtospacers++;
-	if ($SelectNumberOfProtospacers>0) {
-		last if ($NumberOfProtospacers >= $SelectNumberOfProtospacers);	
-	}
-}
-my $MaxNumberOfProtospacers = $NumberOfProtospacers;
 $NumberOfProtospacers = 0;
 foreach my $ProtospacerSequence (sort {$ProtospacerSequences{$b} <=> $ProtospacerSequences{$a}} keys %ProtospacerSequences) {
 	print OUTSEQ $ProtospacerSequence . "\t" . (($MaxNumberOfProtospacers - $NumberOfProtospacers) / $MaxNumberOfProtospacers) . "\n";

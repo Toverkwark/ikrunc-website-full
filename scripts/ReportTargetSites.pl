@@ -93,17 +93,13 @@ my %DisplayObjects;
 while (defined(my $Line = <IN>)) {
 	chomp($Line);
 	my @TargetSites = split( /\t/, $Line );
-	my $TargetChromosome = $TargetSites[0];
-	my $TargetOrientation = $TargetSites[5];
-	my $TargetCutSite = $TargetSites[1]+18;
-	$TargetCutSite = ($TargetSites[1]+6) if ($TargetOrientation eq '-');
-	my $TargetLabel = $TargetSites[3];
-	my $TargetScore = $TargetSites[11];
-	my $TargetSequence=$TargetSites[9];
+	my $TargetChromosome = $TargetSites[1];
+	my $TargetOrientation = $TargetSites[2];
+	my $TargetCutSite = $TargetSites[3];
+		
 	#Verify that the target is in the gene, or within 250nt of the TSS
 	if ($TargetChromosome eq $Chromosome && ($TargetCutSite >= $GeneStart-250 && $TargetCutSite <= $GeneEnd + 250)) {
-		$DisplayObjects{$TargetOrientation}->{$TargetCutSite}->[0]=$TargetLabel . " - "  . $TargetSequence;
-		$DisplayObjects{$TargetOrientation}->{$TargetCutSite}->[1]=$TargetScore;
+		$DisplayObjects{$TargetOrientation}->{$TargetCutSite}=@TargetSites
 	}
 }
 
@@ -141,14 +137,14 @@ foreach my $Orientation (keys %DisplayObjects) {
 		}
 		my $RelativeMarkerPosition=1400*$CodingSequencePosition/$mRNASize;
 		$RelativeMarkerPosition=$RelativeMarkerPosition+100;
-		$DisplayObjects{$Orientation}->{$TargetCutSite}->[2]=$RelativeMarkerPosition;
+		$DisplayObjects{$Orientation}->{$TargetCutSite}->[12]=$RelativeMarkerPosition;
 	}
 }
 
 #Determine and assign colors
 foreach my $Orientation (keys %DisplayObjects) {
 	foreach my $TargetCutSite (keys $DisplayObjects{$Orientation}) {
-		my $TriangleValue=$DisplayObjects{$Orientation}->{$TargetCutSite}->[1];
+		my $TriangleValue=$DisplayObjects{$Orientation}->{$TargetCutSite}->[4];
 		$TriangleValue = int (511*($TriangleValue));
 		my $Blue = 255;
 		my $Red = $TriangleValue;
@@ -159,7 +155,7 @@ foreach my $Orientation (keys %DisplayObjects) {
 			$Green=255;
 		}
 		my $TriangleColor = "$Red,$Green,$Blue"; 
-		$DisplayObjects{$Orientation}->{$TargetCutSite}->[3]=$TriangleColor;
+		$DisplayObjects{$Orientation}->{$TargetCutSite}->[13]=$TriangleColor;
 	}
 }
 		
@@ -174,8 +170,8 @@ foreach my $Orientation (keys %DisplayObjects) {
 		$CollisionsDetected = 0;
 		foreach my $TargetCutSite (keys $DisplayObjects{$Orientation}) {
 			my $CollisionDetectedForThisTarget = 0;
-			my $RelativeMarkerPosition=$DisplayObjects{$Orientation}->{$TargetCutSite}->[2];
-			if(!($DisplayObjects{$Orientation}->{$TargetCutSite}->[4])) {
+			my $RelativeMarkerPosition=$DisplayObjects{$Orientation}->{$TargetCutSite}->[12];
+			if(!($DisplayObjects{$Orientation}->{$TargetCutSite}->[14])) {
 				if($AllPositions{$CollisionLevel}) {
 					foreach my $Position (keys $AllPositions{$CollisionLevel}) {
 						if ($RelativeMarkerPosition <= ($Position+$CollisionWidth) && $RelativeMarkerPosition >= ($Position-$CollisionWidth)) {
@@ -188,7 +184,7 @@ foreach my $Orientation (keys %DisplayObjects) {
 				}
 				if (!$CollisionDetectedForThisTarget) {
 					$AllPositions{$CollisionLevel}->{$RelativeMarkerPosition}++;
-					$DisplayObjects{$Orientation}->{$TargetCutSite}->[4]=$CollisionLevel;
+					$DisplayObjects{$Orientation}->{$TargetCutSite}->[14]=$CollisionLevel;
 				}
 			}
 		}
@@ -261,11 +257,23 @@ my $ExonOffset=30;
 my $TargetID=0;
 my %TableObjects;
 foreach my $Orientation (keys %DisplayObjects) {
-	foreach my $TargetCutSite (sort {$DisplayObjects{$Orientation}->{$a}->[1] <=> $DisplayObjects{$Orientation}->{$b}->[1]} keys $DisplayObjects{$Orientation}) {		
+	#Loop through all cut sites sorted by score
+	foreach my $TargetCutSite (sort {$DisplayObjects{$Orientation}->{$a}->[4] <=> $DisplayObjects{$Orientation}->{$b}->[4]} keys $DisplayObjects{$Orientation}) {		
+		my $TargetChromosome = $TargetSites[1];
+		my $TargetOrientation = $TargetSites[2];
+		my $TargetCutSite = $TargetSites[3];
+		my $TargetScore = $TargetSites[4];
+		my $TargetSequence=$TargetSites[5];
+		my $TargetNumberOfIdentical3PrimeTargets=$TargetSites[6];
+		my $TargetNumberOfIdentical3PrimeTargetsNearExons=$TargetSites[7];
+		my $TargetDegree=$TargetSites[8];
+		my $TargetClosestRelatives=$TargetSites[9];
+		my $TargetClosestRelativesNearExons=$TargetSites[10];
+		my $TargetLabel = $TargetSites[11];
 		$TargetID=$TargetID+1;		
-		my $RelativeMarkerPosition=$DisplayObjects{$Orientation}->{$TargetCutSite}->[2];
-		my $TriangleColor=$DisplayObjects{$Orientation}->{$TargetCutSite}->[3];
-		my $LayerOffset = $LevelOffset*($DisplayObjects{$Orientation}->{$TargetCutSite}->[4] - 1);
+		my $RelativeMarkerPosition=$DisplayObjects{$Orientation}->{$TargetCutSite}->[12];
+		my $TriangleColor=$DisplayObjects{$Orientation}->{$TargetCutSite}->[13];
+		my $LayerOffset = $LevelOffset*($DisplayObjects{$Orientation}->{$TargetCutSite}->[14] - 1);
 		if($Orientation eq '+') {
 			$SVGFile = $SVGFile . "<polygon id=\"" . $TargetID . "\" class=\"Triangle\" points=\"" . ($RelativeMarkerPosition - $TriangleWidth) . "\," . ($YOffset-$LayerOffset-$TriangleHeight) . " " . $RelativeMarkerPosition . "\," . ($YOffset-$LayerOffset) . " " . ($RelativeMarkerPosition+$TriangleWidth) . "\," . ($YOffset-$LayerOffset-$TriangleHeight) . "\" style=\"fill:rgb(" . $TriangleColor . ");stroke:black;stroke-width:1\" onmousemove=\"ShowTooltip(evt, \'" . $DisplayObjects{$Orientation}->{$TargetCutSite}->[0] . "\')\" onmouseout=\"HideTooltip(evt)\" onclick=\"ClickTriangle(" . $TargetID . ")\">";
 			my $RandomTime=1*rand();
@@ -278,10 +286,14 @@ foreach my $Orientation (keys %DisplayObjects) {
 			$SVGFile = $SVGFile . "<animateTransform attributeName=\"transform\" attributeType=\"XML\" type=\"translate\" from=\"0 " . $AnimationDistance . "\" to=\"0 0\" dur=\"" . $RandomTime . "s\"/>";
 			$SVGFile = $SVGFile . "</polygon>\n";
 		}	
-		$TableObjects{$TargetID}->[0]=$DisplayObjects{$Orientation}->{$TargetCutSite}->[1];
-		$TableObjects{$TargetID}->[1]=$Orientation;
+		$TableObjects{$TargetID}->[1]=$TargetOrientation;
 		$TableObjects{$TargetID}->[2]=$TargetCutSite;
-		$TableObjects{$TargetID}->[3]=$DisplayObjects{$Orientation}->{$TargetCutSite}->[0];
+		$TableObjects{$TargetID}->[3]=substr($TargetSequence,0,20) . "<b>" . substr($TargetSequence,20,3) . "</b>";
+		$TableObjects{$TargetID}->[4]=$TargetNumberOfIdentical3PrimeTargets;
+		$TableObjects{$TargetID}->[5]=$TargetNumberOfIdentical3PrimeTargetsNearExons;
+		$TableObjects{$TargetID}->[6]=$TargetDegree;
+		$TableObjects{$TargetID}->[7]=$TargetClosestRelatives;
+		$TableObjects{$TargetID}->[8]=$TargetClosestRelativesNearExons;
 	}
 } 
 
@@ -302,13 +314,30 @@ print OUT `cat $FooterFile`;
 #Print the table file
 print OUTHTML "<!DOCTYPE html>\n<html lang='en'>\n\t<head>\n\t\t<meta charset='utf-8'>\n\t\t<link rel='stylesheet' href='../style.css' type='text/css'></link>\n\t</head>\n";
 print OUTHTML "<body>\n<table id='svgtable' class='svgtable' width='100%'>\n";
+print OUTHTML "\t<th>Rank</th>\n";
+print OUTHTML "\t<th>Chromosome</th>\n";
+print OUTHTML "\t<th>Orientation</th>\n";
+print OUTHTML "\t<th>Position</th>\n";
+print OUTHTML "\t<th>Sequence</th>\n";
+print OUTHTML "\t<th>Identical 3'12nt sites</th>\n";
+print OUTHTML "\t<th>Identical 3'12nt sites near exons</th>\n";
+print OUTHTML "\t<th>Off-target #mismatches</th>\n";
+print OUTHTML "\t<th># sites</th>\n";
+print OUTHTML "\t<th># sites near exons</th>\n";
+my $Rank=0;
 foreach my $TableRow (sort {$TableObjects{$b}->[0] <=> $TableObjects{$a}->[0]} keys %TableObjects) {
+	$Rank=$Rank+1;
 	print OUTHTML "\t<tr id='" . $TableRow . ".table' onclick=parent.ClickTableRow('" . $TableRow . "')>\n";
-	print OUTHTML "\t\t<td>" . $TableRow . "</td>\n";
-	print OUTHTML "\t\t<td>" . $Chromosome . ":" . $TableObjects{$TableRow}->[2] . "</td>\n";
+	print OUTHTML "\t\t<td>" . $Rank . "</td>\n";
+	print OUTHTML "\t\t<td>" . $Chromosome . "</td>\n";
 	print OUTHTML "\t\t<td>" . $TableObjects{$TableRow}->[1] . "</td>\n";
-	print OUTHTML "\t\t<td>" . $TableObjects{$TableRow}->[0] . "</td>\n";
+	print OUTHTML "\t\t<td>" . $TableObjects{$TableRow}->[2] . "</td>\n";
 	print OUTHTML "\t\t<td>" . $TableObjects{$TableRow}->[3] . "</td>\n";
+	print OUTHTML "\t\t<td>" . $TableObjects{$TableRow}->[4] . "</td>\n";
+	print OUTHTML "\t\t<td>" . $TableObjects{$TableRow}->[5] . "</td>\n";
+	print OUTHTML "\t\t<td>" . $TableObjects{$TableRow}->[6] . "</td>\n";
+	print OUTHTML "\t\t<td>" . $TableObjects{$TableRow}->[7] . "</td>\n";
+	print OUTHTML "\t\t<td>" . $TableObjects{$TableRow}->[8] . "</td>\n";
 }
 print OUTHTML "</table>\n</body>\n";
 print OUTHTML "</html>";
