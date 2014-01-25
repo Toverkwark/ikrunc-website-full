@@ -12,6 +12,10 @@ body {
 	clear: both;
 }
 
+sub {
+	font-size: 70%;
+}
+
 h1 {	
 	color: #fc4349
 }

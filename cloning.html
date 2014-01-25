@@ -5,5 +5,58 @@
 		<link rel="stylesheet" href="style.css" type="text/css"></link>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 	</head>
-	<h1>Cloning custom sgRNAs into iKRUNC vectors</h1>
+	<body>
+		<h1>Cloning custom sgRNAs into iKRUNC vectors</h1>
+		In order to use the iKRUNC system to knock out your favourite gene, you'd have to clone a suitable sgRNA into either the 
+		<a href="maps/ikrunc-bsd.gb" target="_blank">iKRUNC-sgRNA-BSD</a> or 
+		<a href="maps/ikrunc-puro.gb" target="_blank">iKRUNC-sgRNA-Puro</a> vector. 
+		You could use the <a href="sitefinder.html">sitefinder</a> tool of this website to find an appropriate target site. 
+		Once an appropriate site has been identified, two oligo's should be ordered to clone into the iKRUNC system.
+		Don't forget that although the genomic target site is characterized by 20 nucleotides followed by the NGG protospacer adjacent motif, the sgRNA only contains those 20 nucleotides.
+		When you get target sites from the sitefinder tool, don't worry about the orientations as automatically the reverse complement sequence is depicted whenever a target site is present on the antisense strand.
+		So, when considering the 20 nucleotides of the sgRNA, order the following oligo's:<br>
+		<font size="2" face="courier new"><br>
+		5'-<b>CGAG</b>N<sub>1</sub>N<sub>2</sub>N<sub>3</sub>N<sub>4</sub>N<sub>5</sub>N<sub>6</sub>N<sub>7</sub>N<sub>8</sub>N<sub>9</sub>N<sub>10</sub>N<sub>11</sub>N<sub>12</sub>N<sub>13</sub>N<sub>14</sub>N<sub>15</sub>N<sub>16</sub>N<sub>17</sub>N<sub>18</sub>N<sub>19</sub>N<sub>20</sub>-3'<br>
+		5'-<b>AAAC</b>M<sub>20</sub>M<sub>19</sub>M<sub>18</sub>M<sub>17</sub>M<sub>16</sub>M<sub>15</sub>M<sub>14</sub>M<sub>13</sub>M<sub>12</sub>M<sub>11</sub>M<sub>10</sub>M<sub>9</sub>M<sub>8</sub>M<sub>7</sub>M<sub>6</sub>M<sub>5</sub>M<sub>4</sub>M<sub>3</sub>M<sub>2</sub>M<sub>1</sub>-3'<br>
+		</font><br>
+		The M's in the last sequence are to indicate that they should be the complimentary letters as the Ns in the first oligo.
+		To clone these oligo's in either iKRUNC-sgRNA-BSD or iKRUNC-sgRNA-Puro, follow these steps:<br>
+		<ul>
+		1. Digest the vector with BfuAI (take note this enzyme works at 50&deg;C!) and isolate the backbone from gel. The digestion releases a 4kb which makes it easier to separate the large 11.5kb backbone from non- or partially digested vector.
+		</ul>
+		<ul>2. Re-anneal the oligo's. Bring them to a concentration of 100&mu;M, then mix<br>
+		1&mu;l Forward oligo<br>
+		1&mu;l Reverse oligo<br>
+		5&mu;l NEB Buffer 2<br>
+		43&mu;l mQ<br><br>
+		In a PCR machine, incubate the samples for 4 minutes @95&deg;C, 10 minutes @70&deg; and then slowly ramp to 4&deg;C.<br>
+		After that, the oligo's should have formed the following double-stranded structures which can easily be cloned in the backbone:<br>
+		<font size="2" face="courier new">
+		<b>CGAG</b>NNNNNNNNNNNNNNNNNNNN<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;||||||||||||||||||||<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;MMMMMMMMMMMMMMMMMMMM<b>CAAA</b>
+		</font> 
+		</ul>
+		<ul>
+		3. Ligate 2&mu;l annealed oligo's into 50ng digested and purified backbone in a total volume of 20&mu;l, containing 2&mu;l 10xLigation buffer and 1&mu;l T4 DNA ligase. Incubate O/N @16&deg;C<br> 
+		</ul>
+		<ul>
+		4. Transform 2&mu;l into competent cells and plate out on LB plates containing 100&mu;g/ml ampicillin or carbenicillin
+		</ul>
+		<ul>
+		5. Miniprep 2-3 clones in case of mutations. Sequence the vector using the iKRUNC-SEQ oligo:<br>
+		5'-AAAGAATAGTAGACATAATAGC-3'
+		</ul>
+		<ul>
+		6. Maxiprep the vector and create lentivirus by transfecting HEK-293T cells using a 3rd generation lentiviral packaging system of your choice. Also create virus using the iKRUNC-Cas9Neo vector.<br>
+		<b>!!!CAUTION!!! Producing and using lentiviruses confers a biological risk. Make sure to follow both your institutional as well as governmental rules while carrying out this work and do not engage in any such acitivity without proper training !!!</b>
+		</ul>
+		<ul>
+		7. When infecting the iKRUNC system into your cells of interest, it is important to realize that it takes time for the tet repressor, which in absence of Doxycycline binds to the H1 promoter and inhibits transcription of the sgRNA, to build up to sufficient levels as to properly suppress transcription. 
+		Therefore, it matters in what order the system is brought into the cells. If the Cas9Neo vector is already present when introducing the sgRNA containing vector, significant mutational activity may already take place before doxycycline induction. Therefore, first introduce the sgRNA construct, perform its selection using blasticidin or puromycin, then introduce the Cas9Neo vector and perform selection using G418. 
+		</ul>
+		<ul>
+		8. Induce the sgRNA expression by adding Doxycycline. In tests done on several cell lines, 100ng/ml seems to be a good concentration, but this may differ between cell lines.	 
+		</ul>
+	</body>
 </html>
