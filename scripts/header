@@ -35,7 +35,7 @@
 					tooltip_bg.setAttributeNS(null,"x",(evt.clientX/ScreenTransformationMatrix.a)+18);
 				}
 				tooltip_bg.setAttributeNS(null,"y",(evt.clientY/ScreenTransformationMatrix.d)+8);
-				tooltip_bg.setAttributeNS(null,"visibility","visibile");
+				tooltip_bg.setAttributeNS(null,"visibility","visible");
 			}
 
 			function HideTooltip(evt) {
@@ -76,7 +76,7 @@
 			<stop stop-color = "rgb(255,255,0)" offset = "100%"/>
 		</linearGradient>
 	</defs>
- 	<text x="0" y="0" font-family="Verdana" font-size="8">Low score</text>
-	<rect x="22" y="0" width="30" height="5" stroke="black" fill="url(#blueyellow)">
-	<text x="54" y="0" font-family="Verdana" font-size="8">High score</text>
+ 	<text x="1425" y="20" font-family="Arial" font-size="12">High score</text>
+	<rect x="1360" y="9" width="60" height="15" stroke="black" fill="url(#blueyellow)"></rect>
+	<text x="1300" y="20" font-family="Arial" font-size="12">Low score</text>
 	

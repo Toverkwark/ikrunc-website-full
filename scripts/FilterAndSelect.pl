@@ -108,21 +108,21 @@ while (defined(my $Line = <IN>)) {
 			$Degree=$Degree+1;
 		}
 	}
-	my $Label = $ProtospacerSequence . "-3'12nt:"$NumberOfIdentical3PrimeTargets . "(" . $NumberOfIdentical3PrimeTargetsNearExons . ") Closest off-target:". $Degree . "mismatched:" . $ClosestRelatives . "(" . $ClosestRelativesNearExons . ")";
+	my $Label = $ProtospacerSequence . ": identical 3\\'12nt regions:" . $NumberOfIdentical3PrimeTargets . "(" . $NumberOfIdentical3PrimeTargetsNearExons . ") Closest off-target:". $Degree . " mismatches:" . $ClosestRelatives . "(" . $ClosestRelativesNearExons . ")";
 	
 	#The score of any protospacer will be determined as follows
 	#There will be one point added for every Degree, meaning the degree below that did not have relatives
 	#3 Points will be added for protospacers that do not have OTHER identical 3' targets
 	#2 Points will be added for protospacers that have 1 OTHER identical 3' target, which is not near Exons
 	#1 Points will be added for protospacers that have more than 1 OTHER identical 3' target unless any of them near Exons
-	#0.0001 points will be subtracted for the number of relatives in the closest degree
-	#0.01 points will be substracted for the number of relatives in the closest degree that are near Exons	
+	#0.00000001 points will be subtracted for the number of relatives in the closest degree
+	#0.0001 points will be substracted for the number of relatives in the closest degree that are near Exons	
 	my $Score=$Degree;
 	$Score=$Score + 3 if ($NumberOfIdentical3PrimeTargets == 1);
 	$Score=$Score + 2 if ($NumberOfIdentical3PrimeTargets == 2 && $NumberOfIdentical3PrimeTargetsNearExons == 0);
 	$Score=$Score + 1 if ($NumberOfIdentical3PrimeTargets > 2 && $NumberOfIdentical3PrimeTargetsNearExons == 0);
-	$Score=$Score - (0.0001 * $ClosestRelatives);
-	$Score=$Score - (0.01 * $ClosestRelativesNearExons);
+	$Score=$Score - (0.00000001 * $ClosestRelatives);
+	$Score=$Score - (0.0001 * $ClosestRelativesNearExons);
 	
 	#Now, see if the protospacer is within the set criteria for CDS fraction or start codon neighbourhood
 	my $WithinStartCodonNeighbourHood = 0;
@@ -164,12 +164,14 @@ while (defined(my $Line = <IN>)) {
 		$ProtospacerSequences{"$RefSeq\t$Chromosome\t$Orientation\t$CutLocation\t$Score\t$ProtospacerSequence\t$NumberOfIdentical3PrimeTargets\t$NumberOfIdentical3PrimeTargetsNearExons\t$Degree\t$ClosestRelatives\t$ClosestRelativesNearExons\t$Label"} = $Score;
 	}
 }
-my $MaxNumberOfProtospacers = scalar %ProtospacerSequences;
+my $MaxNumberOfProtospacers = keys %ProtospacerSequences;
+#print "Max number of Protospacers:$MaxNumberOfProtospacers\n";
+#print "Select number of Protospacers:$SelectNumberOfProtospacers\n";
 if ($SelectNumberOfProtospacers>0) {
 	$MaxNumberOfProtospacers=$SelectNumberOfProtospacers;
 }
 
-$NumberOfProtospacers = 0;
+my $NumberOfProtospacers = 0;
 foreach my $ProtospacerSequence (sort {$ProtospacerSequences{$b} <=> $ProtospacerSequences{$a}} keys %ProtospacerSequences) {
 	print OUTSEQ $ProtospacerSequence . "\t" . (($MaxNumberOfProtospacers - $NumberOfProtospacers) / $MaxNumberOfProtospacers) . "\n";
 	$NumberOfProtospacers++;

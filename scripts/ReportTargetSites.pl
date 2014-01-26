@@ -99,9 +99,10 @@ while (defined(my $Line = <IN>)) {
 		
 	#Verify that the target is in the gene, or within 250nt of the TSS
 	if ($TargetChromosome eq $Chromosome && ($TargetCutSite >= $GeneStart-250 && $TargetCutSite <= $GeneEnd + 250)) {
-		$DisplayObjects{$TargetOrientation}->{$TargetCutSite}=@TargetSites
+		@{$DisplayObjects{$TargetOrientation}->{$TargetCutSite}}=@TargetSites;
 	}
 }
+close (IN);
 
 #Determine coding sequence position of cutsites
 foreach my $Orientation (keys %DisplayObjects) {
@@ -136,15 +137,15 @@ foreach my $Orientation (keys %DisplayObjects) {
 			}
 		}
 		my $RelativeMarkerPosition=1400*$CodingSequencePosition/$mRNASize;
-		$RelativeMarkerPosition=$RelativeMarkerPosition+100;
-		$DisplayObjects{$Orientation}->{$TargetCutSite}->[12]=$RelativeMarkerPosition;
+		$RelativeMarkerPosition=$RelativeMarkerPosition+100;	
+		$DisplayObjects{$Orientation}->{$TargetCutSite}->[13]=$RelativeMarkerPosition;
 	}
 }
 
 #Determine and assign colors
 foreach my $Orientation (keys %DisplayObjects) {
 	foreach my $TargetCutSite (keys $DisplayObjects{$Orientation}) {
-		my $TriangleValue=$DisplayObjects{$Orientation}->{$TargetCutSite}->[4];
+		my $TriangleValue=$DisplayObjects{$Orientation}->{$TargetCutSite}->[12];
 		$TriangleValue = int (511*($TriangleValue));
 		my $Blue = 255;
 		my $Red = $TriangleValue;
@@ -155,7 +156,7 @@ foreach my $Orientation (keys %DisplayObjects) {
 			$Green=255;
 		}
 		my $TriangleColor = "$Red,$Green,$Blue"; 
-		$DisplayObjects{$Orientation}->{$TargetCutSite}->[13]=$TriangleColor;
+		$DisplayObjects{$Orientation}->{$TargetCutSite}->[14]=$TriangleColor;
 	}
 }
 		
@@ -170,8 +171,8 @@ foreach my $Orientation (keys %DisplayObjects) {
 		$CollisionsDetected = 0;
 		foreach my $TargetCutSite (keys $DisplayObjects{$Orientation}) {
 			my $CollisionDetectedForThisTarget = 0;
-			my $RelativeMarkerPosition=$DisplayObjects{$Orientation}->{$TargetCutSite}->[12];
-			if(!($DisplayObjects{$Orientation}->{$TargetCutSite}->[14])) {
+			my $RelativeMarkerPosition=$DisplayObjects{$Orientation}->{$TargetCutSite}->[13];
+			if(!($DisplayObjects{$Orientation}->{$TargetCutSite}->[15])) {
 				if($AllPositions{$CollisionLevel}) {
 					foreach my $Position (keys $AllPositions{$CollisionLevel}) {
 						if ($RelativeMarkerPosition <= ($Position+$CollisionWidth) && $RelativeMarkerPosition >= ($Position-$CollisionWidth)) {
@@ -184,7 +185,7 @@ foreach my $Orientation (keys %DisplayObjects) {
 				}
 				if (!$CollisionDetectedForThisTarget) {
 					$AllPositions{$CollisionLevel}->{$RelativeMarkerPosition}++;
-					$DisplayObjects{$Orientation}->{$TargetCutSite}->[14]=$CollisionLevel;
+					$DisplayObjects{$Orientation}->{$TargetCutSite}->[15]=$CollisionLevel;
 				}
 			}
 		}
@@ -259,6 +260,7 @@ my %TableObjects;
 foreach my $Orientation (keys %DisplayObjects) {
 	#Loop through all cut sites sorted by score
 	foreach my $TargetCutSite (sort {$DisplayObjects{$Orientation}->{$a}->[4] <=> $DisplayObjects{$Orientation}->{$b}->[4]} keys $DisplayObjects{$Orientation}) {		
+		my @TargetSites = @{$DisplayObjects{$Orientation}->{$TargetCutSite}};		
 		my $TargetChromosome = $TargetSites[1];
 		my $TargetOrientation = $TargetSites[2];
 		my $TargetCutSite = $TargetSites[3];
@@ -271,17 +273,17 @@ foreach my $Orientation (keys %DisplayObjects) {
 		my $TargetClosestRelativesNearExons=$TargetSites[10];
 		my $TargetLabel = $TargetSites[11];
 		$TargetID=$TargetID+1;		
-		my $RelativeMarkerPosition=$DisplayObjects{$Orientation}->{$TargetCutSite}->[12];
-		my $TriangleColor=$DisplayObjects{$Orientation}->{$TargetCutSite}->[13];
-		my $LayerOffset = $LevelOffset*($DisplayObjects{$Orientation}->{$TargetCutSite}->[14] - 1);
+		my $RelativeMarkerPosition=$TargetSites[13];
+		my $TriangleColor=$TargetSites[14];
+		my $LayerOffset = $LevelOffset*(($TargetSites[15]) - 1);
 		if($Orientation eq '+') {
-			$SVGFile = $SVGFile . "<polygon id=\"" . $TargetID . "\" class=\"Triangle\" points=\"" . ($RelativeMarkerPosition - $TriangleWidth) . "\," . ($YOffset-$LayerOffset-$TriangleHeight) . " " . $RelativeMarkerPosition . "\," . ($YOffset-$LayerOffset) . " " . ($RelativeMarkerPosition+$TriangleWidth) . "\," . ($YOffset-$LayerOffset-$TriangleHeight) . "\" style=\"fill:rgb(" . $TriangleColor . ");stroke:black;stroke-width:1\" onmousemove=\"ShowTooltip(evt, \'" . $DisplayObjects{$Orientation}->{$TargetCutSite}->[0] . "\')\" onmouseout=\"HideTooltip(evt)\" onclick=\"ClickTriangle(" . $TargetID . ")\">";
+			$SVGFile = $SVGFile . "<polygon id=\"" . $TargetID . "\" class=\"Triangle\" points=\"" . ($RelativeMarkerPosition - $TriangleWidth) . "\," . ($YOffset-$LayerOffset-$TriangleHeight) . " " . $RelativeMarkerPosition . "\," . ($YOffset-$LayerOffset) . " " . ($RelativeMarkerPosition+$TriangleWidth) . "\," . ($YOffset-$LayerOffset-$TriangleHeight) . "\" style=\"fill:rgb(" . $TriangleColor . ");stroke:black;stroke-width:1\" onmousemove=\"ShowTooltip(evt, \'" . $TargetLabel . "\')\" onmouseout=\"HideTooltip(evt)\" onclick=\"ClickTriangle(" . $TargetID . ")\">";
 			my $RandomTime=1*rand();
 			$SVGFile = $SVGFile . "<animateTransform attributeName=\"transform\" attributeType=\"XML\" type=\"translate\" from=\"0 -" . $AnimationDistance . "\" to=\"0 0\" dur=\"" . $RandomTime . "s\"/>";
 			$SVGFile = $SVGFile . "</polygon>\n";
 		}
 		else {
-			$SVGFile = $SVGFile . "<polygon id=\"" . $TargetID . "\"  class=\"Triangle\" points=\"" . ($RelativeMarkerPosition - $TriangleWidth) . "\," . ($YOffset+$ExonOffset+$LayerOffset+$TriangleHeight) . " " . $RelativeMarkerPosition . "\," . ($YOffset+$ExonOffset+$LayerOffset) . " " . ($RelativeMarkerPosition+$TriangleWidth) . "\," . ($YOffset+$ExonOffset+$TriangleHeight+$LayerOffset) . "\" style=\"fill:rgb(" . $TriangleColor . ");stroke:black;stroke-width:1\" onmousemove=\"ShowTooltip(evt, \'" . $DisplayObjects{$Orientation}->{$TargetCutSite}->[0] . "\')\" onmouseout=\"HideTooltip(evt)\" onclick=\"ClickTriangle(" . $TargetID . ")\">";
+			$SVGFile = $SVGFile . "<polygon id=\"" . $TargetID . "\"  class=\"Triangle\" points=\"" . ($RelativeMarkerPosition - $TriangleWidth) . "\," . ($YOffset+$ExonOffset+$LayerOffset+$TriangleHeight) . " " . $RelativeMarkerPosition . "\," . ($YOffset+$ExonOffset+$LayerOffset) . " " . ($RelativeMarkerPosition+$TriangleWidth) . "\," . ($YOffset+$ExonOffset+$TriangleHeight+$LayerOffset) . "\" style=\"fill:rgb(" . $TriangleColor . ");stroke:black;stroke-width:1\" onmousemove=\"ShowTooltip(evt, \'" . $TargetLabel . "\')\" onmouseout=\"HideTooltip(evt)\" onclick=\"ClickTriangle(" . $TargetID . ")\">";
 			my $RandomTime=1*rand();
 			$SVGFile = $SVGFile . "<animateTransform attributeName=\"transform\" attributeType=\"XML\" type=\"translate\" from=\"0 " . $AnimationDistance . "\" to=\"0 0\" dur=\"" . $RandomTime . "s\"/>";
 			$SVGFile = $SVGFile . "</polygon>\n";
@@ -294,6 +296,7 @@ foreach my $Orientation (keys %DisplayObjects) {
 		$TableObjects{$TargetID}->[6]=$TargetDegree;
 		$TableObjects{$TargetID}->[7]=$TargetClosestRelatives;
 		$TableObjects{$TargetID}->[8]=$TargetClosestRelativesNearExons;
+		$TableObjects{$TargetID}->[9]=$TargetScore;
 	}
 } 
 
@@ -325,7 +328,7 @@ print OUTHTML "\t<th>Off-target #mismatches</th>\n";
 print OUTHTML "\t<th># sites</th>\n";
 print OUTHTML "\t<th># sites near exons</th>\n";
 my $Rank=0;
-foreach my $TableRow (sort {$TableObjects{$b}->[0] <=> $TableObjects{$a}->[0]} keys %TableObjects) {
+foreach my $TableRow (sort {$TableObjects{$b}->[9] <=> $TableObjects{$a}->[9]} keys %TableObjects) {
 	$Rank=$Rank+1;
 	print OUTHTML "\t<tr id='" . $TableRow . ".table' onclick=parent.ClickTableRow('" . $TableRow . "')>\n";
 	print OUTHTML "\t\t<td>" . $Rank . "</td>\n";
@@ -343,5 +346,4 @@ print OUTHTML "</table>\n</body>\n";
 print OUTHTML "</html>";
 close (OUT);
 close (OUTHTML);
-close (IN);
 
