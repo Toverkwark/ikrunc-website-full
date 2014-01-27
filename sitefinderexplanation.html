@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" type="text/css"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	</head>
+	<body>
+		<h1>Sitefinder introduction</h1>
+		The <i>Streptococcus pyogenes</i> Cas9 protein recognizes and cleaves target sequences complementary to a 20nt sequence present in the co-expressed sgRNA, but only if the genomic target is followed by the <b>P</b>rotospacer <b>A</b>djacent <b>M</b>otif (PAM) NGG.
+		Off-target cleavage can of course occur whenever the intended target site is also present elsewehere in the genome. Promiscuous activity at sites that are similar, but not identical, has also been reported and is in general harder to predict.
+		To design sgRNAs that target a gene of interest while minimizing off-target effects, we've developed this sitefinder tool, which graphically depicts the most optimal target sites to design sgRNAs against.<br>
+		<h1>Explanation of the interface</h1>
+		Upon selection of any valid gene symbol, a list of RefSeq transcript IDs belonging to that gene is displayed. For every RefSeq ID, the sitefinder has a database of all possible target sites and information about their predicted off-target effects.
+		Because in case of functionally knocking out genes, it makes sense to create disruptions more towards the 5' end of the transcript, one can select for the sitefinder to only display target sites that are present in the first N% of a transcript.
+		Targeting the start codon itself may also be an efficient strategy to create functional knockouts, provided there is no alternative start codon downstream that can still lead to a functional transcript. Therefore, the sitefinder scripts can also search for valid sites to a maximum of 100nt upstream and dowstream of the start codon.
+		After selecting the appropriate criteria, by selecting the submit button, the results of a filtering of the sitefinder database is shown both in graphical format as well as in a table. Each triangle in the picture represents a valid CRISPR/Cas9 target site.
+		The triangles are colored to indicate the order in quality score (increasing when going from blue to yellow). The triangles and table rows are linked with each other such that when highlighting one, the corresponding item will also be highlighted. When hovering over the sites, information is displayed for every triangle:
+		<ul>-The target sequence in the genome. Remember that when designing sgRNAs, the NGG motif at the end should <b>not</b> be taken into consideration!</ul>
+		<ul>-The amount of valid CRISPR/Cas9 target sites in the genome with similar 3'12nt. It has been shown that most of the specificity of target sites in the 3'12nt, so the more specific this region is, the better.</ul>
+		<ul>-How many of those identical 3'12nt target sites are near exons and could thus disrupt other gene products</ul>
+		<ul>-When considering the full 20nt sgRNA sequence, how many mismatches away would be the closest valid CRISPR/Cas9 target site in the genome</ul>
+		<ul>-How many valid CRISPR/Cas9 off-target sites are there in the genome that have that many mismatches to the intended target</ul>
+		<ul>-How many of those are near exons and could thus disrupt other gene products</ul> 
+		<h1>The scoring system</h1>
+		Definitive assessment of potential off-target effects of any CRISPR/Cas9 target site is still out of reach (as is the relative on-target efficacy of each site, especially in terms of creating functional knockouts) but in an attempt to assign a relative quality to every target site, a scoring system was developed that follow these rules:
+		<ul>-1 point is added for every number of mismatches that the closest off-target site has with the intended target</ul> 
+		<ul>-3 points will be added for protospacers that do not have other identical 3' targets</ul>
+		<ul>-2 points will be added for protospacers that have 1 other identical 3' target, which is not near any exon</ul>
+		<ul>-1 point will be added for protospacers that have more than 1 other identical 3' target unless any of them are near any exon</ul>
+		Within each class, target sites will be first ordered according to how many off-target sites are found near exons that have the same amount of mismatches to the intended target site as the closest relative
+		Lastly, a subordering will take place according to the how many total off-target sites are found that have the same amount of mismatches to the intended target site as the closest relative
+	</body>
+</html>
